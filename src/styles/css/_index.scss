@@ -10,15 +10,16 @@
     right: 20px;
     transform: rotate(315deg);
   }
-  min-width: 280px;
-  width: 280px;
-  height: 280px;
+  min-width: 320px;
+  width: 320px;
+  height: 320px;
   background: #252525;
   border-radius: 15px;
-  margin-right: 20px;
+  // margin-right: 20px;
 }
 .weather_cont {
   display: flex;
+  gap: 20px;
 }
 .weather_text_cont {
   z-index: 1;
@@ -33,7 +34,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  background-image: url(../img/weather/weather.jpg) !important;
+  background-image: url(https://github.com/kimsangjunv1/react_project_pick/blob/main/src/styles/img/weather/weather_bg.png?raw=true) !important;
   background-position: 0px -49px !important;
   background-size: 500px !important;
   background-repeat: no-repeat !important;

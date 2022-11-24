@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { fetchAPI } from '../../utils/fetchAPI'
 import Header from '../include/Header'
 import Loader from '../Loader'
+import MainSearch from '../layout/MainSearch'
 
 function RankingItem(props) {
   return (
@@ -77,6 +78,7 @@ const Popular = () => {
       <Header />
       <main id="main">
         <section id="contents">
+          <MainSearch />
           <div className="ranking_cont">
             {firstranking.map((ranking, index) => (
               <FirstRankingItem key={index} ranking={ranking} />

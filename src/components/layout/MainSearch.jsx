@@ -29,7 +29,7 @@ const MainSearch = ({ onSearch }) => {
         onKeyPress={onKeyPress}
       />
       <button type="submit" onClick={onClick}>
-        검색
+        ⚲
       </button>
     </div>
   )
