@@ -1,31 +1,58 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { fetchAPI } from '../../utils/fetchAPI'
 import Header from '../include/Header'
+import MainSearch from '../layout/MainSearch'
+
+import Loader from '../Loader'
+
+function ArtistItem(props) {
+  return (
+    <div className="artist">
+      <img src={`${props.artist.images.background}`} alt="" />
+      <div className="artistbox">
+        <div className="artistbox_desc">
+          <p>백예린</p>
+          <h4>백예린 (Yerin Baek)</h4>
+        </div>
+        <div className="like">
+          <img
+            src="https://raw.githubusercontent.com/kimsangjunv1/react_project_pick/main/src/styles/img/like.svg"
+            alt=""
+          />
+          <p>Likes 5,677</p>
+        </div>
+      </div>
+    </div>
+  )
+}
 
 const Artist = () => {
+  const [artist, setArtist] = useState(null)
+
+  useEffect(() => {
+    fetchAPI(
+      `charts/track?locale=ko-KR&listId=ip-country-chart-KR&pageSize=30&startFrom=10`
+    ).then((data) => setArtist(data.tracks))
+  }, [])
+
+  if (!artist?.length) return <Loader />
+
   return (
     <>
       <Header />
       <main id="main">
         <section id="contents">
-          <div className="search">
-            <label htmlFor="searchInput ir">
-              <div className="glass"></div>
-            </label>
-            <input
-              type="text"
-              id="searchInput"
-              className="input__search"
-              placeholder="Please Insert Here"
-              title="검색"
-            />
-          </div>
+          <MainSearch />
 
           <div className="artistWrap">
             <h3>
-              Artist<em>277</em>
+              Artist<em>30</em>
             </h3>
             <div className="artistinner">
-              <div className="artist">
+              {artist.map((artist, index) => (
+                <ArtistItem key={index} artist={artist} />
+              ))}
+              {/* <div className="artist">
                 <img src="./styles/img/artist/artistimg.jpg" alt="" />
                 <div className="artistbox">
                   <div className="artistbox_desc">
@@ -33,278 +60,14 @@ const Artist = () => {
                     <h4>백예린 (Yerin Baek)</h4>
                   </div>
                   <div className="like">
-                    {/* <svg
-                      width="21"
-                      height="19"
-                      viewBox="0 0 21 19"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6.12997 1C3.29676 1 1 3.29676 1 6.12997C1 11.2599 7.06269 15.9235 10.3272 17.0084C13.5917 15.9235 19.6544 11.2599 19.6544 6.12997C19.6544 3.29676 17.3577 1 14.5245 1C12.7895 1 11.2556 1.86132 10.3272 3.1797C9.39881 1.86132 7.86498 1 6.12997 1Z"
-                        fill="#1DD960"
-                        stroke="#1DD960"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg> */}
+                    <img
+                      src="https://raw.githubusercontent.com/kimsangjunv1/react_project_pick/main/src/styles/img/like.svg"
+                      alt=""
+                    />
                     <p>Likes 5,677</p>
                   </div>
                 </div>
-              </div>
-              <div className="artist">
-                <img src="assets/img/artist/artistimg02.jpg" alt="" />
-                <div className="artistbox">
-                  <div className="artistbox_desc">
-                    <p>태연</p>
-                    <h4>태연(TAEYEON)</h4>
-                  </div>
-                  <div className="like">
-                    {/* <svg
-                      width="21"
-                      height="19"
-                      viewBox="0 0 21 19"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6.12997 1C3.29676 1 1 3.29676 1 6.12997C1 11.2599 7.06269 15.9235 10.3272 17.0084C13.5917 15.9235 19.6544 11.2599 19.6544 6.12997C19.6544 3.29676 17.3577 1 14.5245 1C12.7895 1 11.2556 1.86132 10.3272 3.1797C9.39881 1.86132 7.86498 1 6.12997 1Z"
-                        fill="#1DD960"
-                        stroke="#1DD960"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg> */}
-                    <p>Likes 5,677</p>
-                  </div>
-                </div>
-              </div>
-              <div className="artist">
-                <img src="assets/img/artist/artistimg03.jpg" alt="" />
-                <div className="artistbox">
-                  <div className="artistbox_desc">
-                    <p>트와이스</p>
-                    <h4>TWICE</h4>
-                  </div>
-                  <div className="like">
-                    {/* <svg
-                      width="21"
-                      height="19"
-                      viewBox="0 0 21 19"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6.12997 1C3.29676 1 1 3.29676 1 6.12997C1 11.2599 7.06269 15.9235 10.3272 17.0084C13.5917 15.9235 19.6544 11.2599 19.6544 6.12997C19.6544 3.29676 17.3577 1 14.5245 1C12.7895 1 11.2556 1.86132 10.3272 3.1797C9.39881 1.86132 7.86498 1 6.12997 1Z"
-                        fill="#1DD960"
-                        stroke="#1DD960"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg> */}
-                    <p>Likes 5,677</p>
-                  </div>
-                </div>
-              </div>
-              <div className="artist">
-                <img src="assets/img/artist/artistimg04.jpg" alt="" />
-                <div className="artistbox">
-                  <div className="artistbox_desc">
-                    <p>그루비룸</p>
-                    <h4>GROOVYROOM</h4>
-                  </div>
-                  <div className="like">
-                    {/* <svg
-                      width="21"
-                      height="19"
-                      viewBox="0 0 21 19"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6.12997 1C3.29676 1 1 3.29676 1 6.12997C1 11.2599 7.06269 15.9235 10.3272 17.0084C13.5917 15.9235 19.6544 11.2599 19.6544 6.12997C19.6544 3.29676 17.3577 1 14.5245 1C12.7895 1 11.2556 1.86132 10.3272 3.1797C9.39881 1.86132 7.86498 1 6.12997 1Z"
-                        fill="#1DD960"
-                        stroke="#1DD960"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg> */}
-                    <p>Likes 5,677</p>
-                  </div>
-                </div>
-              </div>
-              <div className="artist">
-                <img src="assets/img/artist/artistimg05.jpg" alt="" />
-                <div className="artistbox">
-                  <div className="artistbox_desc">
-                    <p>YOUN-HA</p>
-                    <h4>윤하</h4>
-                  </div>
-                  <div className="like">
-                    {/* <svg
-                      width="21"
-                      height="19"
-                      viewBox="0 0 21 19"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6.12997 1C3.29676 1 1 3.29676 1 6.12997C1 11.2599 7.06269 15.9235 10.3272 17.0084C13.5917 15.9235 19.6544 11.2599 19.6544 6.12997C19.6544 3.29676 17.3577 1 14.5245 1C12.7895 1 11.2556 1.86132 10.3272 3.1797C9.39881 1.86132 7.86498 1 6.12997 1Z"
-                        fill="#1DD960"
-                        stroke="#1DD960"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg> */}
-                    <p>Likes 5,677</p>
-                  </div>
-                </div>
-              </div>
-              <div className="artist">
-                <img src="assets/img/artist/artistimg.jpg" alt="" />
-                <div className="artistbox">
-                  <div className="artistbox_desc">
-                    <p>백예린</p>
-                    <h4>백예린 (Yerin Baek)</h4>
-                  </div>
-                  <div className="like">
-                    {/* <svg
-                      width="21"
-                      height="19"
-                      viewBox="0 0 21 19"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6.12997 1C3.29676 1 1 3.29676 1 6.12997C1 11.2599 7.06269 15.9235 10.3272 17.0084C13.5917 15.9235 19.6544 11.2599 19.6544 6.12997C19.6544 3.29676 17.3577 1 14.5245 1C12.7895 1 11.2556 1.86132 10.3272 3.1797C9.39881 1.86132 7.86498 1 6.12997 1Z"
-                        fill="#1DD960"
-                        stroke="#1DD960"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg> */}
-                    <p>Likes 5,677</p>
-                  </div>
-                </div>
-              </div>
-              <div className="artist">
-                <img src="assets/img/artist/artistimg02.jpg" alt="" />
-                <div className="artistbox">
-                  <div className="artistbox_desc">
-                    <p>태연</p>
-                    <h4>태연(TAEYEON)</h4>
-                  </div>
-                  <div className="like">
-                    {/* <svg
-                      width="21"
-                      height="19"
-                      viewBox="0 0 21 19"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6.12997 1C3.29676 1 1 3.29676 1 6.12997C1 11.2599 7.06269 15.9235 10.3272 17.0084C13.5917 15.9235 19.6544 11.2599 19.6544 6.12997C19.6544 3.29676 17.3577 1 14.5245 1C12.7895 1 11.2556 1.86132 10.3272 3.1797C9.39881 1.86132 7.86498 1 6.12997 1Z"
-                        fill="#1DD960"
-                        stroke="#1DD960"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg> */}
-                    <p>Likes 5,677</p>
-                  </div>
-                </div>
-              </div>
-              <div className="artist">
-                <img src="assets/img/artist/artistimg03.jpg" alt="" />
-                <div className="artistbox">
-                  <div className="artistbox_desc">
-                    <p>트와이스</p>
-                    <h4>TWICE</h4>
-                  </div>
-                  <div className="like">
-                    {/* <svg
-                      width="21"
-                      height="19"
-                      viewBox="0 0 21 19"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6.12997 1C3.29676 1 1 3.29676 1 6.12997C1 11.2599 7.06269 15.9235 10.3272 17.0084C13.5917 15.9235 19.6544 11.2599 19.6544 6.12997C19.6544 3.29676 17.3577 1 14.5245 1C12.7895 1 11.2556 1.86132 10.3272 3.1797C9.39881 1.86132 7.86498 1 6.12997 1Z"
-                        fill="#1DD960"
-                        stroke="#1DD960"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg> */}
-                    <p>Likes 5,677</p>
-                  </div>
-                </div>
-              </div>
-              <div className="artist">
-                <img src="assets/img/artist/artistimg04.jpg" alt="" />
-                <div className="artistbox">
-                  <div className="artistbox_desc">
-                    <p>그루비룸</p>
-                    <h4>GROOVYROOM</h4>
-                  </div>
-                  <div className="like">
-                    {/* <svg
-                      width="21"
-                      height="19"
-                      viewBox="0 0 21 19"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6.12997 1C3.29676 1 1 3.29676 1 6.12997C1 11.2599 7.06269 15.9235 10.3272 17.0084C13.5917 15.9235 19.6544 11.2599 19.6544 6.12997C19.6544 3.29676 17.3577 1 14.5245 1C12.7895 1 11.2556 1.86132 10.3272 3.1797C9.39881 1.86132 7.86498 1 6.12997 1Z"
-                        fill="#1DD960"
-                        stroke="#1DD960"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg> */}
-                    <p>Likes 5,677</p>
-                  </div>
-                </div>
-              </div>
-              <div className="artist">
-                <img src="../styles/img/artist/artistimg05.jpg" alt="" />
-                <div className="artistbox">
-                  <div className="artistbox_desc">
-                    <p>YOUN-HA</p>
-                    <h4>윤하</h4>
-                  </div>
-                  <div className="like">
-                    {/* <svg
-                      width="21"
-                      height="19"
-                      viewBox="0 0 21 19"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6.12997 1C3.29676 1 1 3.29676 1 6.12997C1 11.2599 7.06269 15.9235 10.3272 17.0084C13.5917 15.9235 19.6544 11.2599 19.6544 6.12997C19.6544 3.29676 17.3577 1 14.5245 1C12.7895 1 11.2556 1.86132 10.3272 3.1797C9.39881 1.86132 7.86498 1 6.12997 1Z"
-                        fill="#1DD960"
-                        stroke="#1DD960"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg> */}
-                    <p>Likes 5,677</p>
-                  </div>
-                </div>
-              </div>
+              </div> */}
             </div>
           </div>
 

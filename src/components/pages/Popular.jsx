@@ -15,7 +15,10 @@ function RankingItem(props) {
       {/* <div>아무노래</div> */}
       <div>{props.ranking.subtitle}</div>
       <div>
-        <img src="assets/img/like.svg" alt="" />
+        <img
+          src="https://raw.githubusercontent.com/kimsangjunv1/react_project_pick/main/src/styles/img/like.svg"
+          alt=""
+        />
         Likes {props.ranking.key.slice(0, 3)}
       </div>
       <div>03:52</div>

@@ -42,7 +42,7 @@
     content: '';
     width: 100%;
     height: 100%;
-    background: linear-gradient(0deg, black 40%, transparent);
+    background: linear-gradient(0deg, black 30%, transparent);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -196,6 +196,9 @@ section {
 }
 .unWidth {
   width: auto !important;
+}
+.unWidth_artist {
+  width: 226px !important;
 }
 .unflex_artist {
   flex-wrap: nowrap !important;

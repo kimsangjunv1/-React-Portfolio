@@ -26,6 +26,26 @@
       border-radius: 15px;
       cursor: pointer;
 
+      audio {
+        position: absolute;
+        width: 100%;
+        height: 30px;
+        left: 0;
+        bottom: -41px;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        background: #000;
+        width: 8px;
+        height: 31px;
+        top: 12px;
+        right: 25px;
+        border-radius: 100px;
+        transform: rotate(45deg);
+      }
+
       &:hover {
         transform: translatey(10px);
         transition: 0.25s;
@@ -34,8 +54,8 @@
         transition: 0.25s;
       }
 
-      img {
-        width: 246px;
+      > img {
+        width: 100%;
         border-radius: 15px;
         height: 341px;
         object-fit: cover;
@@ -48,14 +68,14 @@
         bottom: 0;
         width: 100%;
         height: 126px;
-        -webkit-backdrop-filter: blur(6px);
-        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(60px);
+        backdrop-filter: blur(60px);
         box-sizing: border-box;
         border-radius: 0px 0px 10px 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background: linear-gradient(359deg, black 10%, transparent);
+        background: linear-gradient(359deg, #505050 10%, transparent);
 
         p {
           color: rgba(255, 255, 255, 0.738);
@@ -75,6 +95,12 @@
 
         .like {
           display: flex;
+
+          img {
+            width: 24px;
+            height: 20px;
+            border-radius: 0;
+          }
 
           p {
             margin-left: 10px;

@@ -13,10 +13,13 @@ function RankingItem(props) {
         <img src={`${props.ranking.images.coverart}`} alt="" />
       </div>
       <div>{props.ranking.title}</div>
-      <div>아무노래</div>
+      {/* <div>아무노래</div> */}
       <div>{props.ranking.subtitle}</div>
       <div>
-        <img src="assets/img/like.svg" alt="" />
+        <img
+          src="https://raw.githubusercontent.com/kimsangjunv1/react_project_pick/main/src/styles/img/like.svg"
+          alt=""
+        />
         Likes {props.ranking.key.slice(0, 3)}
       </div>
       <div>03:52</div>
@@ -42,11 +45,19 @@ function AlbumItem(props) {
 function ArtistItem(props) {
   return (
     <div className="artist unWidth">
-      <img src={`${props.artist.images.background}`} alt="" />
+      <img
+        className="unWidth_artist"
+        src={`${props.artist.images.background}`}
+        alt=""
+      />
       <div className="artistbox">
         <p>몰라나도</p>
         <h4>백예린 (Yerin Baek)</h4>
         <div className="like">
+          <img
+            src="https://raw.githubusercontent.com/kimsangjunv1/react_project_pick/main/src/styles/img/like.svg"
+            alt=""
+          />
           <p>Likes 5,677</p>
         </div>
         <audio
@@ -87,11 +98,18 @@ function ArtistItem(props) {
 //   )
 // }
 
+//유튜브
+//https://rapidapi.com/Glavier/api/youtube138/
+// function YoutubeItem(props) {
+//   return <img src={`${props.youtube.video.thumbnails.url}`} alt="" />
+// }
+
 const Main = () => {
   const [ranking, setRanking] = useState(null)
   const [album, setAlbum] = useState(null)
   const [artist, setArtist] = useState(null)
   // const [weather, setWeather] = useState(null)
+  // const [youtube, setYoutube] = useState(null)
 
   useEffect(() => {
     fetchAPI(
@@ -111,9 +129,17 @@ const Main = () => {
     ).then((data) => setArtist(data.tracks))
   }, [])
 
+  // 날씨
   // useEffect(() => {
   //   fetchAPIs(`weather?location=sunnyvale&format=json&u=f`).then((data) =>
   //     setWeather(data)
+  //   )
+  // }, [])
+
+  //유튜브
+  // useEffect(() => {
+  //   fetchAPIyt(`search/?q=겨울 playlist&hl=ko&gl=KR`).then((data) =>
+  //     setYoutube(data.contents)
   //   )
   // }, [])
 
@@ -121,6 +147,7 @@ const Main = () => {
   if (!album?.length) return <Loader />
   if (!artist?.length) return <Loader />
   // if (!weather?.length) return <Loader />
+  // if (!youtube?.length) return <Loader />
   return (
     <>
       <Header />
@@ -189,8 +216,12 @@ const Main = () => {
                   들어볼래요?
                 </p>
               </div>
+
               <div className="season_cont">
                 <div className="season_youtube_link">
+                  {/* {youtube.map((youtube, index) => (
+                    <YoutubeItem key={index} youtube={youtube} />
+                  ))} */}
                   <img src="assets/img/season/season_banner.jpg" alt="" />
                 </div>
               </div>
@@ -226,7 +257,7 @@ const Main = () => {
                     <div>순위</div>
                     <div>썸넬</div>
                     <div>곡명</div>
-                    <div>앨범</div>
+                    {/* <div>앨범</div> */}
                     <div>아티스트</div>
                     <div>LIKE</div>
                     <div>시간</div>
@@ -269,18 +300,18 @@ const Main = () => {
             <div className="music__control">
               <div className="progress">
                 <div className="bar">
-                  <audio
+                  {/* <audio
                     id="main-audio"
                     src="../assets/music/music_audio01.mp3"
                   ></audio>
                   <audio
                     id="main-audio"
                     src="../assets/music/music_audio02.mp3"
-                  ></audio>
+                  ></audio> */}
                 </div>
                 <div className="timer">
-                  <span className="current">0:00</span>
-                  <span className="duration">4:00</span>
+                  {/* <span className="current">0:00</span>
+                  <span className="duration">4:00</span> */}
                 </div>
               </div>
               <div className="volumeCont">
