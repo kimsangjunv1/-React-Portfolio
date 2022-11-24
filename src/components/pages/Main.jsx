@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { fetchAPI } from '../../utils/fetchAPI'
-// import { fetchAPI_weather } from '../../utils/fetchAPI'
 import Header from '../include/Header'
 import MainSearch from '../layout/MainSearch'
 
@@ -40,6 +39,29 @@ function AlbumItem(props) {
   )
 }
 
+function ArtistItem(props) {
+  return (
+    <div className="artist unWidth">
+      <img src={`${props.artist.images.background}`} alt="" />
+      <div className="artistbox">
+        <p>몰라나도</p>
+        <h4>백예린 (Yerin Baek)</h4>
+        <div className="like">
+          <p>Likes 5,677</p>
+        </div>
+        <audio
+          src={`${props.artist.hub.actions[1].uri}`}
+          type="audio/m4a"
+          controls
+          // autoPlay
+        >
+          <source src={`${props.artist.hub.actions[1].uri}`} type="audio/m4a" />
+        </audio>
+      </div>
+    </div>
+  )
+}
+
 // function WeatherItem(props) {
 //   return (
 //     <div className="playlist weather_info">
@@ -56,7 +78,7 @@ function AlbumItem(props) {
 //           />
 //           <div className="degree_cont">
 //             <p>08°</p>
-//             <p>{props.weather.city}</p>
+//             {/* <p>{props.weather.city}</p> */}
 //           </div>
 //           <p>눈 오는 날 듣기 좋은 음악을 추천 해드릴게요</p>
 //         </div>
@@ -68,6 +90,7 @@ function AlbumItem(props) {
 const Main = () => {
   const [ranking, setRanking] = useState(null)
   const [album, setAlbum] = useState(null)
+  const [artist, setArtist] = useState(null)
   // const [weather, setWeather] = useState(null)
 
   useEffect(() => {
@@ -82,14 +105,21 @@ const Main = () => {
     ).then((data) => setAlbum(data.tracks))
   }, [])
 
+  useEffect(() => {
+    fetchAPI(
+      `charts/track?locale=ko-KR&listId=ip-country-chart-KR&pageSize=10&startFrom=0`
+    ).then((data) => setArtist(data.tracks))
+  }, [])
+
   // useEffect(() => {
-  //   fetchAPI_weather(`weather?location=seoul&format=json&u=f`).then((data) =>
+  //   fetchAPIs(`weather?location=sunnyvale&format=json&u=f`).then((data) =>
   //     setWeather(data)
   //   )
   // }, [])
 
   if (!ranking?.length) return <Loader />
   if (!album?.length) return <Loader />
+  if (!artist?.length) return <Loader />
   // if (!weather?.length) return <Loader />
   return (
     <>
@@ -217,115 +247,20 @@ const Main = () => {
                   <h2>Artist</h2>
                 </div>
                 <div className="artistWrap">
-                  <h3>
-                    Artist<em>277</em>
-                  </h3>
                   <div className="artistinner unflex_artist">
-                    아티스트 아이템
-                    <div className="artist unWidth">
+                    {artist.map((artist, index) => (
+                      <ArtistItem key={index} artist={artist} />
+                    ))}
+                    {/* <div className="artist unWidth">
                       <img src="assets/img/artist/artistimg.jpg" alt="" />
                       <div className="artistbox">
                         <p>백예린</p>
                         <h4>백예린 (Yerin Baek)</h4>
                         <div className="like">
-                          {/* <svg
-                            width="21"
-                            height="19"
-                            viewBox="0 0 21 19"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M6.12997 1C3.29676 1 1 3.29676 1 6.12997C1 11.2599 7.06269 15.9235 10.3272 17.0084C13.5917 15.9235 19.6544 11.2599 19.6544 6.12997C19.6544 3.29676 17.3577 1 14.5245 1C12.7895 1 11.2556 1.86132 10.3272 3.1797C9.39881 1.86132 7.86498 1 6.12997 1Z"
-                              fill="#1DD960"
-                              stroke="#1DD960"
-                              stroke-width="2"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                          </svg> */}
                           <p>Likes 5,677</p>
                         </div>
                       </div>
-                    </div>
-                    <div className="artist unWidth">
-                      <img src="assets/img/artist/artistimg.jpg" alt="" />
-                      <div className="artistbox">
-                        <p>백예린</p>
-                        <h4>백예린 (Yerin Baek)</h4>
-                        <div className="like">
-                          {/* <svg
-                            width="21"
-                            height="19"
-                            viewBox="0 0 21 19"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M6.12997 1C3.29676 1 1 3.29676 1 6.12997C1 11.2599 7.06269 15.9235 10.3272 17.0084C13.5917 15.9235 19.6544 11.2599 19.6544 6.12997C19.6544 3.29676 17.3577 1 14.5245 1C12.7895 1 11.2556 1.86132 10.3272 3.1797C9.39881 1.86132 7.86498 1 6.12997 1Z"
-                              fill="#1DD960"
-                              stroke="#1DD960"
-                              stroke-width="2"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                          </svg> */}
-                          <p>Likes 5,677</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="artist unWidth">
-                      <img src="assets/img/artist/artistimg.jpg" alt="" />
-                      <div className="artistbox">
-                        <p>백예린</p>
-                        <h4>백예린 (Yerin Baek)</h4>
-                        <div className="like">
-                          {/* <svg
-                            width="21"
-                            height="19"
-                            viewBox="0 0 21 19"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M6.12997 1C3.29676 1 1 3.29676 1 6.12997C1 11.2599 7.06269 15.9235 10.3272 17.0084C13.5917 15.9235 19.6544 11.2599 19.6544 6.12997C19.6544 3.29676 17.3577 1 14.5245 1C12.7895 1 11.2556 1.86132 10.3272 3.1797C9.39881 1.86132 7.86498 1 6.12997 1Z"
-                              fill="#1DD960"
-                              stroke="#1DD960"
-                              stroke-width="2"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                          </svg> */}
-                          <p>Likes 5,677</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="artist unWidth">
-                      <img src="assets/img/artist/artistimg.jpg" alt="" />
-                      <div className="artistbox">
-                        <p>백예린</p>
-                        <h4>백예린 (Yerin Baek)</h4>
-                        <div className="like">
-                          {/* <svg
-                            width="21"
-                            height="19"
-                            viewBox="0 0 21 19"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M6.12997 1C3.29676 1 1 3.29676 1 6.12997C1 11.2599 7.06269 15.9235 10.3272 17.0084C13.5917 15.9235 19.6544 11.2599 19.6544 6.12997C19.6544 3.29676 17.3577 1 14.5245 1C12.7895 1 11.2556 1.86132 10.3272 3.1797C9.39881 1.86132 7.86498 1 6.12997 1Z"
-                              fill="#1DD960"
-                              stroke="#1DD960"
-                              stroke-width="2"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                          </svg> */}
-                          <p>Likes 5,677</p>
-                        </div>
-                      </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

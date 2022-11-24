@@ -17,6 +17,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 20px;
 
     .artist {
       width: 18.5%;
@@ -34,8 +35,10 @@
       }
 
       img {
-        width: 100%;
+        width: 246px;
         border-radius: 15px;
+        height: 341px;
+        object-fit: cover;
       }
 
       .artistbox {

@@ -38,20 +38,19 @@ export const fetchAPI = async (url) => {
   return data
 }
 
+// 펴
 const BASE_URL_WEATHER = 'https://yahoo-weather5.p.rapidapi.com'
 
 const options_weather = {
-  url: BASE_URL,
-  params: {
-    maxResults: '48',
-  },
+  url: BASE_URL_WEATHER,
+  params: { location: 'sunnyvale', format: 'json', u: 'f' },
   headers: {
     'X-RapidAPI-Key': '03baac2a66mshcd4a23b0410de5ep115e6ejsncfbb7dec4eed',
     'X-RapidAPI-Host': 'yahoo-weather5.p.rapidapi.com',
   },
 }
 
-export const fetchAPI_weather = async (url) => {
+export const fetchAPIs = async (url) => {
   const { data_weather } = await axios.get(
     `${BASE_URL_WEATHER}/${url}`,
     options_weather

@@ -6,12 +6,12 @@ import Loader from '../Loader'
 function RankingItem(props) {
   return (
     <li className="item">
-      <div>{props.index + 1}</div>
+      <div>{props.index + 2}</div>
       <div>
         <img src={`${props.ranking.images.coverart}`} alt="" />
       </div>
       <div>{props.ranking.title}</div>
-      <div>아무노래</div>
+      {/* <div>아무노래</div> */}
       <div>{props.ranking.subtitle}</div>
       <div>
         <img src="assets/img/like.svg" alt="" />
@@ -21,24 +21,67 @@ function RankingItem(props) {
     </li>
   )
 }
+function FirstRankingItem(props) {
+  return (
+    <div className="winner_cont">
+      <h2>Top 10</h2>
+      <div className="album_art_cont">
+        <img src={`${props.ranking.images.coverart}`} alt="" />
+        <img
+          className="album_art_shadow"
+          src={`${props.ranking.images.coverart}`}
+          alt="앨범아트 그림자"
+        />
+      </div>
+      <h4>01-</h4>
+      <p className="artist">벤(ben)</p>
+      <p className="song_title">{props.ranking.title}</p>
+      <p className="refresh_time">
+        <img
+          src="https://raw.githubusercontent.com/kimsangjunv1/react_project_pick/main/src/styles/img/refresh.svg"
+          alt="새로고침"
+        />
+        <span>2022. 11. 13. 오후 22:02</span>
+      </p>
+      <p className="trophy_desc">
+        <img
+          src="https://raw.githubusercontent.com/kimsangjunv1/react_project_pick/main/src/styles/img/trophy.svg"
+          alt="트로피"
+        />
+        <span>올해 47주간 1위</span>
+      </p>
+    </div>
+  )
+}
 
 const Popular = () => {
   const [ranking, setRanking] = useState(null)
+  const [firstranking, setFirstRanking] = useState(null)
 
   useEffect(() => {
     fetchAPI(
-      `charts/track?locale=ko-KR&listId=ip-country-chart-KR&pageSize=10&startFrom=0`
+      `charts/track?locale=ko-KR&listId=ip-country-chart-KR&pageSize=9&startFrom=1`
     ).then((data) => setRanking(data.tracks))
   }, [])
 
+  useEffect(() => {
+    fetchAPI(
+      `charts/track?locale=ko-KR&listId=ip-country-chart-KR&pageSize=1&startFrom=0`
+    ).then((data) => setFirstRanking(data.tracks))
+  }, [])
+
   if (!ranking?.length) return <Loader />
+  if (!firstranking?.length) return <Loader />
   return (
     <>
       <Header />
       <main id="main">
         <section id="contents">
           <div className="ranking_cont">
-            <div className="winner_cont">
+            {firstranking.map((ranking, index) => (
+              <FirstRankingItem key={index} ranking={ranking} />
+            ))}
+            {/* <div className="winner_cont">
               <h2>Top 10</h2>
               <div className="album_art_cont">
                 <img src="assets/img/test_album.png" alt="" />
@@ -59,13 +102,13 @@ const Popular = () => {
                 <img src="assets/img/trophy.svg" alt="트로피" />
                 <span>올해 47주간 1위</span>
               </p>
-            </div>
+            </div> */}
             <div className="list_cont">
               <div className="ranking_list_header">
                 <div>순위</div>
                 <div>썸넬</div>
                 <div>곡명</div>
-                <div>앨범</div>
+                {/* <div>앨범</div> */}
                 <div>아티스트</div>
                 <div>LIKE</div>
                 <div>시간</div>
@@ -74,49 +117,26 @@ const Popular = () => {
                 {ranking.map((ranking, index) => (
                   <RankingItem key={index} ranking={ranking} index={index} />
                 ))}
-                {/* <li className="item">
-                  <div>02</div>
-                  <div>
-                    <img src="assets/img/test_album.png" alt="" />
-                  </div>
-                  <div>늦은 밤 너의 밤 골목길에서</div>
-                  <div>아무노래</div>
-                  <div>ZICO(지코)</div>
-                  <div>
-                    <img src="assets/img/like.svg" alt="" />
-                    Likes 5,403
-                  </div>
-                  <div>03:52</div>
-                </li> */}
               </ul>
             </div>
           </div>
           <div className="music__control">
             <div className="progress">
-              <div className="bar">
-                <audio
-                  id="main-audio"
-                  src="../assets/music/music_audio01.mp3"
-                ></audio>
-                <audio
-                  id="main-audio"
-                  src="../assets/music/music_audio02.mp3"
-                ></audio>
-              </div>
+              <div className="bar"></div>
               <div className="timer">
                 <span className="current">0:00</span>
                 <span className="duration">4:00</span>
               </div>
             </div>
             <div className="volumeCont">
-              <input
+              {/* <input
                 type="range"
                 id="volume-control"
                 min="0"
                 max="10"
-                value="5"
+                devalue="5"
                 step="0.1"
-              />
+              /> */}
             </div>
             <div className="control_cont">
               <div className="control_music">
