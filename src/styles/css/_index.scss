@@ -1,0 +1,199 @@
+.playlist {
+  &::before {
+    content: '';
+    width: 26px;
+    height: 8px;
+    background: #000;
+    border-radius: 100px;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    transform: rotate(315deg);
+  }
+  min-width: 280px;
+  width: 280px;
+  height: 280px;
+  background: #252525;
+  border-radius: 15px;
+  margin-right: 20px;
+}
+.weather_cont {
+  display: flex;
+}
+.weather_text_cont {
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+.weather_info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-image: url('https://images.unsplash.com/photo-1668595472869-88b3baf1d218?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80') !important;
+  background-position: 0px -49px !important;
+  background-size: 500px !important;
+  background-repeat: no-repeat !important;
+  &::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, black 40%, transparent);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+.weather_desc {
+  h2 {
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
+    font-size: 22px !important;
+  }
+  p {
+    font-size: 14px;
+    color: #ffffffc9;
+  }
+}
+.weather_condition {
+  img {
+    width: 80px;
+  }
+  p {
+    &:nth-child(2) {
+      font-size: 22px;
+    }
+  }
+}
+.degree_cont {
+  display: flex;
+  align-items: flex-start;
+  p {
+    &:nth-child(1) {
+      font-size: 36px;
+    }
+    &:nth-child(2) {
+      background: #fff;
+      border-radius: 5px;
+      padding: 2px 4px;
+      color: #000;
+      font-size: 12px;
+      margin-left: 5px;
+      height: 20px;
+      margin-top: 6px;
+    }
+  }
+}
+.select_001 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.item_001 {
+  width: 100%;
+  height: 47.5%;
+}
+.item_cont {
+  width: 100%;
+  height: 47.5%;
+  display: flex;
+  justify-content: space-between;
+}
+.item_003 {
+  width: 47.5%;
+}
+.item_002 {
+  width: 47.5%;
+}
+.select_002 {
+  display: flex;
+  justify-content: space-between;
+}
+.item_004 {
+  height: 100%;
+  width: 47.5%;
+}
+.item_cont2 {
+  width: 47.5%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.item_005 {
+  height: 47.5%;
+}
+.item_006 {
+  height: 47.5%;
+}
+.season_youtube_link {
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 280px;
+    border-radius: 15px;
+  }
+}
+.album_item {
+  position: relative;
+  width: 246px;
+  &::before {
+    content: '';
+    width: 26px;
+    height: 8px;
+    background: #000;
+    border-radius: 100px;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    transform: rotate(315deg);
+    z-index: 15;
+  }
+  img {
+    &:nth-child(1) {
+      z-index: 10;
+      position: relative;
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+  }
+}
+.shadow {
+  position: absolute;
+  bottom: 73px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  filter: blur(25px);
+  z-index: 1;
+  width: 193px;
+  height: 150px;
+}
+.album_cont {
+  display: flex;
+  gap: 20px;
+}
+.section_title {
+  margin-bottom: 30px;
+}
+section {
+  margin-bottom: 70px;
+}
+.artistWrap {
+  height: 100%;
+}
+.unflex {
+  display: block !important;
+  width: 47.5%;
+}
+.maxWidth {
+  width: 100% !important;
+}
+.unWidth {
+  width: auto !important;
+}
+.unflex_artist {
+  flex-wrap: nowrap !important;
+}

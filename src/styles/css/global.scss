@@ -1,0 +1,30 @@
+@import './artist.scss';
+@import './fonts.scss';
+@import './header.scss';
+@import './index.scss';
+@import './main.scss';
+@import './musicplayer.scss';
+@import './ranking.scss';
+@import './resets.scss';
+
+// 변수 설정
+:root {
+  --white: #fff;
+  --black: #000;
+
+  --bg-light: #f0eeeb;
+  --bg-light-border: #dad8d1;
+
+  --bg-dark: #000;
+  --bg-dark-border: #1a1a1a;
+
+  --font-size: 16px;
+  --font-height: 1.4;
+  --font-color: #fff;
+  --font-main: 'NexonLv1Gothic';
+}
+
+body {
+  background-color: var(--bg-dark);
+  min-height: 100vh;
+}

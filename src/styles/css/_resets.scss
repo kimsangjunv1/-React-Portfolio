@@ -1,0 +1,151 @@
+// border-box 초기화
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// 가로모드 글씨 확대 초기화
+html {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+// 공백 초기화
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+select,
+table,
+td,
+textarea,
+th,
+ul,
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+// 폰트 초기화
+body,
+button,
+input,
+select,
+table,
+textarea {
+  font-size: var(--font-size);
+  line-height: var(--font-height);
+  color: var(--font-color);
+  font-family: var(--font-main), -apple-system, BlinkMacSystemFont,
+    "Malgun Gothic", "맑은 고딕", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// 링크 초기화
+a,
+a:hover,
+a:focus {
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+// 버튼 초기화
+// button,
+// html input[type="button"],
+// input[type="reset"],
+// input[type="submit"] {
+//   -webkit-appearance: button;
+//   cursor: pointer;
+// }
+
+// 버튼 디자인 초기화
+input,
+textarea,
+button,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  font-size: var(--font-size);
+}
+
+// 스타일 초기화
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+ul {
+  list-style: none;
+}
+em,
+address {
+  font-style: normal;
+}
+strong {
+  font-weight: normal;
+}
+img {
+  vertical-align: top;
+  // width: 100%;
+}
+// table
+table {
+  border: 0;
+  border-collapse: collaspe;
+  border-spacing: 0;
+  width: 100%;
+}
+
+button {
+  background: transparent;
+  border: 0;
+}
+
+/* 이미지 대체(ir) */
+.ir {
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+/* 블라인드 효과 */
+.blind {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
