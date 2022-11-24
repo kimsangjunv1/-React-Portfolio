@@ -148,6 +148,9 @@
                 border-left: 1px solid #252525;
                 font-size: 16px;
                 color: #fff;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
               }
               &:nth-child(4) {
                 width: 15%;
