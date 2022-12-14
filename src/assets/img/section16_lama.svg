@@ -1,0 +1,23 @@
+<svg width="764" height="706" viewBox="0 0 764 706" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_715_261)">
+<path d="M191.723 653.31C178.662 654.042 166.885 646.361 161.353 634.508V634.508C159.238 629.974 158.134 625.075 158.286 620.074C158.959 597.811 162.774 532.185 184.395 503.357C233.402 524.36 261.407 575.117 303.412 618.874C278.7 644.822 222.586 651.579 191.723 653.31Z" fill="#D5D4E2"/>
+<path d="M188.224 91.1552C175.163 90.4229 163.386 98.1034 157.854 109.957V109.957C155.739 114.491 154.635 119.39 154.787 124.39C155.46 146.654 159.275 212.28 180.896 241.108C229.903 220.105 257.908 169.347 299.913 125.591C275.201 99.6431 219.087 92.8857 188.224 91.1552Z" fill="#D5D4E2"/>
+<rect x="146.986" y="619.057" width="491.229" height="1510.2" rx="245.614" transform="rotate(-90 146.986 619.057)" fill="white" stroke="white" stroke-width="79" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 50"/>
+<rect x="234" y="525.545" width="304.544" height="192.528" rx="95" transform="rotate(-90 234 525.545)" fill="#D5D4E2"/>
+<path d="M381.022 424.029C353.956 424.029 332.015 402.088 332.015 375.022V375.022C332.015 347.956 353.956 326.015 381.022 326.015L426.528 326.015L426.528 424.029L381.022 424.029Z" fill="white"/>
+<rect x="265.505" y="511.543" width="101.515" height="101.515" rx="50.7573" transform="rotate(-90 265.505 511.543)" fill="white"/>
+<rect x="269.004" y="336.518" width="101.515" height="101.515" rx="50.7573" transform="rotate(-90 269.004 336.518)" fill="white"/>
+<rect x="273" y="486.533" width="52.5076" height="52.5076" rx="26.2538" transform="rotate(-90 273 486.533)" fill="#343440"/>
+<rect width="14.002" height="14.002" rx="7.00101" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 315.005 479.531)" fill="white"/>
+<rect x="276.501" y="311.508" width="52.5076" height="52.5076" rx="26.2538" transform="rotate(-90 276.501 311.508)" fill="#343440"/>
+<rect width="14.002" height="14.002" rx="7.00101" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 318.506 304.506)" fill="white"/>
+<line x1="365.375" y1="392.498" x2="376.669" y2="378.381" stroke="#343440" stroke-width="10" stroke-linecap="round"/>
+<line x1="5" y1="-5" x2="23.0786" y2="-5" transform="matrix(0.624695 0.780869 0.780869 -0.624695 366.157 351.289)" stroke="#343440" stroke-width="10" stroke-linecap="round"/>
+<line x1="382.521" y1="374.416" x2="421.528" y2="374.416" stroke="#343440" stroke-width="10" stroke-linecap="square"/>
+</g>
+<defs>
+<clipPath id="clip0_715_261">
+<rect width="764" height="706" fill="white"/>
+</clipPath>
+</defs>
+</svg>

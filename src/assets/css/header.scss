@@ -1,0 +1,37 @@
+#header {
+  z-index: 100000;
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 100%;
+  background: linear-gradient(#5046ac, #5046ac00);
+  padding: 1vw;
+  align-items: center;
+  > a {
+    margin-right: 2.2vw;
+    font-size: 1vw;
+    font-weight: 900;
+  }
+  .menu_cont {
+    a {
+      border-right: 1px solid #3434402f;
+      margin-right: 0.8vw;
+      padding-right: 0.8vw;
+      color: #ffffff86;
+      background: transparent !important;
+      font-size: 1vw;
+      transition: 0.25s;
+      cursor: pointer;
+      &:hover {
+        color: #fe3672 !important;
+      }
+      &:not(:hover) {
+        transition: 0.25s;
+      }
+      &:last-child {
+        margin-right: 0;
+        border-right: none;
+      }
+    }
+  }
+}
