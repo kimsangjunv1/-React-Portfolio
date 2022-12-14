@@ -1,9 +1,10 @@
 import React from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 
 const section = () => {
-  gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
   // 메인 먼지
   ScrollTrigger.create({
     // 어디에 닿으면 반응할건지
@@ -1315,6 +1316,92 @@ const section = () => {
     ),
   });
 
+  var animation;
+
+  gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
+  let mm = gsap.matchMedia();
+  mm.add("(min-width: 700px)", () => {
+    gsap.set("#motionSVG", { scale: 0.7, autoAlpha: 1 });
+    gsap.set("#tractor", { transformOrigin: "50% 50%" });
+
+    animation = gsap.to("#motionSVG", {
+      scrollTrigger: {
+        trigger: "#motionPath",
+        start: "top 80%",
+        scrub: 3,
+        // markers: true,
+      },
+      duration: 10,
+      ease: "none",
+      immediateRender: true,
+      motionPath: {
+        path: "#motionPath",
+        align: "#motionPath",
+        alignOrigin: [0.5, 0.5],
+        autoRotate: 210,
+      },
+    });
+
+    ScrollTrigger.create({
+      trigger: ".pin2",
+      scrub: 1,
+
+      animation: gsap.fromTo(
+        ".lama_fur2",
+        {
+          transform: "rotate(0deg)",
+          yPercent: "100",
+        },
+        {
+          transform: "rotate(70deg)",
+          yPercent: "0",
+        }
+      ),
+    });
+  });
+
+  var animation2;
+
+  gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
+  let mm3 = gsap.matchMedia();
+  mm3.add("(min-width: 700px)", () => {
+    gsap.set("#motionSVG2", { scale: 0.7, autoAlpha: 1 });
+    gsap.set("#tractor2", { transformOrigin: "50% 50%" });
+
+    animation2 = gsap.to("#motionSVG2", {
+      scrollTrigger: {
+        trigger: "#motionPath2",
+        start: "top 130%",
+        scrub: 1,
+        // markers: true,
+      },
+      duration: 10,
+      ease: "none",
+      immediateRender: true,
+      motionPath: {
+        path: "#motionPath2",
+        align: "#motionPath2",
+        alignOrigin: [0.5, 0.5],
+        // autoRotate: 270,
+      },
+    });
+
+    ScrollTrigger.create({
+      trigger: "#motionPath2",
+      scrub: 1,
+
+      animation: gsap.fromTo(
+        "#motionSVG2",
+        {
+          rotate: "+=3000",
+        },
+        {
+          rotate: "+=3000",
+        }
+      ),
+    });
+  });
+
   const slides = document.querySelectorAll(".t_vr");
 
   function initParallax() {
@@ -1342,6 +1429,7 @@ const section = () => {
   function init() {
     initParallax();
   }
+  init();
 
   // window.onload = () => {
   //   init();

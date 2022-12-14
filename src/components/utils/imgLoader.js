@@ -31,7 +31,6 @@ const imgLoader = () => {
       }
     }
     imagesProgress();
-    init();
   }, []);
 };
 
