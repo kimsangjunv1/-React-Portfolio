@@ -1,4 +1,8 @@
 import React from "react";
+import section5p5_light from "./../../assets/img/section5p5_light.svg";
+import section5p5_screenshot_01 from "./../../assets/img/section5p5_screenshot_01.jpg";
+import section5p5_screenshot_02 from "./../../assets/img/section5p5_screenshot_02.jpg";
+import section5p5_screenshot_03 from "./../../assets/img/section5p5_screenshot_03.jpg";
 
 const Section_06 = () => {
   return (
@@ -11,15 +15,11 @@ const Section_06 = () => {
           </p>
         </div>
         <div className="light ir">light</div>
-        <img
-          className="light_on_top"
-          src="src/assets/img/section5p5_light.svg"
-          alt=""
-        />
+        <img className="light_on_top" src={section5p5_light} alt="" />
         <div className="site_type">
           <img
             className="screenshot s5p5_1"
-            src="src/assets/img/section5p5_screenshot_01.jpg"
+            src={section5p5_screenshot_01}
             alt=""
           />
           <div className="site_type_01_desc">
@@ -47,7 +47,7 @@ const Section_06 = () => {
         <div className="site_type">
           <img
             className="screenshot s5p5_4"
-            src="src/assets/img/section5p5_screenshot_02.jpg"
+            src={section5p5_screenshot_02}
             alt=""
           />
           <div className="site_type_02_desc">
@@ -73,7 +73,7 @@ const Section_06 = () => {
         <div className="site_type">
           <img
             className="screenshot s5p5_7"
-            src="src/assets/img/section5p5_screenshot_03.jpg"
+            src={section5p5_screenshot_03}
             alt=""
           />
           <div className="site_type_03_desc">

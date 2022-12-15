@@ -1,5 +1,12 @@
 import React from "react";
 
+import section7_screenshot_01_test from "./../../assets/img/section7_screenshot_01_test.gif";
+import section6p5_screenshot_02 from "./../../assets/img/section6p5_screenshot_02.gif";
+import section6p5_screenshot_04 from "./../../assets/img/section6p5_screenshot_04.gif";
+import section6p5_screenshot_07 from "./../../assets/img/section6p5_screenshot_07.gif";
+import section6p5_screenshot_08 from "./../../assets/img/section6p5_screenshot_08.gif";
+import section6p5_screenshot_09 from "./../../assets/img/section6p5_screenshot_09.gif";
+
 const Section_07 = () => {
   return (
     // <!-- 섹션 7 : 모든 프로젝트 -->
@@ -15,13 +22,13 @@ const Section_07 = () => {
           <div className="screenshot_cont">
             <img
               className="screenshot s6p5_1"
-              src="src/assets/img/section7_screenshot_01_test.gif"
+              src={section7_screenshot_01_test}
               alt=""
             />
           </div>
           <img
             className="screenshot s6p5_2"
-            src="src/assets/img/section6p5_screenshot_02.gif"
+            src={section6p5_screenshot_02}
             alt=""
           />
           <div className="site_type_04_desc">
@@ -44,7 +51,7 @@ const Section_07 = () => {
         <div className="site_type">
           <img
             className="screenshot s6p5_4"
-            src="src/assets/img/section6p5_screenshot_04.gif"
+            src={section6p5_screenshot_04}
             alt=""
           />
           <div className="site_type_05_desc">
@@ -68,7 +75,7 @@ const Section_07 = () => {
         <div className="site_type">
           <img
             className="screenshot s6p5_7"
-            src="src/assets/img/section6p5_screenshot_09.gif"
+            src={section6p5_screenshot_09}
             alt=""
           />
           <div className="site_type_06_desc">
@@ -90,12 +97,12 @@ const Section_07 = () => {
         <div className="site_type">
           <img
             className="screenshot s6p5_10"
-            src="src/assets/img/section6p5_screenshot_07.gif"
+            src={section6p5_screenshot_07}
             alt=""
           />
           <img
             className="screenshot s6p5_11"
-            src="src/assets/img/section6p5_screenshot_08.gif"
+            src={section6p5_screenshot_08}
             alt=""
           />
           <div className="site_type_07_desc">

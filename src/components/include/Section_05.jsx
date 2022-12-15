@@ -3,6 +3,10 @@ import React from "react";
 import section5_lama_fly from "./../../assets/img/section5_lama_fly.svg";
 import section5_lama_top from "./../../assets/img/section5_lama_top.svg";
 import section5_screenshot_01 from "./../../assets/img/section5_screenshot_01.svg";
+import section5_screenshot_02 from "./../../assets/img/section5_screenshot_02.svg";
+import section5_screenshot_03 from "./../../assets/img/section5_screenshot_03.svg";
+import section5_screenshot_04 from "./../../assets/img/section5_screenshot_04.svg";
+import section5_screenshot_05 from "./../../assets/img/section5_screenshot_05.svg";
 
 const Section_05 = () => {
   return (
@@ -37,7 +41,7 @@ const Section_05 = () => {
       <section className="panel2 custom_flex start">
         <div className="section5_item s5_2">
           <div className="section5_screenshot_cont">
-            <img src="src/assets/img/section5_screenshot_01.svg" alt="#" />
+            <img src={section5_screenshot_01} alt="#" />
           </div>
           <h2>
             My<em>SQL</em>
@@ -58,7 +62,7 @@ const Section_05 = () => {
       <section className="panel2 custom_flex">
         <div className="section5_item s5_3">
           <div className="section5_screenshot_cont">
-            <img src="src/assets/img/section5_screenshot_02.svg" alt="#" />
+            <img src={section5_screenshot_02} alt="#" />
           </div>
           <h2>
             SVG<em>ANIMATION</em>
@@ -79,7 +83,7 @@ const Section_05 = () => {
       <section className="panel2 custom_flex">
         <div className="section5_item s5_4">
           <div className="section5_screenshot_cont">
-            <img src="src/assets/img/section5_screenshot_03.svg" alt="#" />
+            <img src={section5_screenshot_03} alt="#" />
           </div>
           <h2>
             CSS<em>DOCS</em>
@@ -100,7 +104,7 @@ const Section_05 = () => {
       <section className="panel2 custom_flex">
         <div className="section5_item s5_5">
           <div className="section5_screenshot_cont">
-            <img src="src/assets/img/section5_screenshot_04.svg" alt="#" />
+            <img src={section5_screenshot_04} alt="#" />
           </div>
           <h2>
             JAVA<em>SCRIPT</em>
@@ -123,7 +127,7 @@ const Section_05 = () => {
       <section className="panel2 custom_flex">
         <div className="section5_item s5_6">
           <div className="section5_screenshot_cont">
-            <img src="src/assets/img/section5_screenshot_05.svg" alt="#" />
+            <img src={section5_screenshot_05} alt="#" />
           </div>
           <h2>
             HTML<em>DOCS</em>
@@ -144,7 +148,7 @@ const Section_05 = () => {
       <section style={{ display: "none" }} className="panel2 custom_flex none">
         <div className="section5_item">
           <div className="section5_screenshot_cont">
-            <img src="src/assets/img/section5_screenshot_01.svg" alt="#" />
+            <img src={section5_screenshot_01} alt="#" />
           </div>
           <h2>
             My<em>SQL</em>
@@ -163,7 +167,7 @@ const Section_05 = () => {
       <section style={{ opacity: "0" }} className="panel2 custom_flex end">
         <div className="section5_item">
           <div className="section5_screenshot_cont">
-            <img src="src/assets/img/section5_screenshot_01.svg" alt="#" />
+            <img src={section5_screenshot_01} alt="#" />
           </div>
           <h2>
             My<em>SQL</em>
