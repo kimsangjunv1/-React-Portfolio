@@ -3,6 +3,7 @@ import React from "react";
 import section16_sns_01 from "./../../assets/img/section16_sns_01.svg";
 import section16_sns_02 from "./../../assets/img/section16_sns_02.svg";
 import section16_sns_03 from "./../../assets/img/section16_sns_03.svg";
+import section16_lama from "./../../assets/img/section16_lama.svg";
 
 const Section_16 = () => {
   return (
@@ -29,11 +30,7 @@ const Section_16 = () => {
             </a>
           </div>
         </div>
-        <img
-          className="section16_lama"
-          src="src/assets/img/section16_lama.svg"
-          alt=""
-        />
+        <img className="section16_lama" src={section16_lama} alt="" />
       </div>
     </section>
   );
