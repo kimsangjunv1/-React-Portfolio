@@ -14,7 +14,7 @@ const Section_16 = () => {
           <h2>CONTACT_ME</h2>
           <p>새싹을 틔울 수 있는 씨앗이 되겠습니다.</p>
           <p>to_before@naver.com</p>
-          <p>010-6607-72765</p>
+          {/* <p>010-6607-72765</p> */}
           <div className="sns_cont">
             <a href="https://github.com/kimsangjunv1">
               <img src={section16_sns_01} alt="깃허브" />
