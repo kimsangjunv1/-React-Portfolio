@@ -1362,11 +1362,11 @@ const section = () => {
 
   // 섹션 16
   ScrollTrigger.create({
-    trigger: ".sns_cont",
+    trigger: ".vr8",
     scrub: 1,
 
     animation: gsap.fromTo(
-      ".vr8",
+      ".section16_lama",
       {
         // transform: "skew(9deg, 19deg) rotate(340deg) scale(1.9)",
         right: "-100%",
@@ -1375,7 +1375,7 @@ const section = () => {
       },
       {
         // transform: "skew(6deg, 10deg) rotate(20deg) scale(1.9)",
-        right: 0,
+        right: "50%",
         // yPercent: "-50",
         // filter: "blur(0px)",
       }
