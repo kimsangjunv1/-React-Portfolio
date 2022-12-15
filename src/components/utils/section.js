@@ -1082,13 +1082,13 @@ const section = () => {
     animation: gsap.fromTo(
       ".sec8_logo",
       {
-        x: "-50%",
-        y: "-50%",
+        x: "-150%",
+        y: "-150%",
         scale: 0.8,
       },
       {
-        x: "30%",
-        y: "10%",
+        x: "0%",
+        y: "0%",
         // ease: Linear.easeNone,
         scale: 1.6,
       }
