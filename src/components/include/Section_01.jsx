@@ -1,5 +1,7 @@
 import React from "react";
 
+import main_lama from "./../../assets/img/main_lama.svg";
+
 const Section_01 = () => {
   return (
     // 섹션 1 : 메인
@@ -13,11 +15,7 @@ const Section_01 = () => {
       </div>
 
       <div className="section1_img">
-        <img
-          className="ir dust_01"
-          src="src/assets/img/main_lama.svg"
-          alt="라마"
-        />
+        <img className="ir dust_01" src={main_lama} alt="라마" />
         <img
           className="ir dust_02"
           src="src/assets/img/main_dust_char_01.svg"
