@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import imagesLoaded from "imagesloaded";
+import $ from "jquery";
 
 const imgLoader = () => {
   useEffect(() => {
@@ -30,7 +32,6 @@ const imgLoader = () => {
         }
       }
     }
-    imagesProgress();
   }, []);
 };
 

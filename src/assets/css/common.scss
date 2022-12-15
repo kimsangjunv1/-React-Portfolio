@@ -36,6 +36,35 @@ body {
   backface-visibility: none;
 }
 
+#progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: black;
+  z-index: 100000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+#progress h2 {
+  font-size: 3.3vw;
+  font-family: "NexonLv1GothicLow";
+  font-weight: 100;
+  line-height: 0.7;
+}
+.progress-text {
+  font-size: 5.5vw;
+  font-weight: 900;
+  font-family: "GmarketSans";
+  color: rgba(0, 0, 0, 0);
+  background: linear-gradient(45deg, #ff9a4b 26%, #ff4ac8 76%, #8349ff 100%);
+  -webkit-background-clip: text;
+}
+
 .st0 {
   fill: none;
   stroke: rgba(48, 12, 131, 0.093);
