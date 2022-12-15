@@ -1369,14 +1369,14 @@ const section = () => {
       ".section16_lama",
       {
         // transform: "skew(9deg, 19deg) rotate(340deg) scale(1.9)",
-        right: "1000%",
-        yPercent: "-50",
+        right: "-100%",
+        // yPercent: "-50",
         // filter: "blur(20px)",
       },
       {
         // transform: "skew(6deg, 10deg) rotate(20deg) scale(1.9)",
         right: 0,
-        yPercent: "-50",
+        // yPercent: "-50",
         // filter: "blur(0px)",
       }
     ),
