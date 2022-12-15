@@ -1,5 +1,7 @@
 import React from "react";
 
+import section4_lama from "./../../assets/img/section4_lama.svg";
+
 const Section_04 = () => {
   return (
     // <!-- 섹션 4 : 게임 이펙트 -->
@@ -92,7 +94,7 @@ const Section_04 = () => {
           </div>
         </div>
       </div>
-      <img className="ir lamas" src="src/assets/img/section4_lama.svg" alt="" />
+      <img className="ir lamas" src={section4_lama} alt="" />
     </section>
   );
 };

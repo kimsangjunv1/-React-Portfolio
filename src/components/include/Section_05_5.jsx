@@ -1,14 +1,12 @@
 import React from "react";
 
+import section5p5_lama_fur2 from "./../../assets/img/section5p5_lama_fur2.svg";
+
 const Section_05_5 = () => {
   return (
     // <!-- 섹션 5.5 : 게임 이펙트와 도큐먼트 사이의 과정 -->
     <section className="section custom_color pin2">
-      <img
-        className="lama_fur2"
-        src="src/assets/img/section5p5_lama_fur2.svg"
-        alt=""
-      />
+      <img className="lama_fur2" src={section5p5_lama_fur2} alt="" />
       <svg
         className="editorial"
         xmlns="http://www.w3.org/2000/svg"

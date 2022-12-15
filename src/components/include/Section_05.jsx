@@ -1,5 +1,9 @@
 import React from "react";
 
+import section5_lama_fly from "./../../assets/img/section5_lama_fly.svg";
+import section5_lama_top from "./../../assets/img/section5_lama_top.svg";
+import section5_screenshot_01 from "./../../assets/img/section5_screenshot_01.svg";
+
 const Section_05 = () => {
   return (
     // <!-- 섹션 5 : DOCS -->
@@ -9,20 +13,12 @@ const Section_05 = () => {
           REFERENCE <em>BOOK</em>
         </h2>
       </div>
-      <img
-        className="lama_fur_test"
-        src="src/assets/img/section5_lama_fly.svg"
-        alt=""
-      />
-      <img
-        className="lama_fur_top"
-        src="src/assets/img/section5_lama_top.svg"
-        alt=""
-      />
+      <img className="lama_fur_test" src={section5_lama_fly} alt="" />
+      <img className="lama_fur_top" src={section5_lama_top} alt="" />
       <section style={{ opacity: "0" }} className="panel2 custom_flex">
         <div className="section5_item s5_1">
           <div className="section5_screenshot_cont">
-            <img src="src/assets/img/section5_screenshot_01.svg" alt="#" />
+            <img src={section5_screenshot_01} alt="#" />
           </div>
           <h2>
             My<em>SQL</em>
