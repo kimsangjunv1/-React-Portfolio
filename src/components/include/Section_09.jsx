@@ -1,5 +1,10 @@
 import React from "react";
 
+import section9_lama from "./../../assets/img/section9_lama.svg";
+import section9_logo from "./../../assets/img/section9_logo.png";
+import section9_logo_bg from "./../../assets/img/section9_logo_bg.jpg";
+import section9_screenshot_01 from "./../../assets/img/section9_screenshot_01.png";
+
 const Section_09 = () => {
   return (
     // <!-- REACT API TMDB : section9 -->
@@ -9,11 +14,7 @@ const Section_09 = () => {
       className="section vr1 t_vr"
     >
       <div className="section9_all_cont">
-        <img
-          className="section9_lama"
-          src="src/assets/img/section9_lama.svg"
-          alt=""
-        />
+        <img className="section9_lama" src={section9_lama} alt="" />
         <div className="section9_desc_cont">
           <div className="title_wrap">
             <p className="title">
@@ -34,21 +35,13 @@ const Section_09 = () => {
           </div>
         </div>
         <div className="section9_logo_cont">
-          <img
-            className="sec8_logo"
-            src="src/assets/img/section9_logo.png"
-            alt=""
-          />
-          <img
-            className="sec8_bg polygon"
-            src="src/assets/img/section9_logo_bg.jpg"
-            alt=""
-          />
+          <img className="sec8_logo" src={section9_logo} alt="" />
+          <img className="sec8_bg polygon" src={section9_logo_bg} alt="" />
         </div>
         <div style={{ background: "#231d54c7" }} className="color_bg"></div>
         <img
           className="section9_main_screenshot"
-          src="src/assets/img/section9_screenshot_01.png"
+          src={section9_screenshot_01}
           alt=""
         />
       </div>

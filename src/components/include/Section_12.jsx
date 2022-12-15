@@ -1,15 +1,16 @@
 import React from "react";
 
+import section12_lama from "./../../assets/img/section12_lama.svg";
+import section10_logo from "./../../assets/img/section10_logo.png";
+import section12_logo_bg from "./../../assets/img/section12_logo_bg.jpg";
+import section12_screenshot_01 from "./../../assets/img/section12_screenshot_01.png";
+
 const Section_12 = () => {
   return (
     // <!-- VUE API UNSPLASH : section12-->
     <section style={{ background: "#31826ed3" }} className="section vr4 t_vr">
       <div className="section12_all_cont">
-        <img
-          className="section12_lama"
-          src="src/assets/img/section12_lama.svg"
-          alt=""
-        />
+        <img className="section12_lama" src={section12_lama} alt="" />
         <div className="section12_desc_cont">
           <div className="title_wrap">
             <p className="title">
@@ -29,14 +30,10 @@ const Section_12 = () => {
           </div>
         </div>
         <div className="section12_logo_cont">
-          <img
-            className="sec12_logo"
-            src="src/assets/img/section10_logo.png"
-            alt=""
-          />
+          <img className="sec12_logo" src={section10_logo} alt="" />
           <img
             className="sec12_bg polygon_reverse"
-            src="src/assets/img/section12_logo_bg.jpg"
+            src={section12_logo_bg}
             alt=""
           />
         </div>
@@ -44,7 +41,7 @@ const Section_12 = () => {
 
         <img
           className="section12_main_screenshot"
-          src="src/assets/img/section12_screenshot_01.png"
+          src={section12_screenshot_01}
           alt=""
         />
       </div>

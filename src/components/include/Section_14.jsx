@@ -1,15 +1,16 @@
 import React from "react";
 
+import section14_lama from "./../../assets/img/section14_lama.svg";
+import section14_logo from "./../../assets/img/section14_logo.png";
+import section14_logo_bg from "./../../assets/img/section14_logo_bg.jpg";
+import section14_screenshot_01 from "./../../assets/img/section14_screenshot_01.png";
+
 const Section_14 = () => {
   return (
     // <!-- VUE API WEB : section14-->
     <section style={{ background: "#4d38d9dc" }} className="section vr6 t_vr">
       <div className="section14_all_cont">
-        <img
-          className="section14_lama"
-          src="src/assets/img/section14_lama.svg"
-          alt=""
-        />
+        <img className="section14_lama" src={section14_lama} alt="" />
         <div className="section14_desc_cont">
           <div className="title_wrap">
             <p className="title">
@@ -26,14 +27,10 @@ const Section_14 = () => {
           </div>
         </div>
         <div className="section14_logo_cont">
-          <img
-            className="sec14_logo"
-            src="src/assets/img/section14_logo.png"
-            alt=""
-          />
+          <img className="sec14_logo" src={section14_logo} alt="" />
           <img
             className="sec14_bg polygon_reverse"
-            src="src/assets/img/section14_logo_bg.jpg"
+            src={section14_logo_bg}
             alt=""
           />
         </div>
@@ -41,7 +38,7 @@ const Section_14 = () => {
 
         <img
           className="section14_main_screenshot"
-          src="src/assets/img/section14_screenshot_01.png"
+          src={section14_screenshot_01}
           alt=""
         />
       </div>

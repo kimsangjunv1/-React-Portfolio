@@ -1,5 +1,9 @@
 import React from "react";
 
+import section16_sns_01 from "./../../assets/img/section16_sns_01.svg";
+import section16_sns_02 from "./../../assets/img/section16_sns_02.svg";
+import section16_sns_03 from "./../../assets/img/section16_sns_03.svg";
+
 const Section_16 = () => {
   return (
     // <!-- section16 -->
@@ -12,15 +16,15 @@ const Section_16 = () => {
           <p>010-6607-72765</p>
           <div className="sns_cont">
             <a href="https://github.com/kimsangjunv1">
-              <img src="src/assets/img/section16_sns_01.svg" alt="깃허브" />
+              <img src={section16_sns_01} alt="깃허브" />
               GITHUB
             </a>
             <a href="https://blog.naver.com/to_before">
-              <img src="src/assets/img/section16_sns_02.svg" alt="네이버" />
+              <img src={section16_sns_02} alt="네이버" />
               NAVER BLOG
             </a>
             <a href="https://kimsangjun.tistory.com/">
-              <img src="src/assets/img/section16_sns_03.svg" alt="티스토리" />
+              <img src={section16_sns_03} alt="티스토리" />
               TISTORY
             </a>
           </div>
