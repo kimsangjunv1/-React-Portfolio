@@ -657,7 +657,8 @@
   }
   &::before {
     content: "";
-    background-image: url("./../../assets/img/section4_icon_music.svg");
+    background-image: url("/public/img/section4_icon_music.svg");
+    // background-image: url("./../../assets/img/section4_icon_music.svg");
     position: absolute;
     top: 50%;
     right: 0;
@@ -689,33 +690,41 @@
   div {
     &:nth-child(1) {
       .section4_item {
-        background-image: url("./../../assets/img/section4_screenshot_01.jpg");
+        // background-image: url("./../../assets/img/section4_screenshot_01.jpg");
+        background-image: url("/public/img/section4_screenshot_01.jpg");
         &::before {
-          background-image: url("./../../assets/img/section4_icon_lama.svg");
+          // background-image: url("./../../assets/img/section4_icon_lama.svg");
+          background-image: url("/public/img/section4_icon_lama.svg");
         }
       }
     }
     &:nth-child(2) {
       .section4_rev_item {
-        background-image: url("./../../assets/img/section4_screenshot_02.jpg");
+        // background-image: url("./../../assets/img/section4_screenshot_02.jpg");
+        background-image: url("/public/img/section4_screenshot_02.jpg");
         &::before {
-          background-image: url("./../../assets/img/section4_icon_card.svg");
+          // background-image: url("./../../assets/img/section4_icon_card.svg");
+          background-image: url("/public/img/section4_icon_card.svg");
         }
       }
     }
     &:nth-child(3) {
       .section4_item {
-        background-image: url("./../../assets/img/section4_screenshot_03.jpg");
+        // background-image: url("./../../assets/img/section4_screenshot_03.jpg");
+        background-image: url("/public/img/section4_screenshot_03.jpg");
         &::before {
-          background-image: url("./../../assets/img/section4_icon_timer.svg");
+          // background-image: url("./../../assets/img/section4_icon_timer.svg");
+          background-image: url("/public/img/section4_icon_timer.jpg");
         }
       }
     }
     &:nth-child(4) {
       .section4_rev_item {
-        background-image: url("./../../assets/img/section4_screenshot_04.jpg");
+        // background-image: url("./../../assets/img/section4_screenshot_04.jpg");
+        background-image: url("/public/img/section4_screenshot_04.jpg");
         &::before {
-          background-image: url("./../../assets/img/section4_icon_music.svg");
+          // background-image: url("./../../assets/img/section4_icon_music.svg");
+          background-image: url("/public/img/section4_icon_music.jpg");
         }
       }
     }
