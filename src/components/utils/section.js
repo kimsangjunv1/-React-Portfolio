@@ -1366,7 +1366,7 @@ const section = () => {
     scrub: 1,
 
     animation: gsap.fromTo(
-      ".section16_lama",
+      ".vr8",
       {
         // transform: "skew(9deg, 19deg) rotate(340deg) scale(1.9)",
         right: "-100%",
