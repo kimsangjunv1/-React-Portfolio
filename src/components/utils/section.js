@@ -1375,7 +1375,7 @@ const section = () => {
       },
       {
         // transform: "skew(6deg, 10deg) rotate(20deg) scale(1.9)",
-        right: "50%",
+        right: "0%",
         // yPercent: "-50",
         // filter: "blur(0px)",
       }
