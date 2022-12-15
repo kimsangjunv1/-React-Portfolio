@@ -1,5 +1,7 @@
 import React from "react";
 
+import ruler from "./../../assets/img/ruler.svg";
+
 const Section_15 = () => {
   return (
     // <!-- section15 -->
@@ -7,7 +9,7 @@ const Section_15 = () => {
       <div className="section15_flex_cont">
         <div className="section15_all_cont">
           <div className="section15_main_title">
-            <img src="src/assets/img/ruler.svg" alt="" />
+            <img src={ruler} alt="" />
             <h2>Worklist</h2>
           </div>
 
