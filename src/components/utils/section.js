@@ -186,7 +186,7 @@ const section = () => {
         scale: 1,
         opacity: 1,
         transformOrigin: "50% 0%",
-        // transform: "translate3d(0,-30px,0)",
+        transform: "translate3d(0,-30px,0)",
         filter: "blur(0px)",
       }
     ),
@@ -207,7 +207,7 @@ const section = () => {
         scale: 1,
         opacity: 1,
         transformOrigin: "50% 0%",
-        // transform: "translate3d(0,-25px,0)",
+        transform: "translate3d(0,-25px,0)",
         filter: "blur(0px)",
       }
     ),
@@ -228,7 +228,7 @@ const section = () => {
         scale: 1,
         opacity: 1,
         transformOrigin: "50% 0%",
-        // transform: "translate3d(0,-25px,0)",
+        transform: "translate3d(0,-25px,0)",
         filter: "blur(0px)",
       }
     ),
@@ -249,7 +249,7 @@ const section = () => {
         scale: 1,
         // opacity: 1,
         transformOrigin: "50% 0%",
-        // transform: "translate3d(0,-25px,0)",
+        transform: "translate3d(0,-25px,0)",
         // filter: "blur(0px)",
       }
     ),
@@ -270,7 +270,7 @@ const section = () => {
         scale: 1,
         // opacity: 1,
         transformOrigin: "50% 0%",
-        // transform: "translate3d(0,-25px,0)",
+        transform: "translate3d(0,-25px,0)",
         // filter: "blur(0px)",
       }
     ),
@@ -291,7 +291,7 @@ const section = () => {
         scale: 1,
         // opacity: 1,
         transformOrigin: "50% 0%",
-        // transform: "translate3d(0,-25px,0)",
+        transform: "translate3d(0,-25px,0)",
         // filter: "blur(0px)",
       }
     ),
@@ -312,7 +312,7 @@ const section = () => {
         scale: 1,
         opacity: 1,
         transformOrigin: "50% 0%",
-        // transform: "translate3d(0,-25px,0)",
+        transform: "translate3d(0,-25px,0)",
         filter: "blur(0px)",
       }
     ),
@@ -331,7 +331,7 @@ const section = () => {
       {
         scale: 1,
         transformOrigin: "50% 0%",
-        // transform: "translate3d(0,-25px,0)",
+        transform: "translate3d(0,-25px,0)",
         //   filter: "blur(0px)",
       }
     ),
@@ -386,7 +386,7 @@ const section = () => {
         scale: 1,
         opacity: 1,
         transformOrigin: "50% 0%",
-        // translate3d: "0,-25px,0",
+        translate3d: "0,-25px,0",
         transform: "translate(-50%, -50%)",
       }
     ),
@@ -406,7 +406,7 @@ const section = () => {
       scale: 1,
       opacity: 1,
       transformOrigin: "50% 0%",
-      // transform: "translate3d(0,-25px,0)",
+      transform: "translate3d(0,-25px,0)",
     }),
   });
 
@@ -451,7 +451,7 @@ const section = () => {
         scale: 1,
         opacity: 1,
         transformOrigin: "50% 0%",
-        // translate3d: "0,-25px,0",
+        translate3d: "0,-25px,0",
         transform: "translate(-50%, -50%)",
       }
     ),
