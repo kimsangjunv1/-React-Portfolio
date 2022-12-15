@@ -1360,6 +1360,28 @@ const section = () => {
     });
   });
 
+  // 섹션 16
+  ScrollTrigger.create({
+    trigger: ".sns_cont",
+    scrub: 1,
+
+    animation: gsap.fromTo(
+      ".section16_lama",
+      {
+        // transform: "skew(9deg, 19deg) rotate(340deg) scale(1.9)",
+        right: "1000%",
+        yPercent: "-50",
+        // filter: "blur(20px)",
+      },
+      {
+        // transform: "skew(6deg, 10deg) rotate(20deg) scale(1.9)",
+        right: 0,
+        yPercent: "-50",
+        // filter: "blur(0px)",
+      }
+    ),
+  });
+
   var animation2;
 
   gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
