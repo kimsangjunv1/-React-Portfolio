@@ -31,9 +31,9 @@ const Main = () => {
   return (
     <>
       <Header />
-      <DescFixed />
-      <ImgLoader />
       <Contents>
+        <ImgLoader />
+        <DescFixed />
         <Section_01 />
         <Section_02 />
         <Section_03 />
