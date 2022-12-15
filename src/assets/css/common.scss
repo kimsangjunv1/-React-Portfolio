@@ -311,21 +311,21 @@ body {
   #header {
     padding: 3vw;
     > a {
-      font-size: 2.5vw;
+      font-size: 2.5vw !important;
     }
     .menu_cont {
       a {
-        font-size: 2.5vw;
+        font-size: 2.5vw !important;
       }
     }
   }
   #main {
     #progress {
       h2 {
-        font-size: 7.3vw;
+        font-size: 7.3vw !important;
       }
       .progress-text {
-        font-size: 20vw;
+        font-size: 20vw !important;
       }
     }
   }
