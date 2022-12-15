@@ -2351,8 +2351,11 @@ h1 {
   transform: translate(0, -50%);
 }
 .vr8 .section16_item_cont .contact_cont .sns_cont a img {
-  width: 2vw;
+  width: 3vw;
   margin-right: 10px;
+  border-radius: 100%;
+  border: 1px solid #0000002b;
+  padding: 2px;
 }
 
 // 기타 1
