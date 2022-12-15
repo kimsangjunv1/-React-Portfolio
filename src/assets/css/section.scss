@@ -293,6 +293,7 @@
     color: #fff;
     width: 4.5vw;
     font-size: 1vw;
+    margin-right: 5px;
     &:hover {
       transition: 0.25s;
       background: #fff;
@@ -300,6 +301,9 @@
     }
     &:not(:hover) {
       transition: 0.25s;
+    }
+    &:last-child {
+      margin-right: 0;
     }
   }
   h2 {
