@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import $ from "jquery";
 import imagesLoaded from "imagesloaded";
 
+import lama_loading from "./../../assets/img/section_loading.svg";
+
 const ImgLoader = () => {
   useEffect(() => {
     function imagesProgress() {
@@ -37,6 +39,7 @@ const ImgLoader = () => {
 
   return (
     <div id="progress">
+      <img className="lama_loading" src={lama_loading} alt="" />
       <h2>loading</h2>
       <div className="progress-text">0%</div>
     </div>

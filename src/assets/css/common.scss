@@ -284,6 +284,85 @@ body {
     }
   }
 }
+
+.lama_loading {
+  -webkit-animation: rubberBand 1.1s alternate 0s infinite;
+  animation: rubberBand 1.1s alternate 0s infinite;
+  animation-timing-function: cubic-bezier(1, 0.36, 0.4, 1.13);
+}
+
+@-webkit-keyframes rubberBand {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1) translateY(-30px);
+    transform: scale3d(1, 1, 1) translateY(-30px);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1) translateY(-30px);
+    transform: scale3d(1.25, 0.75, 1) translateY(-30px);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1) translateY(-30px);
+    transform: scale3d(0.75, 1.25, 1) translateY(-30px);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1) translateY(-78px);
+    transform: scale3d(1.15, 0.85, 1) translateY(-78px);
+  }
+
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1) translateY(-30px);
+    transform: scale3d(0.95, 1.05, 1) translateY(-30px);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1) translateY(-30px);
+    transform: scale3d(1.05, 0.95, 1) translateY(-30px);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1) translateY(-30px);
+    transform: scale3d(1, 1, 1) translateY(-30px);
+  }
+}
+@keyframes rubberBand {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1) translateY(-30px);
+    transform: scale3d(1, 1, 1) translateY(-30px);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1) translateY(-30px);
+    transform: scale3d(1.25, 0.75, 1) translateY(-30px);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1) translateY(-30px);
+    transform: scale3d(0.75, 1.25, 1) translateY(-30px);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1) translateY(-78px);
+    transform: scale3d(1.15, 0.85, 1) translateY(-78px);
+  }
+
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1) translateY(-30px);
+    transform: scale3d(0.95, 1.05, 1) translateY(-30px);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1) translateY(-30px);
+    transform: scale3d(1.05, 0.95, 1) translateY(-30px);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1) translateY(-30px);
+    transform: scale3d(1, 1, 1) translateY(-30px);
+  }
+}
 /* PC (해상도 1024px)*/
 // @media (max-width: 1024px) {
 
