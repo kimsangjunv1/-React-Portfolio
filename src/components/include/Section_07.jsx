@@ -42,11 +42,12 @@ const Section_07 = () => {
               <br />
               댓글/영상/채널정보/조회수/좋아요 수 등등을 불러옵니다.
             </p>
-            <div className="level_cont">
+            <div className="level_cont_project">
               <p>!</p>
               <p>
                 기여도 : 60% | useEffect 사용시 배열을 적지 않으면 api를
-                불러올때 무한으로 불러온다는것을 몰랐어서 어려웠었습니다.
+                불러올때 무한으로 불러온다는것을 몰랐어서 어려웠었던 기억이
+                있습니다.
               </p>
             </div>
             <div className="section6p5_button_cont">
@@ -71,6 +72,14 @@ const Section_07 = () => {
               SESSION에 있는 데이터를 이용해 사용자가 등록한 프로필
               이미지/다이어리 색상 등을 가져올 수 있도록 하였습니다
             </p>
+            <div className="level_cont_project">
+              <p>!</p>
+              <p>
+                기여도 : 60% | useEffect 사용시 배열을 적지 않으면 api를
+                불러올때 무한으로 불러온다는것을 몰랐어서 어려웠었던 기억이
+                있습니다.
+              </p>
+            </div>
             <div className="section6p5_button_cont">
               <a href="https://github.com/kimsangjunv1/Diary">CODE</a>
               <a href="http://vvv0032.dothome.co.kr/Diary/PHP/main/main.php">
