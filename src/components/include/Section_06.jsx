@@ -58,7 +58,7 @@ const Section_06 = () => {
               <br />
               올라갈때 애니메이션이 뚝 끊기는 느낌이 없도록
               <br />
-              이동시 prevendDefault()를 통해 바로 가버리는 이벤트를 막았습니다.
+              이동시 preventDefault()를 통해 바로 가버리는 이벤트를 막았습니다.
             </p>
             <div className="section6p5_button_cont">
               <a href="https://github.com/kimsangjunv1/codingclass/blob/main/site/site5/index.html">

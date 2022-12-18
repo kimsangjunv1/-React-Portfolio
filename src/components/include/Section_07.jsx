@@ -42,6 +42,12 @@ const Section_07 = () => {
               <br />
               댓글/영상/채널정보/조회수/좋아요 수 등등을 불러옵니다.
             </p>
+            <div className="level_cont">
+              <p>!</p>
+              <p>
+                공부할때 childNodes와 같은 노드 선택을 활용한 점이 어려웠습니다.
+              </p>
+            </div>
             <div className="section6p5_button_cont">
               <a href="https://github.com/kimsangjunv1/react_youtube">CODE</a>
               <a href="https://reactapiyt.netlify.app/">VIEW</a>
