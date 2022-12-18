@@ -30,6 +30,12 @@ const Section_04 = () => {
 
       <div className="section4_cont">
         <div className="section4_icon_layout one">
+          <div className="level_cont">
+            <p>!</p>
+            <p>
+              공부할때 childNodes와 같은 노드 선택을 활용한 점이 어려웠습니다.
+            </p>
+          </div>
           <div className="section4_item">
             <div className="section4_left"></div>
             <div className="section4_right">
@@ -47,6 +53,12 @@ const Section_04 = () => {
           </div>
         </div>
         <div className="section4_rev_icon_layout">
+          <div className="level_cont">
+            <p>!</p>
+            <p>
+              공부할때 childNodes와 같은 노드 선택을 활용한 점이 어려웠습니다.
+            </p>
+          </div>
           <div className="section4_rev_item two">
             <div className="section4_rev_left">
               <h2>02.</h2>
@@ -64,12 +76,21 @@ const Section_04 = () => {
           </div>
         </div>
         <div className="section4_icon_layout three">
+          <div className="level_cont">
+            <p>!</p>
+            <p>
+              setTimeout을 통해 한정된 시간을 정해두고 해당 시간이 지나면 종료를
+              시켜야 했었는데 해당 부분이 어려웠습니다.
+            </p>
+          </div>
           <div className="section4_item">
             <div className="section4_left"></div>
             <div className="section4_right">
               <h2>03.</h2>
+
               <div className="section4_item_desc">
                 <h4>CSS MATCHING</h4>
+
                 <p>
                   기존에 저장해두었던 CSS 속성 데이터들을 cssProperty라는 배열
                   속 객체로 저장 후 사용자가 입력한 값을 input 변수에 받아 if를
@@ -82,6 +103,13 @@ const Section_04 = () => {
           </div>
         </div>
         <div className="section4_rev_icon_layout">
+          <div className="level_cont">
+            <p>!</p>
+            <p>
+              data-index, data-duration 등 data 값을 다양하게 활용했던점이 가장
+              어려웠었습니다.
+            </p>
+          </div>
           <div className="section4_rev_item two">
             <div className="section4_rev_left">
               <h2>04.</h2>
