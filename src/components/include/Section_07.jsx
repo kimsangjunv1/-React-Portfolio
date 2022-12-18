@@ -45,7 +45,8 @@ const Section_07 = () => {
             <div className="level_cont">
               <p>!</p>
               <p>
-                공부할때 childNodes와 같은 노드 선택을 활용한 점이 어려웠습니다.
+                기여도 : 60% | useEffect 사용시 배열을 적지 않으면 api를
+                불러올때 무한으로 불러온다는것을 몰랐어서 어려웠었습니다.
               </p>
             </div>
             <div className="section6p5_button_cont">
