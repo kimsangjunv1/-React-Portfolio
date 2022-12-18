@@ -51,7 +51,7 @@ body {
   user-select: none;
 }
 #progress h2 {
-  font-size: 3.3vw;
+  font-size: 4.1vw;
   font-family: "NexonLv1GothicLow";
   font-weight: 100;
   line-height: 0.7;
@@ -61,7 +61,7 @@ body {
   font-weight: 900;
   font-family: "GmarketSans";
   color: rgba(0, 0, 0, 0);
-  background: linear-gradient(45deg, #ff9a4b 26%, #ff4ac8 76%, #8349ff 100%);
+  background: linear-gradient(45deg, #9627ff 26%, #ff00b2 66%, #ff0000 100%);
   -webkit-background-clip: text;
 }
 
@@ -284,11 +284,57 @@ body {
     }
   }
 }
+#main {
+  #progress {
+    .icon_cont {
+      position: relative;
+      img {
+        transition: all 0.25s;
+        position: absolute;
+        opacity: 0.2;
+        &:nth-child(1) {
+          top: -10vw;
+          left: 2.2vw;
+          rotate: 20deg;
+        }
+        &:nth-child(2) {
+          top: -20vw;
+          left: -42vw;
+          transform: scale(1.5);
+          filter: blur(2px);
+          rotate: 40deg;
+        }
+        &:nth-child(3) {
+          top: 7vw;
+          left: 22.2vw;
+          filter: blur(1px);
+          // opacity: 0.8;
+          rotate: 60deg;
+        }
+        &:nth-child(4) {
+          top: 15vw;
+          left: -24.799999999999997vw;
+          filter: blur(2px);
+          /* opacity: 0.8; */
+          rotate: 80deg;
+        }
+        &:nth-child(5) {
+          top: 6vw;
+          left: -50vw;
+          filter: blur(3px);
+          /* opacity: 0.8; */
+          rotate: 100deg;
+        }
+      }
+    }
+  }
+}
 
 .lama_loading {
   -webkit-animation: rubberBand 1.1s alternate 0s infinite;
   animation: rubberBand 1.1s alternate 0s infinite;
   animation-timing-function: cubic-bezier(1, 0.36, 0.4, 1.13);
+  scale: 1.4;
 }
 
 @-webkit-keyframes rubberBand {
@@ -400,8 +446,11 @@ body {
   }
   #main {
     #progress {
+      .icon_cont {
+        display: none;
+      }
       h2 {
-        font-size: 7.3vw !important;
+        font-size: 15.3vw !important;
       }
       .progress-text {
         font-size: 20vw !important;
