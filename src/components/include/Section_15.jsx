@@ -15,6 +15,14 @@ const Section_15 = () => {
 
           <div className="section15_list_cont">
             <ul>
+              <li>모든 작업물 보기</li>
+              <li>작업물 보기</li>
+              <li>모든 작업물을 볼 수 있도록 한곳에 정리하였습니다</li>
+              <li>
+                <a href="http://vvv0032.dothome.co.kr/">보기</a>
+              </li>
+            </ul>
+            <ul>
               <li>레퍼런스</li>
               <li>자바스크립트・HTML・CSS</li>
               <li>
@@ -22,9 +30,13 @@ const Section_15 = () => {
                 입니다
               </li>
               <li>
-                <a href="#">JAVASCRIPT</a>
-                <a href="#">CSS</a>
-                <a href="#">HTML</a>
+                <a href="http://vvv0032.dothome.co.kr/javascript/index.html">
+                  JAVASCRIPT
+                </a>
+                <a href="http://vvv0032.dothome.co.kr/css/index.html">CSS</a>
+                <a href="http://vvv0032.dothome.co.kr/html/alphabet.html">
+                  HTML
+                </a>
               </li>
             </ul>
             <ul>
@@ -35,11 +47,17 @@ const Section_15 = () => {
                 레이아웃을 마크업 하였습니다.
               </li>
               <li>
-                <a href="#">01</a>
-                <a href="#">02</a>
-                <a href="#">03</a>
-                <a href="#">04</a>
-                <a href="#">05</a>
+                <a href="http://vvv0032.dothome.co.kr/site/site1/index.html">
+                  01
+                </a>
+                <a href="http://vvv0032.dothome.co.kr/site/site5/index.html">
+                  02
+                </a>
+                <a href="http://vvv0032.dothome.co.kr/site/site1/index.html">
+                  03
+                </a>
+                {/* <a href="#">04</a>
+                <a href="#">05</a> */}
               </li>
             </ul>
             <ul>
@@ -50,12 +68,24 @@ const Section_15 = () => {
                 섹션으로 나누어 구현해두었습니다!
               </li>
               <li>
-                <a href="#">서치</a>
-                <a href="#">퀴즈</a>
-                <a href="#">슬라이드</a>
-                <a href="#">마우스</a>
-                <a href="#">패럴렉스</a>
-                <a href="#">게임</a>
+                <a href="http://vvv0032.dothome.co.kr/javascript/effect/searchEffect01.html">
+                  서치
+                </a>
+                <a href="http://vvv0032.dothome.co.kr/javascript/effect/quizEffect01.html">
+                  퀴즈
+                </a>
+                <a href="http://vvv0032.dothome.co.kr/javascript/effect/sliderEffect01.html">
+                  슬라이드
+                </a>
+                <a href="http://vvv0032.dothome.co.kr/javascript/effect/mouseEffect01.html">
+                  마우스
+                </a>
+                <a href="http://vvv0032.dothome.co.kr/javascript/effect/parallaxEffect01.html">
+                  패럴렉스
+                </a>
+                <a href="http://vvv0032.dothome.co.kr/javascript/effect/gameEffect01.html">
+                  게임
+                </a>
               </li>
             </ul>
             <ul>
