@@ -97,14 +97,14 @@ const Section_15 = () => {
                 <a href="#">보기</a>
               </li>
             </ul>
-            <ul>
+            {/* <ul>
               <li>프로젝트</li>
               <li>REACT 'Pick'</li>
               <li>뮤직플레이어 설명 적어야함</li>
               <li>
                 <a href="#">보기</a>
               </li>
-            </ul>
+            </ul> */}
             <ul>
               <li>사이트</li>
               <li>REACT / VUE</li>
