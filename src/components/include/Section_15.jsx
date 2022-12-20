@@ -97,7 +97,9 @@ const Section_15 = () => {
                 프로필 사진을 넣을 수 있도록 작업하였습니다.
               </li>
               <li>
-                <a href="#">보기</a>
+                <a href="http://vvv0032.dothome.co.kr/phpClass/main/main.php">
+                  보기
+                </a>
               </li>
             </ul>
             <ul>
@@ -111,7 +113,9 @@ const Section_15 = () => {
                 다이어리 작성, 프로필 사진[생성,삭제]가 가능합니다.
               </li>
               <li>
-                <a href="#">보기</a>
+                <a href="http://vvv0032.dothome.co.kr/Diary/PHP/main/main.php">
+                  보기
+                </a>
               </li>
             </ul>
             <ul>
@@ -124,7 +128,7 @@ const Section_15 = () => {
                 수 등등을 불러옵니다.
               </li>
               <li>
-                <a href="#">보기</a>
+                <a href="https://reactapiyt.netlify.app/">보기</a>
               </li>
             </ul>
             {/* <ul>
@@ -144,12 +148,12 @@ const Section_15 = () => {
               </li>
               <li>
                 <p>
-                  <a href="#">VUE : API</a>
-                  <a href="#">VUE : 사이트 유형</a>
+                  <a href="https://vueapi11.netlify.app/">VUE : API</a>
+                  {/* <a href="#">VUE : 사이트 유형</a> */}
                 </p>
                 <p>
-                  <a href="#">REACT : API</a>
-                  <a href="#">REACT : 사이트 유형</a>
+                  <a href="https://reactapi11.netlify.app/">REACT : API</a>
+                  {/* <a href="#">REACT : 사이트 유형</a> */}
                 </p>
               </li>
             </ul>

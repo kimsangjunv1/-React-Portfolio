@@ -21,8 +21,9 @@ const Section_12 = () => {
             <p className="sub_ttitle">UNSPLASH</p>
           </div>
           <p>
-            UNSPLASH API를 통해 VUE를 이용해서 좋아하는 사진을 Swiper와 함께
-            구현하였습니다.
+            Vue를 이용해 Unsplash에서 제공하는 api를 이용해
+            <br />
+            SPA를 구현하였으며 Swiper를 이용해 슬라이드 섹션도 제작해두었습니다.
           </p>
           <div className="section_rv_button_cont">
             <a href="https://github.com/kimsangjunv1/vue_api">CODE</a>

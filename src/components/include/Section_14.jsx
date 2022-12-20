@@ -16,14 +16,20 @@ const Section_14 = () => {
             <p className="title">
               VUE API
               <br />
-              <em>MOVIE</em>
+              <em>SITE TYPE</em>
             </p>
             <p className="sub_ttitle">TMDB</p>
           </div>
-          <p>USEEFFECT와 USESTATE</p>
+          <p>
+            Vue를 이용해 사이트 기본구조를 구성하였습니다.
+            <br />
+            상단에 SWIPER를 통해 자동으로 넘어가게하고
+            <br />
+            메뉴 클릭시 해당 섹션으로 스크롤 되게 하였습니다.
+          </p>
           <div className="section_rv_button_cont">
             <a href="www.naver.com">CODE</a>
-            <a href="www.naver.com">VIEW</a>
+            <a href="https://creative-lokum-2822d2.netlify.app/">VIEW</a>
           </div>
         </div>
         <div className="section14_logo_cont">

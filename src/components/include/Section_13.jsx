@@ -20,7 +20,11 @@ const Section_13 = () => {
             </p>
             <p className="sub_ttitle">TMDB</p>
           </div>
-          <p>USEEFFECT와 USESTATE</p>
+          <p>
+            Vue를 이용해 TMDB에서 제공하는 api를 이용해
+            <br />
+            SPA를 구현하였으며 Swiper를 이용해 슬라이드 섹션도 제작해두었습니다.
+          </p>
           <div className="section_rv_button_cont">
             <a href="https://github.com/kimsangjunv1/vue_api">CODE</a>
             <a href="https://vueapi11.netlify.app/movie">VIEW</a>
