@@ -18,7 +18,7 @@ const Section_14 = () => {
               <br />
               <em>SITE TYPE</em>
             </p>
-            <p className="sub_ttitle">TMDB</p>
+            <p className="sub_ttitle">WEB</p>
           </div>
           <p>
             Vue를 이용해 사이트 기본구조를 구성하였습니다.
