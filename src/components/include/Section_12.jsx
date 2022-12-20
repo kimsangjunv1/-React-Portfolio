@@ -27,7 +27,7 @@ const Section_12 = () => {
           </p>
           <div className="section_rv_button_cont">
             <a href="https://github.com/kimsangjunv1/vue_api">CODE</a>
-            <a href="https://vueapi11.netlify.app/unsplash">VIEW</a>
+            <a href="https://vueapi11.netlify.app/">VIEW</a>
           </div>
         </div>
         <div className="section12_logo_cont">
