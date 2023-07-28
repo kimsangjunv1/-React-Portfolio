@@ -13,7 +13,7 @@ const Section_03 = () => {
     <section id="javascript" className="horizontal">
       <div className="section3_fixed">
         <h2>
-          JAVSCRIPT <em>EFFECT</em>
+          JAVASCRIPT <em>PRACTICE</em>
         </h2>
       </div>
 
@@ -42,12 +42,14 @@ const Section_03 = () => {
               효과입니다. 좀 더 응용하여 data-set의 value값을 호출해 카테고리
               별로 검색하는 기능까지 추가해 종류별로도 볼 수 있도록 하였습니다.
             </p>
-            <a href="https://github.com/kimsangjunv1/codingclass/blob/main/javascript/effect/searchEffect01.html">
-              code
-            </a>
-            <a href="http://vvv0032.dothome.co.kr/javascript/effect/searchEffect01.html">
-              view
-            </a>
+            <div>
+              <a href="https://github.com/kimsangjunv1/codingclass/blob/main/javascript/effect/searchEffect01.html">
+                code
+              </a>
+              <a href="http://vvv0032.dothome.co.kr/javascript/effect/searchEffect01.html">
+                view
+              </a>
+            </div>
           </div>
         </div>
 
@@ -64,12 +66,14 @@ const Section_03 = () => {
               <br />
               틀린 문제는 그에 맞는 애니메이션이 나오게 해주었습니다.
             </p>
-            <a href="https://github.com/kimsangjunv1/codingclass/blob/main/javascript/effect/quizEffect01.html">
-              code
-            </a>
-            <a href="http://vvv0032.dothome.co.kr/javascript/effect/quizEffect01.html">
-              view
-            </a>
+            <div>
+              <a href="https://github.com/kimsangjunv1/codingclass/blob/main/javascript/effect/quizEffect01.html">
+                code
+              </a>
+              <a href="http://vvv0032.dothome.co.kr/javascript/effect/quizEffect01.html">
+                view
+              </a>
+            </div>
           </div>
         </div>
 
@@ -85,12 +89,14 @@ const Section_03 = () => {
               <br />
               마지막 이미지를 넣어주어 연속적으로 스크롤하는 효과를 줍니다.
             </p>
-            <a href="https://github.com/kimsangjunv1/codingclass/blob/main/javascript/effect/sliderEffect.html">
-              code
-            </a>
-            <a href="http://vvv0032.dothome.co.kr/javascript/effect/sliderEffect.html">
-              view
-            </a>
+            <div>
+              <a href="https://github.com/kimsangjunv1/codingclass/blob/main/javascript/effect/sliderEffect.html">
+                code
+              </a>
+              <a href="http://vvv0032.dothome.co.kr/javascript/effect/sliderEffect.html">
+                view
+              </a>
+            </div>
           </div>
         </div>
 
@@ -106,12 +112,14 @@ const Section_03 = () => {
               <br />
               이미지효과 및 마우스를 추적하는 효과를 구현하였습니다.
             </p>
-            <a href="https://github.com/kimsangjunv1/codingclass/blob/main/javascript/effect/mouseEffect01.html">
-              code
-            </a>
-            <a href="http://vvv0032.dothome.co.kr/javascript/effect/mouseEffect01.html">
-              view
-            </a>
+            <div>
+              <a href="https://github.com/kimsangjunv1/codingclass/blob/main/javascript/effect/mouseEffect01.html">
+                code
+              </a>
+              <a href="http://vvv0032.dothome.co.kr/javascript/effect/mouseEffect01.html">
+                view
+              </a>
+            </div>
           </div>
         </div>
 
@@ -127,12 +135,14 @@ const Section_03 = () => {
               <br />
               다양한 효과를 주는 예제를 만들었습니다.
             </p>
-            <a href="https://github.com/kimsangjunv1/codingclass/blob/main/javascript/effect/parallaxEffect.html">
-              code
-            </a>
-            <a href="http://vvv0032.dothome.co.kr/javascript/effect/parallaxEffect01.html">
-              view
-            </a>
+            <div>
+              <a href="https://github.com/kimsangjunv1/codingclass/blob/main/javascript/effect/parallaxEffect.html">
+                code
+              </a>
+              <a href="http://vvv0032.dothome.co.kr/javascript/effect/parallaxEffect01.html">
+                view
+              </a>
+            </div>
           </div>
         </div>
 
@@ -140,16 +150,18 @@ const Section_03 = () => {
           <img src={section3_img_006} alt="Search Effect" />
           <div className="item_desc">
             <h2>
-              GAME <br />
-              EFFECT
+              JS <br />
+              PROJECT
             </h2>
             <p></p>
-            <a href="https://github.com/kimsangjunv1/codingclass/blob/main/javascript/effect/gameEffect01.html">
-              code
-            </a>
-            <a href="http://vvv0032.dothome.co.kr/javascript/effect/gameEffect01.html">
-              view
-            </a>
+            <div>
+              <a href="https://github.com/kimsangjunv1/codingclass/blob/main/javascript/effect/gameEffect01.html">
+                code
+              </a>
+              <a href="http://vvv0032.dothome.co.kr/javascript/effect/gameEffect01.html">
+                view
+              </a>
+            </div>
           </div>
         </div>
       </section>

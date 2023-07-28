@@ -14,7 +14,7 @@ const Section_07 = () => {
       <div>
         <div className="section6p7_static">
           <p className="section6p7_title">
-            ALL <em>PROJECT</em>
+            TEAM <em>PROJECT</em>
           </p>
         </div>
         <div className="light ir">light</div>
@@ -32,15 +32,27 @@ const Section_07 = () => {
             alt=""
           />
           <div className="site_type_04_desc">
-            <h2>YOUTUBE</h2>
+            <h2>TECHTUBE</h2>
+            <div className="project_type">
+              <span>개인 프로젝트</span>
+            </div>
             <p>
+              <strong>
+                TechTube는 제가 좋아하는 유튜버들의 목록을 왼쪽에 배치하여
+                <br />
+                각 유튜버들이 어떠한 영상을 올렸고 어떠한 댓글이 달렸는지
+                <br />
+                확인할 수 있는 사이트 입니다.
+              </strong>
+              <br />
+              <br />
               REACT를 사용하여 RAPID API를 이용해 유튜브를 다시 디자인해
               구현하였습니다
               <br />
               좌측에 좋아하는 유튜버들과 우측에 해당 영상 유튜버 영상 목록을
               띄워주었고
               <br />
-              댓글/영상/채널정보/조회수/좋아요 수 등등을 불러옵니다.
+              댓글/영상/채널정보/조회수/좋아요 수 등등을 불러오도록 하였습니다.
             </p>
             {/* <div className="level_cont_project">
               <p>!</p>
@@ -52,7 +64,7 @@ const Section_07 = () => {
             </div> */}
             <div className="section6p5_button_cont">
               <a href="https://github.com/kimsangjunv1/react_youtube">CODE</a>
-              <a href="https://reactapiyt.netlify.app/">VIEW</a>
+              <a href="https://react-techtube.netlify.app/">VIEW</a>
             </div>
           </div>
         </div>
@@ -64,13 +76,27 @@ const Section_07 = () => {
           />
           <div className="site_type_05_desc">
             <h2>GGUDA</h2>
+            <div className="project_type">
+              <span>팀 프로젝트</span>
+              <span>담당 : 디자인 100% / 프론트 100% / 퍼블리싱 40%</span>
+            </div>
             <p>
-              PHP로 만든 사이트 입니다.
+              <strong>
+                꾸다는 다꾸(다이어리 꾸미기)와 같은 정보나
+                <br />
+                혹은 자신이 다이어리를 직접 꾸며 볼 수 있는 사이트 입니다.
+              </strong>
+              <br />
               <br />
               GET/POST 방식을 적절히 섞어 로그인/회원가입 등을 구현하였으며,
               <br />
               SESSION에 있는 데이터를 이용해 사용자가 등록한 프로필
-              이미지/다이어리 색상 등을 가져올 수 있도록 하였습니다
+              이미지/다이어리 색상 등을 가져올 수 있도록 하였고
+              <br />
+              <br />
+              드래그&드롭 방식을 통해 보유하고 있는 일러스트를 활용하여
+              <br />
+              사용자가 다이어리를 꾸며 볼 수 있도록 유도하였습니다.
             </p>
             {/* <div className="level_cont_project">
               <p>!</p>
@@ -96,10 +122,21 @@ const Section_07 = () => {
           />
           <div className="site_type_06_desc">
             <h2>PHP BLOG</h2>
+            <div className="project_type">
+              <span>개인 프로젝트</span>
+            </div>
             <p>
-              PHP를 이용해 SESSION과 GET/POST 방식을 이용해
+              <strong>
+                최신 게시물 확인 및 게시물을 올리고 수정하고 삭제 할 수 있는
+                <br />
+                개인 블로그를 PHP로 만들었습니다.
+              </strong>
+              <br />
+              <br />
+              PHP를 이용해 SESSION과 RESTful API 방식을 이용해
               <br />
               로그인/로그아웃/게시물 작성/댓글 작성 등등의 기능을 추가한 개발
+              <br />
               블로그를 제작했습니다.
             </p>
             <div className="section6p5_button_cont">
@@ -124,8 +161,13 @@ const Section_07 = () => {
           <div className="site_type_07_desc">
             <h2>TISTORY BLOG</h2>
             <p>
-              자바스크립트/HTML/CSS/프로그래머스 등등과 관련된 공부한 내용들을
-              블로그에 정리하였으며
+              <strong>
+                티스토리를 통해 웹사이트를 디자인하여
+                <br />
+                자바스크립트/HTML/CSS/프로그래머스 등등과 관련된 공부한 내용들을
+                <br />
+                블로그에 정리하고 스킨 제작에 초점을 두었습니다.
+              </strong>
               <br />
               <br />
               블로그 스킨 제작시 티스토리 블로그를 window.innerWidth를 응용해

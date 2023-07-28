@@ -14,16 +14,23 @@ const Section_13 = () => {
         <div className="section13_desc_cont">
           <div className="title_wrap">
             <p className="title">
-              VUE API
+              POPULAR MOIVE
               <br />
-              <em>MOVIE</em>
+              <em>WEBSITE</em>
             </p>
-            <p className="sub_ttitle">TMDB</p>
+            <p className="sub_ttitle">VUE</p>
           </div>
           <p>
-            Vue를 이용해 TMDB에서 제공하는 api를 이용해
+            TMDB에서 제공하는 api를 이용해 검색
             <br />
-            SPA를 구현하였으며 Swiper를 이용해 슬라이드 섹션도 제작해두었습니다.
+            가능한 영화 목록 웹사이트를 만들었습니다.
+            <br />
+            <br />
+            검색하면 검색어와 관련된 영화들의 목록의 response를 통해
+            <br />
+            하단에 영화 포스터, 평점, 제목등을
+            <br />
+            목록으로 보여주는 사이트를 만들었습니다.
           </p>
           <div className="section_rv_button_cont">
             <a href="https://github.com/kimsangjunv1/vue_api">CODE</a>
@@ -34,7 +41,7 @@ const Section_13 = () => {
           <img className="sec13_logo" src={section13_logo} alt="" />
           <img className="sec13_bg polygon" src={section13_logo_bg} alt="" />
         </div>
-        <div style={{ background: "#055d63c7" }} className="color_bg"></div>
+        <div style={{ background: "#161c29e0" }} className="color_bg"></div>
 
         <img
           className="section13_main_screenshot"

@@ -1,7 +1,7 @@
 import React from "react";
 
 import section14_lama from "./../../assets/img/section14_lama.svg";
-import section14_logo from "./../../assets/img/section14_logo.png";
+import section14_logo from "./../../assets/img/section11_logo.png";
 import section14_logo_bg from "./../../assets/img/section14_logo_bg.jpg";
 import section14_screenshot_01 from "./../../assets/img/section14_screenshot_01.png";
 
@@ -14,11 +14,11 @@ const Section_14 = () => {
         <div className="section14_desc_cont">
           <div className="title_wrap">
             <p className="title">
-              VUE API
+              STANDARD
               <br />
-              <em>SITE TYPE</em>
+              <em>WEBSITE</em>
             </p>
-            <p className="sub_ttitle">WEB</p>
+            <p className="sub_ttitle">VUE</p>
           </div>
           <p>
             Vue를 이용해 사이트 기본구조를 구성하였습니다.
@@ -40,7 +40,7 @@ const Section_14 = () => {
             alt=""
           />
         </div>
-        <div style={{ background: "#55239dd4" }} className="color_bg"></div>
+        <div style={{ background: "#0d4430d4" }} className="color_bg"></div>
 
         <img
           className="section14_main_screenshot"

@@ -27,10 +27,14 @@ import Section_16 from "../include/Section_16.jsx";
 import DescFixed from "../layout/DescFixed.jsx";
 import ImgLoader from "../include/ImgLoader.jsx";
 
+const test = () => {
+  alert("테스트 알람");
+};
+
 const Main = () => {
   return (
     <>
-      <Header />
+      <Header gwayeon={() => test()} />
       <Contents>
         <ImgLoader />
         <DescFixed />

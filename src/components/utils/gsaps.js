@@ -45,7 +45,7 @@ const gsaps = () => {
       "#header, #header a, .porfolio_desc_fixed p",
       {
         color: "#fff",
-        background: "linear-gradient(180deg, #5046ac, #5046ac00)",
+        background: "linear-gradient(180deg, #161c29, #161c2900)",
       },
       {
         color: "#000",

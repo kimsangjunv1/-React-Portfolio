@@ -5,7 +5,7 @@ body {
   position: relative;
 }
 body {
-  background-color: #5046ac;
+  background-color: #161c29;
   overflow: hidden;
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -42,32 +42,37 @@ body {
   left: 0;
   height: 100vh;
   width: 100%;
-  background: black;
+  background: #161c29;
   z-index: 100000;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   user-select: none;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blure(30px);
 }
 #progress h2 {
-  font-size: 4.1vw;
-  font-family: "NexonLv1GothicLow";
+  font-size: 3.4vw;
+  font-family: NexonLv1GothicLow;
+  font-weight: 100;
+  text-transform: uppercase;
   font-weight: 100;
   line-height: 0.7;
 }
 .progress-text {
   font-size: 5.5vw;
   font-weight: 900;
-  font-family: "GmarketSans";
-  color: rgba(0, 0, 0, 0);
-  background: linear-gradient(45deg, #9627ff 26%, #ff00b2 66%, #ff0000 100%);
+  font-family: GmarketSans;
+  color: #0000;
+  background: linear-gradient(45deg, rgb(20, 240, 66) 26%, #b7ff00 100%);
   -webkit-background-clip: text;
+  filter: drop-shadow(0px 0px 26px #b7ff004d);
 }
 
 .st0 {
   fill: none;
-  stroke: rgba(48, 12, 131, 0.093);
+  stroke: transparent;
   stroke-width: 10;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -165,7 +170,7 @@ body {
   background: #ededf4;
 }
 .custom_color_dark {
-  background: #15152d;
+  background: #161c29;
 }
 .custom_color_purple {
   background: #6259b4;
@@ -224,10 +229,11 @@ body {
   align-items: flex-end;
   flex-direction: column;
   z-index: 111;
-  font-family: "Red Hat Display";
+  font-family: Red Hat Display;
   padding: 7.2vw 0;
   font-weight: 900;
   font-size: 0.7vw;
+  text-transform: uppercase;
   p {
     transform: rotate(90deg);
     background: transparent !important;
@@ -272,7 +278,7 @@ body {
       transition: 0.25s;
       cursor: pointer;
       &:hover {
-        color: #fe3672 !important;
+        color: #18a06f !important;
       }
       &:not(:hover) {
         transition: 0.25s;
