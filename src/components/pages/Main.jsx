@@ -24,42 +24,49 @@ import Section_14 from "../include/Section_14.jsx";
 import Section_15 from "../include/Section_15.jsx";
 import Section_16 from "../include/Section_16.jsx";
 
+import PopupComponents from "../common/PopupComponents.jsx";
+
 import DescFixed from "../layout/DescFixed.jsx";
 import ImgLoader from "../include/ImgLoader.jsx";
 
 const test = () => {
-  alert("테스트 알람");
+	alert("테스트 알람");
 };
 
 const Main = () => {
-  return (
-    <>
-      <Header gwayeon={() => test()} />
-      <Contents>
-        <ImgLoader />
-        <DescFixed />
-        <Section_01 />
-        <Section_02 />
-        <Section_03 />
-        <Section_03_5 />
-        <Section_04 />
-        <Section_05 />
-        <Section_05_5 />
-        <Section_06 />
-        <Section_06_5 />
-        <Section_07 />
-        <Section_09 />
-        <Section_10 />
-        <Section_11 />
-        <Section_12 />
-        <Section_13 />
-        <Section_14 />
-        <Section_15 />
-        <Section_16 />
-      </Contents>
-      {/* <Footer /> */}
-    </>
-  );
+	return (
+		<>
+			<Header gwayeon={() => test()} />
+			<Contents>
+				<PopupComponents
+					desc={
+						"현재 포트폴리오는 학원에 다닐때 만들었던 포트폴리오 입니다, 최근 새로 내용을 정리해 포트폴리오를 만들었습니다."
+					}
+				/>
+				<ImgLoader />
+				<DescFixed />
+				<Section_01 />
+				<Section_02 />
+				<Section_03 />
+				<Section_03_5 />
+				<Section_04 />
+				<Section_05 />
+				<Section_05_5 />
+				<Section_06 />
+				<Section_06_5 />
+				<Section_07 />
+				<Section_09 />
+				<Section_10 />
+				<Section_11 />
+				<Section_12 />
+				<Section_13 />
+				<Section_14 />
+				<Section_15 />
+				<Section_16 />
+			</Contents>
+			{/* <Footer /> */}
+		</>
+	);
 };
 
 export default Main;
