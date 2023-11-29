@@ -4,6 +4,8 @@ import Contents from "../layout/Contents";
 import Footer from "../layout/Footer";
 // import MainCont from "../include/MainCont";
 
+import MouseComponents from "../common/MouseComponents.jsx";
+
 // 섹션
 import Section_01 from "../include/Section_01.jsx";
 import Section_02 from "../include/Section_02.jsx";
@@ -63,6 +65,7 @@ const Main = () => {
         <Section_14 />
         <Section_15 />
         <Section_16 />
+        <MouseComponents />
       </Contents>
       {/* <Footer /> */}
     </>

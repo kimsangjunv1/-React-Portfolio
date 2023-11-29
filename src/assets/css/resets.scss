@@ -33,6 +33,8 @@
 
 // 가로모드 글씨 확대 초기화
 html {
+  cursor: none;
+
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;

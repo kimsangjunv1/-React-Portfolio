@@ -78,6 +78,7 @@
       left: 50%;
       transform: translate(-50%, 0);
       // width: 50vw;
+      display: none;
     }
     &:nth-child(10) {
       right: 10%;
@@ -93,6 +94,18 @@
       top: -450px;
       width: 3vw;
     }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background: #287eff;
+    border-radius: 100%;
+    width: 50vmin;
+    height: 50vmin;
+    filter: blur(100px);
   }
 }
 .splitText {
@@ -282,6 +295,7 @@
   font-family: "NexonLv1GothicLow";
   font-weight: 400;
   color: #287eff;
+  display: none;
 }
 .second_name {
   font-size: 5vw;

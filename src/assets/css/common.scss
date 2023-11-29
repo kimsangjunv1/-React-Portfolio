@@ -64,8 +64,8 @@ body {
   font-size: 5.5vw;
   font-weight: 900;
   font-family: GmarketSans;
-  color: #287eff;
-  //   background: linear-gradient(45deg, rgb(20, 240, 66) 26%, #b7ff00 100%);
+  //   color: #287eff;
+  // background: linear-gradient(45deg, rgb(20, 240, 66) 26%, #b7ff00 100%);
   -webkit-background-clip: text;
   filter: drop-shadow(0px 0px 26px #b7ff004d);
 }
@@ -902,5 +902,99 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.643);
+  }
+}
+
+// 새로운
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  z-index: 2;
+  pointer-events: none;
+  z-index: 1000000;
+}
+.cursor div {
+  position: absolute;
+  display: grid;
+  place-items: center;
+}
+.cursor div div {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  animation: pulse 2.5s linear infinite;
+  box-shadow: 0 0 50px 5px #d7abff6e;
+}
+.cursor div:nth-child(1),
+.cursor div:nth-child(2),
+.cursor div:nth-child(3) {
+  width: 100%;
+  height: 100%;
+}
+.cursor div:nth-child(1) {
+  transition: transform 0.2s ease-out;
+}
+.cursor div:nth-child(2) {
+  transition: transform 0.1s ease-out;
+}
+.cursor div:nth-child(3) {
+  transition: transform 0.5s ease-out;
+}
+.cursor div:nth-child(2) div {
+  background: #fff;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+}
+.cursor div:nth-child(3) div {
+  z-index: -10000000;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75em;
+  height: 75em;
+  margin: 0 0 0.1px;
+  object-fit: contain;
+  border-radius: 75em;
+  filter: blur(10em);
+  background-image: radial-gradient(
+    circle at 50% 50%,
+    #287eff,
+    rgba(0, 214, 122, 0)
+  );
+  will-change: left, top, transform;
+  transition: transform 0.5s;
+  opacity: 0.4;
+}
+
+.cursor {
+  &.obj {
+    z-index: -10000;
+  }
+  .back_obj {
+    > div {
+      z-index: -10000000;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 75em;
+      height: 75em;
+      margin: 0 0 0.1px;
+      object-fit: contain;
+      border-radius: 75em;
+      filter: blur(10em);
+      background-image: radial-gradient(
+        circle at 50% 50%,
+        #287eff,
+        rgba(0, 214, 122, 0)
+      );
+      will-change: left, top, transform;
+      transition: transform 0.5s;
+      opacity: 0.4;
+    }
   }
 }
