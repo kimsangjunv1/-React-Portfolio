@@ -1,0 +1,255 @@
+{
+  "usedskill": [
+    {
+      "list": [
+        {
+          "name": "스와이퍼",
+          "desc": "다양한 데모를 통한 여러가지 형태의 슬라이드 구현이 가능하여 사용하게 되었습니다."
+        },
+        {
+          "name": "SCSS",
+          "desc": "CSS 속성들이 사용된 클래스의 구조들을 쉽게 파악 및 수정이 가능하고 압축해 사용이 가능해서 사용하게 되었습니다."
+        },
+        {
+          "name": "Lenis",
+          "desc": "스크롤을 부드럽게 제어하기 간편해 사용하게 되었습니다."
+        },
+        {
+          "name": "Framer",
+          "desc": "사실적인 애니메이션을 표현하는데 있어서 우수하기에 사용하였습니다"
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "name": "리액트",
+          "desc": "React의 구조를 이해하고 있으며, 여러가지 Hook을 사용할 수 있습니다."
+        },
+        {
+          "name": "Redux Toolkit",
+          "desc": "기록이 남아 에러가 발생한경우 찾기 수월하였으며, 상태관리를 한곳에 관리하는데 유용하게 사용하였습니다."
+        },
+        {
+          "name": "Styled-components",
+          "desc": "리액트에서 Props를 활용해 조건을 가지고 스타일링을 할 수 있기에 사용하게 되었습니다!"
+        },
+        {
+          "name": "Zustand",
+          "desc": "리덕스를 사용하기위해 provider 등등의 세팅 하는 과정들을 축소시켜 빠른 작업이 가능하였고 상태를 정의하고 사용하는 방법이 단순해 사용하게 되었습니다!"
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "name": "PHP",
+          "desc": "dothome을 통해 간단하게 회원들의 정보를 관리하고 게시물 작성 및 삭제 할 수 있어 사용하게 되었습니다."
+        },
+        {
+          "name": "MySQL",
+          "desc": "php로 작성한것을 dothome 호스팅을 통해 filezilla로 접속하여 관리 하기위해 사용하였습니다."
+        }
+      ]
+    },
+    {
+      "list": [
+        { "name": "Redux Toolkit", "desc": "사용한 이유는..." },
+        {
+          "name": "Styled-components",
+          "desc": "리액트에서 Props를 활용해 조건을 가지고 스타일링을 할 수 있기에 사용하게 되었습니다!"
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "name": "Zeplin",
+          "desc": "디자인한 요소들의 html 레이아웃 간격들을 알수가 있어 사용하게 되었습니다."
+        },
+        {
+          "name": "Figma",
+          "desc": "adobe xd가 아닌 웹사이트를 손쉽게 디자인하고 같은 반복적인 작업이 필요할떄는 컴포넌트별로 분리 후 하나만 수정하면 다양한것들이 수정 가능한 기능들이 제공되어 사용하게 되었습니다."
+        },
+        {
+          "name": "Jira",
+          "desc": "앞으로 해야하는 todo list가 무엇이 있는지, 어떤 문제에 직면해 있었는지 확인이 가능해 사용하게 되었습니다."
+        },
+        {
+          "name": "Slack",
+          "desc": "같이 작업하는 사람들과 손쉽게 코드를 공유 및 업무를 분배하기 용이한 대화수단이라 사용하게 되었스빈다."
+        },
+        {
+          "name": "Github",
+          "desc": "브랜치를 각각 나누어 작업하며 메인 브랜치에 merge 하는 방식으로 작업하고 있습니다."
+        }
+      ]
+    }
+  ],
+  "toyproject": [
+    {
+      "title": "포트폴리오",
+      "category": "개인 프로젝트",
+      "skill": [
+        { "name": "React" },
+        { "name": "Redux Toolkit" },
+        { "name": "Framer" },
+        { "name": "Swiper" },
+        { "name": "SCSS" }
+      ],
+      "participationContents": "이런것들을 참여했습니다~",
+      "participationRate": [
+        { "design": "100" },
+        { "publishing": "60" },
+        { "front": "70" }
+      ],
+      "image": [
+        {
+          "url": "https://github.com/kimsangjunv1/-React-portfolio-rework/blob/main/src/assets/img/toy_porfolio2_001.jpg?raw=true"
+        }
+      ],
+      "date": "2023.11.25",
+      "desc": "제가 개인적으로 처음부터 디자인 후 만들어본 포트폴리오 입니다,<br> 기존에 학원에서 만들었던 포트폴리오의 경우 설명보단 효과가 중심이 되는 부분이 강해 이번 포트폴리오는 제가 한것들을 깔끔하게 정리해보았습니다<br>또한 각 섹션별 설명들을 수정 및 관리하기 용이하게 하기위해<br> 하나의 json으로 섹션별로 분류해 내용들을 수정/편집이 편하도록 관리하였습니다.",
+      "github": "https://github.com/kimsangjunv1/-React-portfolio-rework",
+      "view": "https://portfolio-sprout.netlify.app/",
+      "figma": "https://www.figma.com/file/CXwaeJIh0hsAVgihQMjreL/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4-%EB%A6%AC%EC%9B%8C%ED%81%AC?type=design&node-id=171%3A746&mode=design&t=z81wqywdOkeLiIas-1",
+      "color": "#3A1D69"
+    },
+    {
+      "title": "PlayGround",
+      "category": "개인 프로젝트",
+      "skill": [{ "name": "React" }, { "name": "SCSS" }, { "name": "Zustand" }],
+      "participationContents": "이런것들을 참여했습니다~",
+      "participationRate": [
+        { "design": "100" },
+        { "publishing": "60" },
+        { "front": "70" }
+      ],
+      "image": [
+        {
+          "url": "https://github.com/kimsangjunv1/-React-portfolio-rework/blob/main/src/assets/img/toy_playground_001.png?raw=true"
+        },
+        {
+          "url": "https://github.com/kimsangjunv1/-React-portfolio-rework/blob/main/src/assets/img/toy_playground_002.jpg?raw=true"
+        },
+        {
+          "url": "https://github.com/kimsangjunv1/-React-portfolio-rework/blob/main/src/assets/img/toy_playground_003.jpg?raw=true"
+        },
+        {
+          "url": "https://github.com/kimsangjunv1/-React-portfolio-rework/blob/main/src/assets/img/toy_playground_004.jpg?raw=true"
+        }
+      ],
+      "date": "2023.11.14",
+      "desc": "기존 유튜브를 재디자인 한 'PlayGround' 입니다,<br>단순히 이쁘게 재 디자인을 해보기 위하여 한것이 아닌 기존에 유튜브가 계속 디자인이 변화하면서 사용자가 받아들이기 힘들었던 디자인을 걷어내고 드랍박스라는 기능을 통해 원하는 영상들을 편하게 넣어두었다가 꺼내 볼 수 있도록 기능을 추가해 만든 웹사이트 입니다, 추후 모바일 반응형도 제작할 예정입니다.",
+      "github": "https://github.com/kimsangjunv1/-React-Playground",
+      "view": "https://playground-r.netlify.app/",
+      "figma": "https://www.figma.com/file/Za2MM7db7OKZtiBJ1EeEaV/%EC%9C%A0%ED%8A%9C%EB%B8%8C-%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8?type=design&node-id=0%3A1&mode=design&t=HqaYZ3hMuFVMborN-1",
+      "color": "#066839"
+    },
+    {
+      "title": "Pick",
+      "category": "개인 프로젝트",
+      "skill": [
+        { "name": "React" },
+        { "name": "Redux Toolkit" },
+        { "name": "SCSS" }
+      ],
+      "participationContents": "이런것들을 참여했습니다~",
+      "participationRate": [
+        { "design": "100" },
+        { "publishing": "60" },
+        { "front": "70" }
+      ],
+      "image": [
+        {
+          "url": "https://github.com/kimsangjunv1/-React-portfolio-rework/blob/main/src/assets/img/toy_pick_001.jpg?raw=true"
+        },
+        {
+          "url": "https://github.com/kimsangjunv1/-React-portfolio-rework/blob/main/src/assets/img/toy_pick_002.jpg?raw=true"
+        },
+        {
+          "url": "https://github.com/kimsangjunv1/-React-portfolio-rework/blob/main/src/assets/img/toy_pick_003.jpg?raw=true"
+        },
+        {
+          "url": "https://github.com/kimsangjunv1/-React-portfolio-rework/blob/main/src/assets/img/toy_pick_004.jpg?raw=true"
+        }
+      ],
+      "date": "2023.10.29",
+      "desc": "날씨별로 음악을 추천해주는 'PiCK' 입니다,<br>일주일 평균 최저/최고 온도를 기반으로 6시를 기준으로 나눠<br>각 날씨별 지정해둔 키워드를 적용해 검색 후<br>사용자에게 듣기/아티스트 정보/앨범정보를 제공해주는 웹 사이트 입니다!",
+      "github": "https://github.com/kimsangjunv1/-React-Pick-Music-Player",
+      "view": "https://react-pick.netlify.app/",
+      "figma": "https://www.figma.com/file/0Fads8hi4HV4RtXV94SAUz/%EB%AE%A4%EC%A7%81%ED%94%8C%EB%A0%88%EC%9D%B4%EC%96%B4-PiCK?type=design&node-id=0%3A1&mode=design&t=0QdSkNiRWmYy96Y9-1",
+      "color": "#027C00"
+    },
+    {
+      "title": "라마의 여행",
+      "category": "개인 프로젝트",
+      "skill": [{ "name": "React" }, { "name": "SCSS" }],
+      "participationContents": "이런것들을 참여했습니다~",
+      "participationRate": [
+        { "design": "100" },
+        { "publishing": "60" },
+        { "front": "70" }
+      ],
+      "image": [
+        {
+          "url": "https://github.com/kimsangjunv1/-React-portfolio-rework/blob/main/src/assets/img/toy_porfolio_001.jpg?raw=true"
+        },
+        {
+          "url": "https://github.com/kimsangjunv1/-React-portfolio-rework/blob/main/src/assets/img/toy_porfolio_002.jpg?raw=true"
+        },
+        {
+          "url": "https://github.com/kimsangjunv1/-React-portfolio-rework/blob/main/src/assets/img/toy_porfolio_003.jpg?raw=true"
+        },
+        {
+          "url": "https://github.com/kimsangjunv1/-React-portfolio-rework/blob/main/src/assets/img/toy_porfolio_004.jpg?raw=true"
+        },
+        {
+          "url": "https://github.com/kimsangjunv1/-React-portfolio-rework/blob/main/src/assets/img/toy_porfolio_005.jpg?raw=true"
+        },
+        {
+          "url": "https://github.com/kimsangjunv1/-React-portfolio-rework/blob/main/src/assets/img/toy_porfolio_006.jpg?raw=true"
+        }
+      ],
+      "date": "2023.09.02",
+      "desc": "6개월간의 교육과정을 병행하며 직접 디자인하고 만들었던 포트폴리오 입니다,<br>단순히 스크롤을 내려 작업물들을 확인하는것이 아닌 처음에 등장하는 라마 캐릭터와 솜뭉치들과 함께 같이 작업물들을 구경하며 스토리라인을 그려가는듯한 느낌을 주었으며, 현재 awwwwwards에 등록해둔 상태입니다",
+      "github": "https://github.com/kimsangjunv1/-React-Portfolio",
+      "view": "https://portfoliosj-react.netlify.app/",
+      "figma": "https://www.figma.com/file/6mxQdZer7YnWA2D9Jf8ffw/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4-%EB%9D%BC%EB%A7%88%EC%9D%98-%EC%97%AC%ED%96%89?type=design&node-id=0%3A1&mode=design&t=eUr4tg18Jr6BkdQb-1",
+      "color": "#086B65"
+    },
+    {
+      "title": "꾸다",
+      "category": "팀 프로젝트",
+      "skill": [{ "name": "PHP" }, { "name": "SCSS" }],
+      "participationContents": "이런것들을 참여했습니다~",
+      "participationRate": [
+        { "design": "100" },
+        { "publishing": "60" },
+        { "front": "70" }
+      ],
+      "image": [
+        {
+          "url": "https://github.com/kimsangjunv1/-React-portfolio-rework/blob/main/src/assets/img/toy_gguda_001.jpg?raw=true"
+        },
+        {
+          "url": "https://github.com/kimsangjunv1/-React-portfolio-rework/blob/main/src/assets/img/toy_gguda_002.jpg?raw=true"
+        },
+        {
+          "url": "https://github.com/kimsangjunv1/-React-portfolio-rework/blob/main/src/assets/img/toy_gguda_003.jpg?raw=true"
+        }
+      ],
+      "date": "2023.08.11",
+      "desc": "다이어리 꾸미기 웹사이트로써 사용자가 본인이 꾸며보고 싶었던 다이어리를 웹으로 간단하게 꾸며 보고<br>사용자들끼리 내용도 공유할 수 있도록 구성한 사이트 입니다.",
+      "github": "https://github.com/kimsangjunv1/-PHP-GGUDA-Diary",
+      "view": "http://vvv0032.dothome.co.kr/Diary/PHP/main/main.php",
+      "figma": "https://www.figma.com/file/KdrJpICIDBY9p4jC4JPKdR/%EA%BE%B8%EB%8B%A4?type=design&node-id=0%3A1&mode=design&t=nyyCWOsBoKNP0kgm-1",
+      "color": "#3A1D69"
+    }
+  ],
+  "RecycleBin": [
+    { "name": "Zustand", "desc": "사용한 이유는..." },
+    { "name": "뷰", "desc": "사용한 이유는..." },
+    { "name": "스벨트", "desc": "사용한 이유는..." }
+  ]
+}
