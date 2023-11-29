@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../layout/Header";
 import Contents from "../layout/Contents";
 import Footer from "../layout/Footer";
@@ -36,9 +36,19 @@ const test = () => {
 };
 
 const Main = () => {
+  const [scrolled, setScrolled] = useState(0);
+  // 스크롤
+  window.onscroll = function () {
+    let winScroll =
+      document.body.scrollTop || document.documentElement.scrollTop;
+    let height =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+    setScrolled((winScroll / height) * 100);
+  };
   return (
     <>
-      <Header gwayeon={() => test()} />
+      <Header />
       <Contents>
         {/* <PopupComponents
 					desc={
@@ -46,7 +56,7 @@ const Main = () => {
 					}
 				/> */}
         <ImgLoader />
-        <DescFixed />
+        <DescFixed scrolled={scrolled} />
         <Section_01 />
         <Section_02 />
         <Section_03 />

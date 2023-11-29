@@ -16,7 +16,7 @@ const MouseComponents = () => {
       subCursor.current.style.transform = `translateX(calc(${e.clientX}px - 1.25rem)) translateY(calc(${e.clientY}px - 1.25rem))`;
       mainCursor.current.style.transform = `translateX(calc(${e.clientX}px - 1.25rem)) translateY(calc(${e.clientY}px - 1.25rem))`;
       objCursor.current.style.transform = `translateX(calc(${e.clientX}px - 1.25rem)) translateY(calc(${e.clientY}px - 1.25rem)) `;
-      keepScrollDown.current.style.transform = `translateX(calc(${e.clientX}px - 1.25rem)) translateY(0%)`;
+      //   keepScrollDown.current.style.transform = `translateX(calc(${e.clientX}px - 1.25rem)) translateY(0%)`;
     });
     window.addEventListener("mousedown", (e) => {
       subCursor.current.style.transform = `translateX(calc(${e.clientX}px - 1.25rem)) translateY(calc(${e.clientY}px - 1.25rem)) scale(2)`;

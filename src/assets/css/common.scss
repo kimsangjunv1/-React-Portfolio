@@ -226,10 +226,10 @@ body {
   width: 0%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   flex-direction: column;
   z-index: 111;
-  font-family: Red Hat Display;
+  //   font-family: Red Hat Display;
   padding: 7.2vw 0;
   font-weight: 900;
   font-size: 0.7vw;
@@ -237,6 +237,29 @@ body {
   p {
     transform: rotate(90deg);
     background: transparent !important;
+  }
+  .scroll_background {
+    width: 1px;
+    height: 70%;
+    position: relative;
+    // top: 50%;
+    // left: -15px;
+    // transform: translate(0, -50%);
+    z-index: -1;
+    display: flex;
+    align-items: start;
+    background: #ffffff40;
+    .scroll_progress {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      background: #2b393e;
+      width: 3px;
+      height: 5%;
+      border-radius: 100px;
+      margin: 0 auto;
+    }
   }
 }
 .point {
