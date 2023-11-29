@@ -325,13 +325,13 @@ const section = () => {
       {
         scale: (1.3, 1.3),
         transformOrigin: "500px 18px",
-        transform: "translate(0,50px)",
+        transform: "translate(0,50px) rotate(30deg)",
         //   filter: "blur(2px)",
       },
       {
         scale: 1,
         transformOrigin: "50% 0%",
-        transform: "translate3d(0,-25px,0)",
+        transform: "translate3d(0,-25px,0) rotate(10deg)",
         //   filter: "blur(0px)",
       }
     ),

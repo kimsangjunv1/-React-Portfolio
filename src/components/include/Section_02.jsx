@@ -20,10 +20,18 @@ const Section_02 = () => {
           <h2 className="fifth_name n7">SANGJUN</h2>
         </div>
         <div className="section2_profile_cont">
-          <img className="section2_profile ir" src={section2_profile} alt="" />
+          <img
+            className="section2_profile ir"
+            src={section2_profile}
+            alt="김상준 프로필 이미지"
+          />
         </div>
       </div>
-      <img src={section2_lama} alt="lama" className="lama" />
+      <img
+        src={section2_lama}
+        alt="오른쪽에서 나오는 라마 그림"
+        className="lama"
+      />
     </section>
   );
 };

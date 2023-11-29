@@ -45,7 +45,7 @@ const gsaps = () => {
       "#header, #header a, .porfolio_desc_fixed p",
       {
         color: "#fff",
-        background: "linear-gradient(180deg, #161c29, #161c2900)",
+        background: "linear-gradient(180deg, #000000, #00000000)",
       },
       {
         color: "#000",
@@ -67,7 +67,7 @@ const gsaps = () => {
       },
       {
         color: "#fff",
-        background: "linear-gradient(180deg, #15152d, #15152d00)",
+        background: "linear-gradient(180deg, #000000, #00000000)",
       }
     ),
   });
@@ -81,11 +81,11 @@ const gsaps = () => {
       "#header, #header a, .porfolio_desc_fixed p",
       {
         // color: "#000",
-        background: "linear-gradient(180deg, #15152d, #15152d00)",
+        background: "linear-gradient(180deg, #000000, #00000000)",
       },
       {
         // color: "#fff",
-        background: "linear-gradient(180deg, #15152d, #15152d00)",
+        background: "linear-gradient(180deg, #000000, #00000000)",
       }
     ),
   });
@@ -99,7 +99,7 @@ const gsaps = () => {
       "#header, #header a, .porfolio_desc_fixed p",
       {
         color: "#fff",
-        background: "linear-gradient(180deg, #15152d, #15152d00)",
+        background: "linear-gradient(180deg, #000000, #00000000)",
       },
       {
         color: "#000",
