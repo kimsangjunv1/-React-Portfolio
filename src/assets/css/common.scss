@@ -254,7 +254,7 @@ body {
       top: 0;
       left: 50%;
       transform: translate(-50%, 0);
-      background: #2b393e;
+      background: #10c06b;
       width: 3px;
       height: 5%;
       border-radius: 100px;
@@ -912,7 +912,7 @@ body {
         transition: 0.25s;
         line-height: 2.4;
         &:hover {
-          background: #287eff;
+          background: #10c06b;
         }
       }
     }
@@ -985,7 +985,7 @@ body {
   filter: blur(10em);
   background-image: radial-gradient(
     circle at 50% 50%,
-    #287eff,
+    #10c06b,
     rgba(0, 214, 122, 0)
   );
   will-change: left, top, transform;
@@ -1012,7 +1012,7 @@ body {
       filter: blur(10em);
       background-image: radial-gradient(
         circle at 50% 50%,
-        #287eff,
+        #10c06b,
         rgba(0, 214, 122, 0)
       );
       will-change: left, top, transform;

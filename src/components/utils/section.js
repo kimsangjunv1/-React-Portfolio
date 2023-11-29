@@ -136,22 +136,22 @@ const section = () => {
       }
     ),
   });
-  ScrollTrigger.create({
-    // 어디에 닿으면 반응할건지
-    trigger: ".section2_cont",
-    scrub: 1,
-    // 어디다가 적용할건지
-    animation: gsap.fromTo(
-      ".section1_desc h2",
-      {
-        height: "27.2vw",
-      },
-      {
-        height: "0vw",
-        // filter: "blur(3px)",
-      }
-    ),
-  });
+  // ScrollTrigger.create({
+  //   // 어디에 닿으면 반응할건지
+  //   trigger: ".section2_cont",
+  //   scrub: 1,
+  //   // 어디다가 적용할건지
+  //   animation: gsap.fromTo(
+  //     ".section1_desc h2",
+  //     {
+  //       height: "27.2vw",
+  //     },
+  //     {
+  //       height: "0vw",
+  //       // filter: "blur(3px)",
+  //     }
+  //   ),
+  // });
 
   //   섹션 2
   ScrollTrigger.create({
@@ -207,7 +207,10 @@ const section = () => {
         scale: 1,
         opacity: 1,
         transformOrigin: "50% 0%",
-        transform: "translate3d(0,-25px,0)",
+        // transform: "translate3d(0,-25px,0)",
+        x: 0,
+        y: "-25px",
+        z: 0,
         filter: "blur(0px)",
       }
     ),
@@ -228,7 +231,10 @@ const section = () => {
         scale: 1,
         opacity: 1,
         transformOrigin: "50% 0%",
-        transform: "translate3d(0,-25px,0)",
+        // transform: "translate3d(0,-25px,0)",
+        x: 0,
+        y: "-25px",
+        z: 0,
         filter: "blur(0px)",
       }
     ),
@@ -249,7 +255,10 @@ const section = () => {
         scale: 1,
         // opacity: 1,
         transformOrigin: "50% 0%",
-        transform: "translate3d(0,-25px,0)",
+        // transform: "translate3d(0,-25px,0)",
+        x: 0,
+        y: "-25px",
+        z: 0,
         // filter: "blur(0px)",
       }
     ),
@@ -270,7 +279,10 @@ const section = () => {
         scale: 1,
         // opacity: 1,
         transformOrigin: "50% 0%",
-        transform: "translate3d(0,-25px,0)",
+        // transform: "translate3d(0,-25px,0)",
+        x: 0,
+        y: "-25px",
+        z: 0,
         // filter: "blur(0px)",
       }
     ),
@@ -291,7 +303,10 @@ const section = () => {
         scale: 1,
         // opacity: 1,
         transformOrigin: "50% 0%",
-        transform: "translate3d(0,-25px,0)",
+        // transform: "translate3d(0,-25px,0)",
+        x: 0,
+        y: "-25px",
+        z: 0,
         // filter: "blur(0px)",
       }
     ),
@@ -312,7 +327,10 @@ const section = () => {
         scale: 1,
         opacity: 1,
         transformOrigin: "50% 0%",
-        transform: "translate3d(0,-25px,0)",
+        // transform: "translate3d(0,-25px,0)",
+        x: 0,
+        y: "-25px",
+        z: 0,
         filter: "blur(0px)",
       }
     ),
@@ -331,7 +349,11 @@ const section = () => {
       {
         scale: 1,
         transformOrigin: "50% 0%",
-        transform: "translate3d(0,-25px,0) rotate(10deg)",
+        // transform: "translate3d(0,-25px,0) rotate(10deg)",
+        rotate: "10deg",
+        x: 0,
+        y: "-25px",
+        z: 0,
         //   filter: "blur(0px)",
       }
     ),
@@ -386,7 +408,10 @@ const section = () => {
         scale: 1,
         opacity: 1,
         transformOrigin: "50% 0%",
-        translate3d: "0,-25px,0",
+        // translate3d: "0,-25px,0",
+        x: 0,
+        y: "-25px",
+        z: 0,
         transform: "translate(-50%, -50%)",
       }
     ),
@@ -406,7 +431,10 @@ const section = () => {
       scale: 1,
       opacity: 1,
       transformOrigin: "50% 0%",
-      transform: "translate3d(0,-25px,0)",
+      // transform: "translate3d(0,-25px,0)",
+      x: 0,
+      y: "-25px",
+      z: 0,
     }),
   });
 
@@ -451,7 +479,10 @@ const section = () => {
         scale: 1,
         opacity: 1,
         transformOrigin: "50% 0%",
-        translate3d: "0,-25px,0",
+        // translate3d: "0,-25px,0",
+        x: 0,
+        y: "-25px",
+        z: 0,
         transform: "translate(-50%, -50%)",
       }
     ),
