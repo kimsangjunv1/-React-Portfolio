@@ -53,6 +53,23 @@ const gsaps = () => {
       }
     ),
   });
+  ScrollTrigger.create({
+    // 어디에 닿으면 반응할건지
+    trigger: ".editorial_two",
+    scrub: 1,
+    // 어디다가 적용할건지
+    animation: gsap.fromTo(
+      ".cursor div div",
+      {
+        borderColor: "white",
+        // background: "linear-gradient(180deg, #000000, #00000000)",
+      },
+      {
+        borderColor: "black",
+        // background: "linear-gradient(180deg, #ededf4, #ededf400)",
+      }
+    ),
+  });
 
   ScrollTrigger.create({
     // 어디에 닿으면 반응할건지
@@ -68,6 +85,25 @@ const gsaps = () => {
       {
         color: "#fff",
         background: "linear-gradient(180deg, #000000, #00000000)",
+      }
+    ),
+  });
+
+  ScrollTrigger.create({
+    // 어디에 닿으면 반응할건지
+    trigger: ".pin2",
+    scrub: 1,
+    // 어디다가 적용할건지
+    animation: gsap.fromTo(
+      ".cursor div div",
+
+      {
+        borderColor: "black",
+        // background: "linear-gradient(180deg, #ededf4, #ededf400)",
+      },
+      {
+        borderColor: "white",
+        // background: "linear-gradient(180deg, #000000, #00000000)",
       }
     ),
   });

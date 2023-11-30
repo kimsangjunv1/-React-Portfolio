@@ -53,7 +53,10 @@ const Header = () => {
     <header id="header" ref={headerBox}>
       <a href="#main">
         <img src={Logo} alt="헤더 로고" />
-        KIMSANGJUN
+        <div>
+          <p>2023 프론트엔드</p>
+          <p>김상준 포트-폴리오</p>
+        </div>
       </a>
       <div className="menu_cont">
         <a href="#javascript">기술</a>
