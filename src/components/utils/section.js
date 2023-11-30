@@ -155,120 +155,96 @@ const section = () => {
   // });
 
   //   섹션 2
-  ScrollTrigger.create({
-    // 어디에 닿으면 반응할건지
-    trigger: ".section2_cont",
-    scrub: 1,
-    // 어디다가 적용할건지
-    animation: gsap.fromTo(
-      ".section .lama",
-      {
-        right: "-300px",
-      },
-      {
-        right: "0px",
-      }
-    ),
-  });
+  // ScrollTrigger.create({
+  //   // 어디에 닿으면 반응할건지
+  //   trigger: ".section2_cont",
+  //   scrub: 1,
+  //   // 어디다가 적용할건지
+  //   animation: gsap.fromTo(
+  //     ".section .lama",
+  //     {
+  //       right: "-300px",
+  //     },
+  //     {
+  //       right: "0px",
+  //     }
+  //   ),
+  // });
 
+  // ScrollTrigger.create({
+  //   trigger: ".section2_cont",
+  //   scrub: 1,
+  //   animation: gsap.fromTo(
+  //     ".n1",
+  //     {
+  //       scale: (1.4, 1.4),
+  //       opacity: 0,
+  //       transformOrigin: "1300px 18px",
+  //       transform: "translate(0,50px)",
+  //       filter: "blur(15px)",
+  //     },
+  //     {
+  //       scale: 1,
+  //       opacity: 1,
+  //       transformOrigin: "50% 0%",
+  //       transform: "translate3d(0,-30px,0)",
+  //       filter: "blur(0px)",
+  //     }
+  //   ),
+  // });
+  // ScrollTrigger.create({
+  //   trigger: ".section2_cont",
+  //   scrub: 1,
+  //   animation: gsap.fromTo(
+  //     ".n2",
+  //     {
+  //       scale: (1.3, 1.3),
+  //       opacity: 0,
+  //       transformOrigin: "900px 18px",
+  //       transform: "translate(0,50px)",
+  //       filter: "blur(7px)",
+  //     },
+  //     {
+  //       scale: 1,
+  //       opacity: 1,
+  //       transformOrigin: "50% 0%",
+  //       // transform: "translate3d(0,-25px,0)",
+  //       x: 0,
+  //       y: "-25px",
+  //       z: 0,
+  //       filter: "blur(0px)",
+  //     }
+  //   ),
+  // });
+  // ScrollTrigger.create({
+  //   trigger: ".section2_cont",
+  //   scrub: 1,
+  //   animation: gsap.fromTo(
+  //     ".n3",
+  //     {
+  //       scale: (1.3, 1.3),
+  //       opacity: 0,
+  //       transformOrigin: "500px 18px",
+  //       transform: "translate(0,50px)",
+  //       filter: "blur(2px)",
+  //     },
+  //     {
+  //       scale: 1,
+  //       opacity: 1,
+  //       transformOrigin: "50% 0%",
+  //       // transform: "translate3d(0,-25px,0)",
+  //       x: 0,
+  //       y: "-25px",
+  //       z: 0,
+  //       filter: "blur(0px)",
+  //     }
+  //   ),
+  // });
   ScrollTrigger.create({
     trigger: ".section2_cont",
     scrub: 1,
     animation: gsap.fromTo(
-      ".n1",
-      {
-        scale: (1.4, 1.4),
-        opacity: 0,
-        transformOrigin: "1300px 18px",
-        transform: "translate(0,50px)",
-        filter: "blur(15px)",
-      },
-      {
-        scale: 1,
-        opacity: 1,
-        transformOrigin: "50% 0%",
-        transform: "translate3d(0,-30px,0)",
-        filter: "blur(0px)",
-      }
-    ),
-  });
-  ScrollTrigger.create({
-    trigger: ".section2_cont",
-    scrub: 1,
-    animation: gsap.fromTo(
-      ".n2",
-      {
-        scale: (1.3, 1.3),
-        opacity: 0,
-        transformOrigin: "900px 18px",
-        transform: "translate(0,50px)",
-        filter: "blur(7px)",
-      },
-      {
-        scale: 1,
-        opacity: 1,
-        transformOrigin: "50% 0%",
-        // transform: "translate3d(0,-25px,0)",
-        x: 0,
-        y: "-25px",
-        z: 0,
-        filter: "blur(0px)",
-      }
-    ),
-  });
-  ScrollTrigger.create({
-    trigger: ".section2_cont",
-    scrub: 1,
-    animation: gsap.fromTo(
-      ".n3",
-      {
-        scale: (1.3, 1.3),
-        opacity: 0,
-        transformOrigin: "500px 18px",
-        transform: "translate(0,50px)",
-        filter: "blur(2px)",
-      },
-      {
-        scale: 1,
-        opacity: 1,
-        transformOrigin: "50% 0%",
-        // transform: "translate3d(0,-25px,0)",
-        x: 0,
-        y: "-25px",
-        z: 0,
-        filter: "blur(0px)",
-      }
-    ),
-  });
-  ScrollTrigger.create({
-    trigger: ".section2_cont",
-    scrub: 1,
-    animation: gsap.fromTo(
-      ".n4",
-      {
-        scale: (1.3, 1.3),
-        // opacity: 0,
-        transformOrigin: "500px 18px",
-        transform: "translate(0,50px)",
-        // filter: "blur(4px)",
-      },
-      {
-        scale: 1,
-        // opacity: 1,
-        transformOrigin: "50% 0%",
-        // transform: "translate3d(0,-25px,0)",
-        x: 0,
-        y: "-25px",
-        z: 0,
-        // filter: "blur(0px)",
-      }
-    ),
-  });
-  ScrollTrigger.create({
-    trigger: ".section2_cont",
-    scrub: 1,
-    animation: gsap.fromTo(
-      ".n5",
+      ".section2_desc .title",
       {
         scale: (1.3, 1.3),
         // opacity: 0,
@@ -292,7 +268,7 @@ const section = () => {
     trigger: ".section2_cont",
     scrub: 1,
     animation: gsap.fromTo(
-      ".n6",
+      ".section2_desc .desc",
       {
         scale: (1.3, 1.3),
         // opacity: 0,
@@ -312,30 +288,54 @@ const section = () => {
       }
     ),
   });
-  ScrollTrigger.create({
-    trigger: ".section2_cont",
-    scrub: 1,
-    animation: gsap.fromTo(
-      ".n7",
-      {
-        scale: (1.3, 1.3),
-        opacity: 0,
-        transformOrigin: "500px 18px",
-        transform: "translate(0,50px)",
-        filter: "blur(4px)",
-      },
-      {
-        scale: 1,
-        opacity: 1,
-        transformOrigin: "50% 0%",
-        // transform: "translate3d(0,-25px,0)",
-        x: 0,
-        y: "-25px",
-        z: 0,
-        filter: "blur(0px)",
-      }
-    ),
-  });
+  // ScrollTrigger.create({
+  //   trigger: ".section2_cont",
+  //   scrub: 1,
+  //   animation: gsap.fromTo(
+  //     ".n6",
+  //     {
+  //       scale: (1.3, 1.3),
+  //       // opacity: 0,
+  //       transformOrigin: "500px 18px",
+  //       transform: "translate(0,50px)",
+  //       // filter: "blur(4px)",
+  //     },
+  //     {
+  //       scale: 1,
+  //       // opacity: 1,
+  //       transformOrigin: "50% 0%",
+  //       // transform: "translate3d(0,-25px,0)",
+  //       x: 0,
+  //       y: "-25px",
+  //       z: 0,
+  //       // filter: "blur(0px)",
+  //     }
+  //   ),
+  // });
+  // ScrollTrigger.create({
+  //   trigger: ".section2_cont",
+  //   scrub: 1,
+  //   animation: gsap.fromTo(
+  //     ".n7",
+  //     {
+  //       scale: (1.3, 1.3),
+  //       opacity: 0,
+  //       transformOrigin: "500px 18px",
+  //       transform: "translate(0,50px)",
+  //       filter: "blur(4px)",
+  //     },
+  //     {
+  //       scale: 1,
+  //       opacity: 1,
+  //       transformOrigin: "50% 0%",
+  //       // transform: "translate3d(0,-25px,0)",
+  //       x: 0,
+  //       y: "-25px",
+  //       z: 0,
+  //       filter: "blur(0px)",
+  //     }
+  //   ),
+  // });
   ScrollTrigger.create({
     trigger: ".section2_cont",
     scrub: 1,
@@ -465,39 +465,39 @@ const section = () => {
   // gsap.set(".skewElem", { transformOrigin: "right center", force3D: true });
 
   //   섹션 5
-  ScrollTrigger.create({
-    trigger: ".section5_fixed",
-    scrub: 1,
-    animation: gsap.fromTo(
-      ".section5_fixed",
-      {
-        scale: (1.3, 1.3),
-        opacity: 0,
-        transformOrigin: "900px 18px",
-        transform: "translate(-50%, -50%)",
-      },
-      {
-        scale: 1,
-        opacity: 1,
-        transformOrigin: "50% 0%",
-        // translate3d: "0,-25px,0",
-        x: 0,
-        y: "-25px",
-        z: 0,
-        transform: "translate(-50%, -50%)",
-      }
-    ),
-  });
+  // ScrollTrigger.create({
+  //   trigger: ".section5_fixed",
+  //   scrub: 1,
+  //   animation: gsap.fromTo(
+  //     ".section5_fixed",
+  //     {
+  //       scale: (1.3, 1.3),
+  //       opacity: 0,
+  //       transformOrigin: "900px 18px",
+  //       transform: "translate(-50%, -50%)",
+  //     },
+  //     {
+  //       scale: 1,
+  //       opacity: 1,
+  //       transformOrigin: "50% 0%",
+  //       // translate3d: "0,-25px,0",
+  //       x: 0,
+  //       y: "-25px",
+  //       z: 0,
+  //       transform: "translate(-50%, -50%)",
+  //     }
+  //   ),
+  // });
 
-  ScrollTrigger.create({
-    scrub: 1,
-    animation: gsap.from(".section3_item_bottom", {
-      transform: "translatex(0%)",
-    }),
-    animation: gsap.to(".section3_item_bottom", {
-      transform: "translatex(-50%)",
-    }),
-  });
+  // ScrollTrigger.create({
+  //   scrub: 1,
+  //   animation: gsap.from(".section3_item_bottom", {
+  //     transform: "translatex(0%)",
+  //   }),
+  //   animation: gsap.to(".section3_item_bottom", {
+  //     transform: "translatex(-50%)",
+  //   }),
+  // });
 
   // 섹션 5.5
   // 사이트 타입
@@ -966,39 +966,39 @@ const section = () => {
     }),
   });
 
-  ScrollTrigger.create({
-    scrub: 1,
-    animation: gsap.fromTo(
-      ".lama_fur_test",
-      {
-        rotate: "-100",
-        x: "-4000",
-        y: "2500",
-      },
-      {
-        rotate: "+=150",
-        x: "3000",
-        y: "-1000",
-      }
-    ),
-  });
+  // ScrollTrigger.create({
+  //   scrub: 1,
+  //   animation: gsap.fromTo(
+  //     ".lama_fur_test",
+  //     {
+  //       rotate: "-100",
+  //       x: "-4000",
+  //       y: "2500",
+  //     },
+  //     {
+  //       rotate: "+=150",
+  //       x: "3000",
+  //       y: "-1000",
+  //     }
+  //   ),
+  // });
 
-  ScrollTrigger.create({
-    scrub: 0.1,
-    animation: gsap.fromTo(
-      ".lama_fur_top",
-      {
-        // rotate: "-100",
-        // x: "4000",
-        y: "-800",
-      },
-      {
-        // rotate: "+=150",
-        // x: "-3000",
-        y: "100",
-      }
-    ),
-  });
+  // ScrollTrigger.create({
+  //   scrub: 0.1,
+  //   animation: gsap.fromTo(
+  //     ".lama_fur_top",
+  //     {
+  //       // rotate: "-100",
+  //       // x: "4000",
+  //       y: "-800",
+  //     },
+  //     {
+  //       // rotate: "+=150",
+  //       // x: "-3000",
+  //       y: "100",
+  //     }
+  //   ),
+  // });
 
   ScrollTrigger.create({
     scrub: 0.1,

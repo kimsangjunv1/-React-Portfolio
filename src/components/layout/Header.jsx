@@ -51,20 +51,22 @@ const Header = () => {
   }, []);
   return (
     <header id="header" ref={headerBox}>
-      <a href="#main">
-        <img src={Logo} alt="헤더 로고" />
-        <div>
-          <p>2023 프론트엔드</p>
-          <p>김상준 포트-폴리오</p>
+      <div className="header_inner">
+        <a href="#main">
+          <img src={Logo} alt="헤더 로고" />
+          <div>
+            <p>2023 프론트엔드</p>
+            <p>김상준 포트-폴리오</p>
+          </div>
+        </a>
+        <div className="menu_cont">
+          <a href="#javascript">기술</a>
+          <a href="#game">게임</a>
+          <a href="#reference">레퍼런스</a>
+          <a href="#site">사이트</a>
+          <a href="#project">프로젝트</a>
+          <a href="#vue&react">뷰/리액트</a>
         </div>
-      </a>
-      <div className="menu_cont">
-        <a href="#javascript">기술</a>
-        <a href="#game">게임</a>
-        <a href="#reference">레퍼런스</a>
-        <a href="#site">사이트</a>
-        <a href="#project">프로젝트</a>
-        <a href="#vue&react">뷰/리액트</a>
       </div>
     </header>
   );
