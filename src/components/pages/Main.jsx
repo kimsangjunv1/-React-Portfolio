@@ -66,7 +66,7 @@ const Main = () => {
         <Section_05_5 />
         <Section_06 />
         <Section_06_5 />
-        <Section_07 />
+        {/* <Section_07 /> */}
         <Section_09 />
         <Section_10 />
         <Section_11 />

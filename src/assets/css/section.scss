@@ -39,21 +39,21 @@
       right: 20%;
       transform: translate(-950%, 120%) rotate(230deg);
       // transform: translate(70%, 0);
-      width: 10vw;
+      width: 16vmin;
     }
     &:nth-child(5) {
       left: 10%;
       bottom: 10vw;
       transform: translate(780%, 110%) rotate(230deg);
       // transform: translate(70%, 0);
-      width: 10vw;
+      width: 16vmin;
     }
     &:nth-child(6) {
       bottom: 0vw;
       left: 5%;
       transform: translate(1500%, 120%) rotate(230deg);
       // transform: translate(70%, 0);
-      width: 10vw;
+      width: 16vmin;
     }
     &:nth-child(7) {
       z-index: 0;
@@ -85,14 +85,14 @@
       transform: translate(-750%, 800%) rotate(-230deg);
       // transform: translate(-60%, 0);
       top: -450px;
-      width: 10vw;
+      width: 16vmin;
     }
     &:nth-child(11) {
       left: 20%;
       transform: translate(500%, 1600%) rotate(200deg);
       // transform: translate(-50%, 0);
       top: -450px;
-      width: 10vw;
+      width: 16vmin;
     }
   }
   // &::after {

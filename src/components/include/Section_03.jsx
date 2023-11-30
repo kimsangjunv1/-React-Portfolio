@@ -9,6 +9,13 @@ import section3_img_005 from "./../../assets/img/section3_img_005.jpg";
 import section3_img_006 from "./../../assets/img/section3_img_006.jpg";
 
 const Section_03 = () => {
+  const data = [
+    {
+      name: "dsad",
+      desc: "asd",
+      github: "asd",
+    },
+  ];
   return (
     <section id="javascript" className="horizontal">
       <div className="section3_fixed">
