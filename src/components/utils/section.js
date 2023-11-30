@@ -32,7 +32,7 @@ const section = () => {
     animation: gsap.fromTo(
       ".dust_02",
       {
-        transform: "translate(-50%,-100%) rotate(0deg)",
+        transform: "translate(-50%,0) rotate(0deg)",
       },
       {
         transform: "translate(-500%,-120%) scale(4.0) rotate(200deg)",
@@ -48,7 +48,7 @@ const section = () => {
     animation: gsap.fromTo(
       ".dust_03",
       {
-        transform: "translate(70%,-50%) rotate(0deg)",
+        transform: "translate(70%,0) rotate(0deg)",
       },
       {
         transform: "translate(300%,-200%) scale(1.5) rotate(200deg)",
@@ -128,11 +128,12 @@ const section = () => {
     animation: gsap.fromTo(
       ".dust_11",
       {
-        transform: "translate(-60%,0) rotate(0deg)",
+        transform: "translate(-60%,0) rotate(20deg)",
+        filter: "blur(3px)",
       },
       {
         transform: "translate(-500%,-120%) scale(2.0) rotate(200deg)",
-        filter: "blur(3px)",
+        filter: "blur(10px)",
       }
     ),
   });
@@ -500,331 +501,331 @@ const section = () => {
 
   // 섹션 5.5
   // 사이트 타입
-  let mm2 = gsap.matchMedia();
-  mm2.add("(min-width: 700px)", () => {
-    ScrollTrigger.create({
-      trigger: ".bg_change_purple",
-      scrub: 1,
+  // let mm2 = gsap.matchMedia();
+  // mm2.add("(min-width: 700px)", () => {
+  //   ScrollTrigger.create({
+  //     trigger: ".bg_change_purple",
+  //     scrub: 1,
 
-      animation: gsap.fromTo(
-        ".section6p7_title",
-        {
-          transform: "skew(5deg,5deg) rotate(360deg)",
-          yPercent: "150",
-        },
-        {
-          transform: "skew(37deg, 349deg) rotate(40deg)",
-          yPercent: "-3000",
-        }
-      ),
-    });
-    ScrollTrigger.create({
-      trigger: ".custom_color_dark",
-      scrub: 1,
+  //     animation: gsap.fromTo(
+  //       ".section6p7_title",
+  //       {
+  //         transform: "skew(5deg,5deg) rotate(360deg)",
+  //         yPercent: "150",
+  //       },
+  //       {
+  //         transform: "skew(37deg, 349deg) rotate(40deg)",
+  //         yPercent: "-3000",
+  //       }
+  //     ),
+  //   });
+  //   ScrollTrigger.create({
+  //     trigger: ".custom_color_dark",
+  //     scrub: 1,
 
-      animation: gsap.fromTo(
-        ".section6p5_title",
-        {
-          transform: "skew(5deg,5deg) rotate(360deg)",
-          yPercent: "50",
-        },
-        {
-          transform: "skew(37deg, 349deg) rotate(60deg)",
-          yPercent: "500",
-        }
-      ),
-    });
-    ScrollTrigger.create({
-      trigger: ".custom_color_dark",
-      scrub: 1,
+  //     animation: gsap.fromTo(
+  //       ".section6p5_title",
+  //       {
+  //         transform: "skew(5deg,5deg) rotate(360deg)",
+  //         yPercent: "50",
+  //       },
+  //       {
+  //         transform: "skew(37deg, 349deg) rotate(60deg)",
+  //         yPercent: "500",
+  //       }
+  //     ),
+  //   });
+  //   ScrollTrigger.create({
+  //     trigger: ".custom_color_dark",
+  //     scrub: 1,
 
-      animation: gsap.fromTo(
-        ".s5p5_1",
-        {
-          transform: "skew(346deg, 354deg) rotate(340deg)",
-          yPercent: "50",
-        },
-        {
-          transform: "skew(336deg, 334deg) rotate(20deg)",
-          yPercent: "0",
-        }
-      ),
-    });
-    ScrollTrigger.create({
-      trigger: ".custom_color_dark",
-      scrub: 1,
+  //     animation: gsap.fromTo(
+  //       ".s5p5_1",
+  //       {
+  //         transform: "skew(346deg, 354deg) rotate(340deg)",
+  //         yPercent: "50",
+  //       },
+  //       {
+  //         transform: "skew(336deg, 334deg) rotate(20deg)",
+  //         yPercent: "0",
+  //       }
+  //     ),
+  //   });
+  //   ScrollTrigger.create({
+  //     trigger: ".custom_color_dark",
+  //     scrub: 1,
 
-      animation: gsap.fromTo(
-        ".site_type_01_desc",
-        {
-          transform: "skew(0deg, 0deg) rotate(340deg)",
-          yPercent: "100",
-        },
-        {
-          transform: "skew(3deg, 3deg) rotate(10deg)",
-          yPercent: "0",
-        }
-      ),
-    });
+  //     animation: gsap.fromTo(
+  //       ".site_type_01_desc",
+  //       {
+  //         transform: "skew(0deg, 0deg) rotate(340deg)",
+  //         yPercent: "100",
+  //       },
+  //       {
+  //         transform: "skew(3deg, 3deg) rotate(10deg)",
+  //         yPercent: "0",
+  //       }
+  //     ),
+  //   });
 
-    // 사이트 타입 2
-    ScrollTrigger.create({
-      trigger: ".custom_color_dark",
-      scrub: 1,
+  //   // 사이트 타입 2
+  //   ScrollTrigger.create({
+  //     trigger: ".custom_color_dark",
+  //     scrub: 1,
 
-      animation: gsap.fromTo(
-        ".s5p5_4",
-        {
-          transform: "skew(19deg, 10deg) rotate(340deg)",
-          yPercent: "50",
-        },
-        {
-          transform: "skew(10deg, 29deg) rotate(20deg)",
-          yPercent: "0",
-        }
-      ),
-    });
-    ScrollTrigger.create({
-      trigger: ".custom_color_dark",
-      scrub: 1,
+  //     animation: gsap.fromTo(
+  //       ".s5p5_4",
+  //       {
+  //         transform: "skew(19deg, 10deg) rotate(340deg)",
+  //         yPercent: "50",
+  //       },
+  //       {
+  //         transform: "skew(10deg, 29deg) rotate(20deg)",
+  //         yPercent: "0",
+  //       }
+  //     ),
+  //   });
+  //   ScrollTrigger.create({
+  //     trigger: ".custom_color_dark",
+  //     scrub: 1,
 
-      animation: gsap.fromTo(
-        ".site_type_02_desc",
-        {
-          transform: "skew(340deg, 360deg) rotate(340deg)",
-          yPercent: "100",
-        },
-        {
-          transform: "skew(360deg, 340deg) rotate(20deg)",
-          yPercent: "0",
-        }
-      ),
-    });
+  //     animation: gsap.fromTo(
+  //       ".site_type_02_desc",
+  //       {
+  //         transform: "skew(340deg, 360deg) rotate(340deg)",
+  //         yPercent: "100",
+  //       },
+  //       {
+  //         transform: "skew(360deg, 340deg) rotate(20deg)",
+  //         yPercent: "0",
+  //       }
+  //     ),
+  //   });
 
-    // 사이트 타입 3
-    ScrollTrigger.create({
-      trigger: ".custom_color_dark",
-      scrub: 1,
+  //   // 사이트 타입 3
+  //   ScrollTrigger.create({
+  //     trigger: ".custom_color_dark",
+  //     scrub: 1,
 
-      animation: gsap.fromTo(
-        ".s5p5_7",
-        {
-          transform: "skew(346deg, 354deg) rotate(340deg)",
-          yPercent: "50",
-        },
-        {
-          transform: "skew(336deg, 334deg) rotate(20deg)",
-          yPercent: "0",
-        }
-      ),
-    });
-    ScrollTrigger.create({
-      trigger: ".custom_color_dark",
-      scrub: 1,
+  //     animation: gsap.fromTo(
+  //       ".s5p5_7",
+  //       {
+  //         transform: "skew(346deg, 354deg) rotate(340deg)",
+  //         yPercent: "50",
+  //       },
+  //       {
+  //         transform: "skew(336deg, 334deg) rotate(20deg)",
+  //         yPercent: "0",
+  //       }
+  //     ),
+  //   });
+  //   ScrollTrigger.create({
+  //     trigger: ".custom_color_dark",
+  //     scrub: 1,
 
-      animation: gsap.fromTo(
-        ".site_type_03_desc",
-        {
-          transform: "skew(0deg, 0deg) rotate(340deg)",
-          yPercent: "100",
-        },
-        {
-          transform: "skew(3deg, 3deg) rotate(10deg)",
-          yPercent: "0",
-        }
-      ),
-    });
+  //     animation: gsap.fromTo(
+  //       ".site_type_03_desc",
+  //       {
+  //         transform: "skew(0deg, 0deg) rotate(340deg)",
+  //         yPercent: "100",
+  //       },
+  //       {
+  //         transform: "skew(3deg, 3deg) rotate(10deg)",
+  //         yPercent: "0",
+  //       }
+  //     ),
+  //   });
 
-    // 사이트 타입 4
-    ScrollTrigger.create({
-      trigger: ".bg_change_purple",
-      scrub: 1,
+  //   // 사이트 타입 4
+  //   // ScrollTrigger.create({
+  //   //   trigger: ".bg_change_purple",
+  //   //   scrub: 1,
 
-      animation: gsap.fromTo(
-        ".s6p5_1",
-        {
-          transform: "skew(1deg, 350deg) rotate(340deg) scale(2.1)",
-          yPercent: "100",
-        },
-        {
-          transform: "skew(136deg, 34deg) rotate(20deg) scale(2.1)",
-          yPercent: "-1500",
-        }
-      ),
-    });
-    ScrollTrigger.create({
-      trigger: ".bg_change_purple",
-      scrub: 1,
+  //   //   animation: gsap.fromTo(
+  //   //     ".s6p5_1",
+  //   //     {
+  //   //       transform: "skew(1deg, 350deg) rotate(340deg) scale(2.1)",
+  //   //       yPercent: "100",
+  //   //     },
+  //   //     {
+  //   //       transform: "skew(136deg, 34deg) rotate(20deg) scale(2.1)",
+  //   //       yPercent: "-1500",
+  //   //     }
+  //   //   ),
+  //   // });
+  //   // ScrollTrigger.create({
+  //   //   trigger: ".bg_change_purple",
+  //   //   scrub: 1,
 
-      animation: gsap.fromTo(
-        ".s6p5_2",
-        {
-          transform: "skew(346deg, 354deg) rotate(340deg)",
-          yPercent: "50",
-        },
-        {
-          transform: "skew(336deg, 334deg) rotate(20deg)",
-          yPercent: "0",
-        }
-      ),
-    });
-    ScrollTrigger.create({
-      trigger: ".bg_change_purple",
-      scrub: 1,
+  //   //   animation: gsap.fromTo(
+  //   //     ".s6p5_2",
+  //   //     {
+  //   //       transform: "skew(346deg, 354deg) rotate(340deg)",
+  //   //       yPercent: "50",
+  //   //     },
+  //   //     {
+  //   //       transform: "skew(336deg, 334deg) rotate(20deg)",
+  //   //       yPercent: "0",
+  //   //     }
+  //   //   ),
+  //   // });
+  //   ScrollTrigger.create({
+  //     trigger: ".bg_change_purple",
+  //     scrub: 1,
 
-      animation: gsap.fromTo(
-        ".site_type_04_desc",
-        {
-          transform: "skew(0deg, 0deg) rotate(340deg)",
-          yPercent: "100",
-        },
-        {
-          transform: "skew(3deg, 3deg) rotate(10deg)",
-          yPercent: "0",
-        }
-      ),
-    });
+  //     animation: gsap.fromTo(
+  //       ".site_type_04_desc",
+  //       {
+  //         transform: "skew(0deg, 0deg) rotate(340deg)",
+  //         yPercent: "100",
+  //       },
+  //       {
+  //         transform: "skew(3deg, 3deg) rotate(10deg)",
+  //         yPercent: "0",
+  //       }
+  //     ),
+  //   });
 
-    // 사이트 타입 5
-    ScrollTrigger.create({
-      trigger: ".bg_change_purple",
-      scrub: 1,
+  //   // 사이트 타입 5
+  //   ScrollTrigger.create({
+  //     trigger: ".bg_change_purple",
+  //     scrub: 1,
 
-      animation: gsap.fromTo(
-        ".s6p5_4",
-        {
-          transform: "skew(346deg, 354deg) rotate(320deg) scale(1.8)",
-          yPercent: "100",
-        },
-        {
-          transform: "skew(360deg, 334deg) rotate(20deg) scale(1.8)",
-          yPercent: "-1500",
-        }
-      ),
-    });
-    ScrollTrigger.create({
-      trigger: ".bg_change_purple",
-      scrub: 1,
+  //     animation: gsap.fromTo(
+  //       ".s6p5_4",
+  //       {
+  //         transform: "skew(346deg, 354deg) rotate(320deg) scale(1.8)",
+  //         yPercent: "100",
+  //       },
+  //       {
+  //         transform: "skew(360deg, 334deg) rotate(20deg) scale(1.8)",
+  //         yPercent: "-1500",
+  //       }
+  //     ),
+  //   });
+  //   ScrollTrigger.create({
+  //     trigger: ".bg_change_purple",
+  //     scrub: 1,
 
-      animation: gsap.fromTo(
-        ".site_type_05_desc",
-        {
-          transform: "skew(0deg, 0deg) rotate(340deg)",
-          yPercent: "100",
-        },
-        {
-          transform: "skew(3deg, 3deg) rotate(10deg)",
-          yPercent: "0",
-        }
-      ),
-    });
+  //     animation: gsap.fromTo(
+  //       ".site_type_05_desc",
+  //       {
+  //         transform: "skew(0deg, 0deg) rotate(340deg)",
+  //         yPercent: "100",
+  //       },
+  //       {
+  //         transform: "skew(3deg, 3deg) rotate(10deg)",
+  //         yPercent: "0",
+  //       }
+  //     ),
+  //   });
 
-    // 사이트 타입 6
-    ScrollTrigger.create({
-      trigger: ".bg_change_purple",
-      scrub: 1,
+  //   // 사이트 타입 6
+  //   ScrollTrigger.create({
+  //     trigger: ".bg_change_purple",
+  //     scrub: 1,
 
-      animation: gsap.fromTo(
-        ".s6p5_7",
-        {
-          transform: "skew(15deg, 4deg) rotate(0deg) scale(1.8)",
-          yPercent: "100",
-        },
-        {
-          transform: "skew(15deg, 4deg) rotate(21deg) scale(1.8)",
-          yPercent: "-1500",
-        }
-      ),
-    });
-    ScrollTrigger.create({
-      trigger: ".bg_change_purple",
-      scrub: 1,
+  //     animation: gsap.fromTo(
+  //       ".s6p5_7",
+  //       {
+  //         transform: "skew(15deg, 4deg) rotate(0deg) scale(1.8)",
+  //         yPercent: "100",
+  //       },
+  //       {
+  //         transform: "skew(15deg, 4deg) rotate(21deg) scale(1.8)",
+  //         yPercent: "-1500",
+  //       }
+  //     ),
+  //   });
+  //   ScrollTrigger.create({
+  //     trigger: ".bg_change_purple",
+  //     scrub: 1,
 
-      animation: gsap.fromTo(
-        ".site_type_06_desc",
-        {
-          transform: "skew(340deg, 340deg) rotate(340deg)",
-          yPercent: "100",
-        },
-        {
-          transform: "skew(0deg, 0deg) rotate(10deg)",
-          yPercent: "0",
-        }
-      ),
-    });
+  //     animation: gsap.fromTo(
+  //       ".site_type_06_desc",
+  //       {
+  //         transform: "skew(340deg, 340deg) rotate(340deg)",
+  //         yPercent: "100",
+  //       },
+  //       {
+  //         transform: "skew(0deg, 0deg) rotate(10deg)",
+  //         yPercent: "0",
+  //       }
+  //     ),
+  //   });
 
-    // 사이트 타입 7
-    ScrollTrigger.create({
-      trigger: ".s6p5_10",
-      scrub: 1,
+  //   // 사이트 타입 7
+  //   ScrollTrigger.create({
+  //     trigger: ".s6p5_10",
+  //     scrub: 1,
 
-      animation: gsap.fromTo(
-        ".s6p5_10",
-        {
-          transform: "skew(9deg, 19deg) rotate(340deg) scale(1.9)",
-          yPercent: "50",
-          // filter: "blur(20px)",
-        },
-        {
-          transform: "skew(6deg, 10deg) rotate(20deg) scale(1.9)",
-          yPercent: "0",
-          // filter: "blur(0px)",
-        }
-      ),
-    });
-    ScrollTrigger.create({
-      trigger: ".s6p5_10",
-      scrub: 1,
+  //     animation: gsap.fromTo(
+  //       ".s6p5_10",
+  //       {
+  //         transform: "skew(9deg, 19deg) rotate(340deg) scale(1.9)",
+  //         yPercent: "50",
+  //         // filter: "blur(20px)",
+  //       },
+  //       {
+  //         transform: "skew(6deg, 10deg) rotate(20deg) scale(1.9)",
+  //         yPercent: "0",
+  //         // filter: "blur(0px)",
+  //       }
+  //     ),
+  //   });
+  //   ScrollTrigger.create({
+  //     trigger: ".s6p5_10",
+  //     scrub: 1,
 
-      animation: gsap.fromTo(
-        ".s6p5_11",
-        {
-          transform: "skew(346deg, 354deg) rotate(340deg)",
-          yPercent: "50",
-          // filter: "blur(20px)",
-        },
-        {
-          transform: "skew(336deg, 344deg) rotate(20deg)",
-          yPercent: "0",
-          // filter: "blur(0px)",
-        }
-      ),
-    });
-    ScrollTrigger.create({
-      trigger: ".bg_change_purple",
-      scrub: 1,
+  //     animation: gsap.fromTo(
+  //       ".s6p5_11",
+  //       {
+  //         transform: "skew(346deg, 354deg) rotate(340deg)",
+  //         yPercent: "50",
+  //         // filter: "blur(20px)",
+  //       },
+  //       {
+  //         transform: "skew(336deg, 344deg) rotate(20deg)",
+  //         yPercent: "0",
+  //         // filter: "blur(0px)",
+  //       }
+  //     ),
+  //   });
+  //   ScrollTrigger.create({
+  //     trigger: ".bg_change_purple",
+  //     scrub: 1,
 
-      animation: gsap.fromTo(
-        ".site_type_07_desc",
-        {
-          transform: "skew(0deg, 0deg) rotate(210deg)",
-          yPercent: "100",
-          // filter: "blur(20px)",
-        },
-        {
-          transform: "skew(3deg, 3deg) rotate(360deg)",
-          yPercent: "0",
-          // filter: "blur(0px)",
-        }
-      ),
-    });
+  //     animation: gsap.fromTo(
+  //       ".site_type_07_desc",
+  //       {
+  //         transform: "skew(0deg, 0deg) rotate(210deg)",
+  //         yPercent: "100",
+  //         // filter: "blur(20px)",
+  //       },
+  //       {
+  //         transform: "skew(3deg, 3deg) rotate(360deg)",
+  //         yPercent: "0",
+  //         // filter: "blur(0px)",
+  //       }
+  //     ),
+  //   });
 
-    // 파티클
-    ScrollTrigger.create({
-      // trigger: ".section5_fixed",
-      scrub: 1,
-      animation: gsap.from(".ball_cont", {
-        // transform: "translatey(-200%)",
-        y: -7500,
-        // y: -3500,
-      }),
-      animation: gsap.to(".ball_cont", {
-        // transform: "translatey(1000%)",
-        y: 800,
-        // y: 3000,
-      }),
-    });
-  });
+  //   // 파티클
+  //   ScrollTrigger.create({
+  //     // trigger: ".section5_fixed",
+  //     scrub: 1,
+  //     animation: gsap.from(".ball_cont", {
+  //       // transform: "translatey(-200%)",
+  //       y: -7500,
+  //       // y: -3500,
+  //     }),
+  //     animation: gsap.to(".ball_cont", {
+  //       // transform: "translatey(1000%)",
+  //       y: 800,
+  //       // y: 3000,
+  //     }),
+  //   });
+  // });
 
   // 섹션 3_i001 ~ i006
   ScrollTrigger.create({
@@ -1416,44 +1417,44 @@ const section = () => {
   var animation2;
 
   gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
-  let mm3 = gsap.matchMedia();
-  mm3.add("(min-width: 700px)", () => {
-    gsap.set("#motionSVG2", { scale: 0.7, autoAlpha: 1 });
-    gsap.set("#tractor2", { transformOrigin: "50% 50%" });
+  // let mm3 = gsap.matchMedia();
+  // mm3.add("(min-width: 700px)", () => {
+  //   gsap.set("#motionSVG2", { scale: 0.7, autoAlpha: 1 });
+  //   gsap.set("#tractor2", { transformOrigin: "50% 50%" });
 
-    animation2 = gsap.to("#motionSVG2", {
-      scrollTrigger: {
-        trigger: "#motionPath2",
-        start: "top 130%",
-        scrub: 1,
-        // markers: true,
-      },
-      duration: 10,
-      ease: "none",
-      immediateRender: true,
-      motionPath: {
-        path: "#motionPath2",
-        align: "#motionPath2",
-        alignOrigin: [0.5, 0.5],
-        // autoRotate: 270,
-      },
-    });
+  //   animation2 = gsap.to("#motionSVG2", {
+  //     scrollTrigger: {
+  //       trigger: "#motionPath2",
+  //       start: "top 130%",
+  //       scrub: 1,
+  //       // markers: true,
+  //     },
+  //     duration: 10,
+  //     ease: "none",
+  //     immediateRender: true,
+  //     motionPath: {
+  //       path: "#motionPath2",
+  //       align: "#motionPath2",
+  //       alignOrigin: [0.5, 0.5],
+  //       // autoRotate: 270,
+  //     },
+  //   });
 
-    ScrollTrigger.create({
-      trigger: "#motionPath2",
-      scrub: 1,
+  //   ScrollTrigger.create({
+  //     trigger: "#motionPath2",
+  //     scrub: 1,
 
-      animation: gsap.fromTo(
-        "#motionSVG2",
-        {
-          rotate: "+=3000",
-        },
-        {
-          rotate: "+=3000",
-        }
-      ),
-    });
-  });
+  //     animation: gsap.fromTo(
+  //       "#motionSVG2",
+  //       {
+  //         rotate: "+=3000",
+  //       },
+  //       {
+  //         rotate: "+=3000",
+  //       }
+  //     ),
+  //   });
+  // });
 
   const slides = document.querySelectorAll(".t_vr");
 

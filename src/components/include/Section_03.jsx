@@ -7,6 +7,7 @@ import section3_img_003 from "./../../assets/img/section3_img_003.jpg";
 import section3_img_004 from "./../../assets/img/section3_img_004.jpg";
 import section3_img_005 from "./../../assets/img/section3_img_005.jpg";
 import section3_img_006 from "./../../assets/img/section3_img_006.jpg";
+import section3_title from "./../../assets/img/section3_title.svg";
 
 const Section_03 = () => {
   const data = [
@@ -20,8 +21,10 @@ const Section_03 = () => {
     <section id="javascript" className="horizontal">
       <div className="section3_fixed">
         <h2>
-          JAVASCRIPT <em>PRACTICE</em>
+          USED <em>STACK</em>
+          {/* JAVASCRIPT <em>PRACTICE</em> */}
         </h2>
+        {/* <img src={section3_title} alt="" /> */}
       </div>
 
       <section className="panel custom_02">

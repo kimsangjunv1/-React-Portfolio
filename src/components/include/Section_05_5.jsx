@@ -26,9 +26,9 @@ const Section_05_5 = () => {
           />
         </defs>
         <g className="parallax">
-          <use xlinkHref="#gentle-wave" x="50" y="0" fill="#161c29" />
-          <use xlinkHref="#gentle-wave" x="50" y="3" fill="#161c29cf" />
-          <use xlinkHref="#gentle-wave" x="50" y="6" fill="#161c29ad" />
+          <use xlinkHref="#gentle-wave" x="50" y="0" fill="#000000" />
+          <use xlinkHref="#gentle-wave" x="50" y="3" fill="#000000cf" />
+          <use xlinkHref="#gentle-wave" x="50" y="6" fill="#000000ad" />
         </g>
       </svg>
 

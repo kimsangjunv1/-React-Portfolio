@@ -38,7 +38,7 @@ const Section_01 = () => {
         />
         <img className="ir dust_09" src={main_dust_01} alt="먼지 1" />
         <img className="ir dust_10" src={main_dust_02} alt="먼지 2" />
-        <img className="ir dust_11" src={main_dust_03} alt="먼지 3" />
+        <img className="ir dust_11" src={main_dust_05} alt="먼지 3" />
         <img
           className="ir dust_04"
           src={main_lama_back_02}

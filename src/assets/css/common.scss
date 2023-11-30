@@ -1021,3 +1021,28 @@ body {
     }
   }
 }
+
+// 로딩
+.loading_container {
+  position: fixed;
+  background: #000000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+  .loading_container_inner {
+    background: #10c06b;
+    height: 100%;
+    width: 100%;
+    // transform: translateX(100%);
+    overflow: hidden;
+    position: relative;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

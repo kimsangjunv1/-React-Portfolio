@@ -2,6 +2,11 @@ import React, { useState } from "react";
 import Header from "../layout/Header";
 import Contents from "../layout/Contents";
 import Footer from "../layout/Footer";
+import Loading from "../layout/Loading.jsx";
+
+import { AnimatePresence } from "framer-motion";
+import imagesLoaded from "imagesloaded";
+
 // import MainCont from "../include/MainCont";
 
 import MouseComponents from "../common/MouseComponents.jsx";
@@ -37,6 +42,7 @@ const test = () => {
 
 const Main = () => {
   const [scrolled, setScrolled] = useState(0);
+  const [isLoaded, setIsLoaded] = useState(false);
   // 스크롤
   window.onscroll = function () {
     let winScroll =
@@ -46,8 +52,14 @@ const Main = () => {
       document.documentElement.clientHeight;
     setScrolled((winScroll / height) * 100);
   };
+  // 이미지 로딩
+  imagesLoaded("body", function () {
+    setIsLoaded(true);
+  });
   return (
     <>
+      <AnimatePresence>{isLoaded ? "" : <Loading />}</AnimatePresence>
+
       <Header />
       <Contents>
         {/* <PopupComponents
@@ -55,14 +67,14 @@ const Main = () => {
 						"현재 포트폴리오는 학원에 다닐때 만들었던 포트폴리오 입니다, 최근 새로 내용을 정리해 포트폴리오를 만들었습니다."
 					}
 				/> */}
-        <ImgLoader />
+        {/* <ImgLoader /> */}
         <DescFixed scrolled={scrolled} />
         <Section_01 />
         <Section_02 />
         <Section_03 />
         <Section_03_5 />
         <Section_04 />
-        <Section_05 />
+        {/* <Section_05 /> */}
         <Section_05_5 />
         <Section_06 />
         <Section_06_5 />

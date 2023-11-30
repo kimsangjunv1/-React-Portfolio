@@ -25,7 +25,7 @@ const Section_06 = () => {
           <div className="site_type_01_desc">
             <h2>PICK</h2>
             <div className="project_type">
-              <span>팀 프로젝트</span>
+              <span>개인 프로젝트</span>
               <span>담당 : 디자인 100% / 프론트 60% / 퍼블리싱 80%</span>
             </div>
             <p>
