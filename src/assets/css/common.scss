@@ -36,30 +36,30 @@ body {
   backface-visibility: none;
 }
 
-#progress {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
-  background: #000000;
-  z-index: 100000;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  user-select: none;
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blure(30px);
-}
-#progress h2 {
-  font-size: 3.4vw;
-  font-family: NexonLv1GothicLow;
-  font-weight: 100;
-  text-transform: uppercase;
-  font-weight: 100;
-  line-height: 0.7;
-}
+// #progress {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   height: 100vh;
+//   width: 100%;
+//   background: #000000;
+//   z-index: 100000;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   user-select: none;
+//   backdrop-filter: blur(30px);
+//   -webkit-backdrop-filter: blure(30px);
+// }
+// #progress h2 {
+//   font-size: 3.4vw;
+//   font-family: NexonLv1GothicLow;
+//   font-weight: 100;
+//   text-transform: uppercase;
+//   font-weight: 100;
+//   line-height: 0.7;
+// }
 .progress-text {
   font-size: 5.5vw;
   font-weight: 900;
@@ -1030,7 +1030,7 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: 10000;
+  z-index: 10000000;
   .loading_container_inner {
     background: #10c06b;
     height: 100%;
@@ -1038,11 +1038,25 @@ body {
     // transform: translateX(100%);
     overflow: hidden;
     position: relative;
-    img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    > img {
+      -webkit-animation: rubberBand 1.1s alternate 0s infinite;
+      animation: rubberBand 1.1s alternate 0s infinite;
+      animation-timing-function: cubic-bezier(1, 0.36, 0.4, 1.13);
+    }
+    .loading_info {
+      display: flex;
+      color: black;
+      font-family: "Galmuri9";
+      .title {
+        font-size: 30px;
+      }
+      .progress {
+        font-size: 30px;
+      }
     }
   }
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../layout/Header";
 import Contents from "../layout/Contents";
 import Footer from "../layout/Footer";
@@ -43,6 +43,7 @@ const test = () => {
 const Main = () => {
   const [scrolled, setScrolled] = useState(0);
   const [isLoaded, setIsLoaded] = useState(false);
+  const [loadingCount, setLoadingCount] = useState(0);
   // 스크롤
   window.onscroll = function () {
     let winScroll =
@@ -53,12 +54,45 @@ const Main = () => {
     setScrolled((winScroll / height) * 100);
   };
   // 이미지 로딩
-  imagesLoaded("body", function () {
-    setIsLoaded(true);
-  });
+  // imagesLoaded("body", function () {
+  //   setIsLoaded(true);
+  // });
+  useEffect(() => {
+    function imagesProgress() {
+      var imgLoad = imagesLoaded("body"),
+        imgTotal = imgLoad.images.length,
+        imgLoaded = 0,
+        current = 0,
+        progressTimer = setInterval(updateProgress, 2000 / 60);
+
+      imgLoad.on("progress", function () {
+        imgLoaded++;
+      });
+
+      function updateProgress() {
+        var target = (imgLoaded / imgTotal) * 100;
+
+        current += (target - current) * 0.1;
+        // $progressText.text(Math.floor(current) + "%");
+        setLoadingCount(Math.floor(current) + "%");
+
+        if (current >= 100) {
+          clearInterval(progressTimer);
+        }
+        if (current > 99.9) {
+          current = 100;
+          setIsLoaded(true);
+        }
+      }
+    }
+    imagesProgress();
+  }, []);
+
   return (
     <>
-      <AnimatePresence>{isLoaded ? "" : <Loading />}</AnimatePresence>
+      <AnimatePresence>
+        {isLoaded ? "" : <Loading count={loadingCount} />}
+      </AnimatePresence>
 
       <Header />
       <Contents>
