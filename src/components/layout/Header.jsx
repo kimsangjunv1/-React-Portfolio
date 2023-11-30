@@ -56,12 +56,12 @@ const Header = () => {
         KIMSANGJUN
       </a>
       <div className="menu_cont">
-        <a href="#javascript">Javascript</a>
-        <a href="#game">Game</a>
-        <a href="#reference">Reference</a>
-        <a href="#site">Site</a>
-        <a href="#project">Project</a>
-        <a href="#vue&react">Vue/React</a>
+        <a href="#javascript">기술</a>
+        <a href="#game">게임</a>
+        <a href="#reference">레퍼런스</a>
+        <a href="#site">사이트</a>
+        <a href="#project">프로젝트</a>
+        <a href="#vue&react">뷰/리액트</a>
       </div>
     </header>
   );

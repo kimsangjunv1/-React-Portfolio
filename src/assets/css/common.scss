@@ -933,8 +933,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 4rem;
+  height: 4rem;
   z-index: 2;
   pointer-events: none;
   z-index: 1000000;
@@ -945,10 +945,10 @@ body {
   place-items: center;
 }
 .cursor div div {
-  border: 1px solid #fff;
+  border: 1px solid #ffffff3a;
   border-radius: 50%;
   animation: pulse 2.5s linear infinite;
-  box-shadow: 0 0 50px 5px #d7abff6e;
+  //   box-shadow: 0 0 50px 5px #d7abff6e;
 }
 .cursor div:nth-child(1),
 .cursor div:nth-child(2),
@@ -968,8 +968,8 @@ body {
 .cursor div:nth-child(2) div {
   background: #fff;
   border-radius: 50%;
-  width: 4px;
-  height: 4px;
+  width: 7px;
+  height: 7px;
 }
 .cursor div:nth-child(3) div {
   z-index: -10000000;
@@ -1004,8 +1004,8 @@ body {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 75em;
-      height: 75em;
+      width: 45em;
+      height: 45em;
       margin: 0 0 0.1px;
       object-fit: contain;
       border-radius: 75em;

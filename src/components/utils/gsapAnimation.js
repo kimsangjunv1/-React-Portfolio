@@ -13,12 +13,12 @@ const gsapAnimation = () => {
   });
   gsap.to(".dust_02", {
     scrollTrigger: ".dust_02",
-    transform: "translate(-50%,0%) rotate(0deg)",
+    transform: "translate(-50%,-100%) rotate(0deg)",
     duration: 1.3,
   });
   gsap.to(".dust_03", {
     scrollTrigger: ".dust_03",
-    transform: "translate(70%,0%) rotate(0deg)",
+    transform: "translate(70%,-50%) rotate(0deg)",
     duration: 1.5,
   });
   gsap.to(".dust_04", {

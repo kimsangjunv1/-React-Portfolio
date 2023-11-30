@@ -32,7 +32,7 @@ const section = () => {
     animation: gsap.fromTo(
       ".dust_02",
       {
-        transform: "translate(-50%,0) rotate(0deg)",
+        transform: "translate(-50%,-100%) rotate(0deg)",
       },
       {
         transform: "translate(-500%,-120%) scale(4.0) rotate(200deg)",
@@ -48,7 +48,7 @@ const section = () => {
     animation: gsap.fromTo(
       ".dust_03",
       {
-        transform: "translate(70%,0) rotate(0deg)",
+        transform: "translate(70%,-50%) rotate(0deg)",
       },
       {
         transform: "translate(300%,-200%) scale(1.5) rotate(200deg)",
