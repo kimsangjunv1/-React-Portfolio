@@ -155,21 +155,21 @@ const section = () => {
   // });
 
   //   섹션 2
-  // ScrollTrigger.create({
-  //   // 어디에 닿으면 반응할건지
-  //   trigger: ".section2_cont",
-  //   scrub: 1,
-  //   // 어디다가 적용할건지
-  //   animation: gsap.fromTo(
-  //     ".section .lama",
-  //     {
-  //       right: "-300px",
-  //     },
-  //     {
-  //       right: "0px",
-  //     }
-  //   ),
-  // });
+  ScrollTrigger.create({
+    // 어디에 닿으면 반응할건지
+    trigger: ".section2_cont",
+    scrub: 1,
+    // 어디다가 적용할건지
+    animation: gsap.fromTo(
+      ".section .lama",
+      {
+        right: "-300px",
+      },
+      {
+        right: "20px",
+      }
+    ),
+  });
 
   // ScrollTrigger.create({
   //   trigger: ".section2_cont",
@@ -356,6 +356,22 @@ const section = () => {
         y: "-25px",
         z: 0,
         //   filter: "blur(0px)",
+      }
+    ),
+  });
+  ScrollTrigger.create({
+    // 어디에 닿으면 반응할건지
+    trigger: ".section4_cont",
+    scrub: 1,
+    // 어디다가 적용할건지
+    animation: gsap.fromTo(
+      ".lamas",
+      {
+        transform: "translate(70%,0) rotate(0deg)",
+      },
+      {
+        transform: "translate(300%,-200%) scale(1.5) rotate(200deg)",
+        filter: "blur(5px)",
       }
     ),
   });

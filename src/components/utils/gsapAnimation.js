@@ -64,6 +64,11 @@ const gsapAnimation = () => {
     // scale: 1,
     duration: 1.6,
   });
+  gsap.to(".lamas", {
+    scrollTrigger: ".lamas",
+    transform: "translate(70%,0) rotate(0deg)",
+    duration: 1.5,
+  });
 };
 
 export default gsapAnimation;

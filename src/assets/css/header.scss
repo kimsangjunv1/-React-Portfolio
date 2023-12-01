@@ -14,6 +14,9 @@
     // width: 100%;
     // margin: 0 auto;
     padding: 0 20px;
+    > img {
+      width: 4vmin;
+    }
     > a {
       margin-right: 2.2vw;
       font-size: 1vw;
@@ -23,6 +26,9 @@
       justify-self: center;
       background: transparent !important;
       gap: 10px;
+      i {
+        color: #10c06b;
+      }
     }
     .menu_cont {
       position: absolute;
@@ -42,6 +48,7 @@
         cursor: pointer;
         text-transform: uppercase;
         background: transparent;
+
         &:hover {
           color: #10c06b !important;
           background: black !important;

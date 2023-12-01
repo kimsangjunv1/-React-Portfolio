@@ -55,8 +55,12 @@ const Header = () => {
         <a href="#main">
           <img src={Logo} alt="헤더 로고" />
           <div>
-            <p>2023 프론트엔드</p>
-            <p>김상준 포트-폴리오</p>
+            <p>
+              <i>2023</i> 프론트엔드
+            </p>
+            <p>
+              <i>김상준</i> 포트-폴리오
+            </p>
           </div>
         </a>
         <div className="menu_cont">

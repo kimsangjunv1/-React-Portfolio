@@ -8,11 +8,7 @@ const Section_15 = () => {
     <section style={{ background: "#f6f6fb" }} className="section vr7">
       <div className="section15_flex_cont">
         <div className="section15_all_cont">
-          <div className="section15_main_title">
-            <img src={ruler} alt="" />
-            <h2>Worklist</h2>
-          </div>
-
+          <h2>Worklist</h2>
           <div className="section15_list_cont">
             <ul>
               <li>모두 보기</li>
@@ -28,7 +24,7 @@ const Section_15 = () => {
                 </ul>
               </div>
             </ul>
-            <ul>
+            {/* <ul>
               <li>
                 HTML
                 <br />
@@ -83,7 +79,7 @@ const Section_15 = () => {
                   </li>
                 </ul>
               </div>
-            </ul>
+            </ul> */}
             <ul>
               <li>PHP</li>
               <div>
