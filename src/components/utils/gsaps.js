@@ -86,23 +86,23 @@ const gsaps = () => {
     ),
   });
 
-  ScrollTrigger.create({
-    // 어디에 닿으면 반응할건지
-    trigger: ".pin2",
-    scrub: 1,
-    // 어디다가 적용할건지
-    animation: gsap.fromTo(
-      "#header, #header .header_inner a, .porfolio_desc_fixed p",
-      {
-        color: "#000",
-        background: "linear-gradient(180deg, #ededf4, #ededf400)",
-      },
-      {
-        color: "#fff",
-        background: "linear-gradient(180deg, #000000, #00000000)",
-      }
-    ),
-  });
+  // ScrollTrigger.create({
+  //   // 어디에 닿으면 반응할건지
+  //   trigger: ".pin2",
+  //   scrub: 1,
+  //   // 어디다가 적용할건지
+  //   animation: gsap.fromTo(
+  //     "#header, #header .header_inner a, .porfolio_desc_fixed p",
+  //     {
+  //       color: "#000",
+  //       background: "linear-gradient(180deg, #ededf4, #ededf400)",
+  //     },
+  //     {
+  //       color: "#fff",
+  //       background: "linear-gradient(180deg, #000000, #00000000)",
+  //     }
+  //   ),
+  // });
   ScrollTrigger.create({
     // 어디에 닿으면 반응할건지
     trigger: ".editorial_two",

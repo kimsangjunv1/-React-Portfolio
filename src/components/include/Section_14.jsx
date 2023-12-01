@@ -40,7 +40,7 @@ const Section_14 = () => {
             alt=""
           />
         </div>
-        <div style={{ background: "#0d4430d4" }} className="color_bg"></div>
+        <div style={{ background: "#000000d4" }} className="color_bg"></div>
 
         <img
           className="section14_main_screenshot"
