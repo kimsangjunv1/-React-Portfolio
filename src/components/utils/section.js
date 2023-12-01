@@ -550,6 +550,7 @@ const section = () => {
   //       }
   //     ),
   //   });
+  // 사이트 타입 1
   ScrollTrigger.create({
     trigger: ".custom_color_dark",
     scrub: 1,
@@ -557,12 +558,13 @@ const section = () => {
     animation: gsap.fromTo(
       ".s5p5_1",
       {
-        transform: "skew(346deg, 354deg) rotate(340deg)",
-        yPercent: "50",
+        transform: "skew(0deg, 0deg) rotate(340deg)",
+        // transform: "skew(350deg, 360deg) rotate(340deg)",
+        yPercent: "150",
       },
       {
-        transform: "skew(336deg, 334deg) rotate(20deg)",
-        yPercent: "0",
+        transform: "skew(3deg, 10deg) rotate(20deg)",
+        yPercent: "-50",
       }
     ),
   });
@@ -590,13 +592,22 @@ const section = () => {
 
     animation: gsap.fromTo(
       ".s5p5_4",
+      // {
+      //   transform: "skew(19deg, 10deg) rotate(340deg)",
+      //   yPercent: "50",
+      // },
+      // {
+      //   transform: "skew(10deg, 29deg) rotate(20deg)",
+      //   yPercent: "0",
+      // }
       {
-        transform: "skew(19deg, 10deg) rotate(340deg)",
+        transform: "skew(10deg, 10deg) rotate(340deg)",
+        // transform: "skew(350deg, 360deg) rotate(340deg)",
         yPercent: "50",
       },
       {
-        transform: "skew(10deg, 29deg) rotate(20deg)",
-        yPercent: "0",
+        transform: "skew(20deg, 20deg) rotate(20deg)",
+        yPercent: "110",
       }
     ),
   });
@@ -608,11 +619,11 @@ const section = () => {
       ".site_type_02_desc",
       {
         transform: "skew(340deg, 360deg) rotate(340deg)",
-        yPercent: "100",
+        yPercent: "50",
       },
       {
         transform: "skew(360deg, 340deg) rotate(20deg)",
-        yPercent: "0",
+        yPercent: "110",
       }
     ),
   });
@@ -626,11 +637,11 @@ const section = () => {
       ".s5p5_7",
       {
         transform: "skew(346deg, 354deg) rotate(340deg)",
-        yPercent: "50",
+        yPercent: "100",
       },
       {
         transform: "skew(336deg, 334deg) rotate(20deg)",
-        yPercent: "0",
+        yPercent: "50",
       }
     ),
   });
@@ -646,7 +657,7 @@ const section = () => {
       },
       {
         transform: "skew(3deg, 3deg) rotate(10deg)",
-        yPercent: "0",
+        yPercent: "50",
       }
     ),
   });
