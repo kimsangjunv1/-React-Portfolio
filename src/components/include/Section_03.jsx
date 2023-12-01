@@ -45,21 +45,21 @@ const Section_03 = () => {
             <h2>FRONT</h2>
 
             <div>
-              <p>React</p>
+              <h4>React</h4>
               <p>
                 React의 구조를 이해하고 있으며, 여러가지 Hook을 사용할 수
                 있습니다.
               </p>
             </div>
             <div>
-              <p>ReduxToolKit</p>
+              <h4>ReduxToolKit</h4>
               <p>
                 기록이 남아 에러가 발생한경우 찾기 수월하였으며, 상태관리를
                 한곳에 관리하는데 유용하게 사용하였습니다.
               </p>
             </div>
             <div>
-              <p>Zustand</p>
+              <h4>Zustand</h4>
               <p>
                 리덕스를 사용하기위해 provider 등등의 세팅 하는 과정들을
                 축소시켜 빠른 작업이 가능하였고 상태를 정의하고 사용하는 방법이
@@ -67,10 +67,12 @@ const Section_03 = () => {
               </p>
             </div>
             <div>
-              <p>Vue</p>
-              <p></p>
+              <h4>Styled-components</h4>
+              <p>
+                리액트에서 Props를 활용해 조건을 가지고 스타일링을 할 수 있기에
+                사용하게 되었습니다!
+              </p>
             </div>
-
             {/* <div>
               <a href="https://github.com/kimsangjunv1/codingclass/blob/main/javascript/effect/searchEffect01.html">
                 code
@@ -86,19 +88,28 @@ const Section_03 = () => {
           <img src={section3_img_002} alt="Search Effect" />
           <div className="item_desc">
             <h2>BACK-END</h2>
-            <p>
-              quizScore 변수에 정답을 저장해서 맞은 갯수가 몇개인지 알려주고
-              <br />
-              틀린 문제는 그에 맞는 애니메이션이 나오게 해주었습니다.
-            </p>
             <div>
+              <h4>PHP</h4>
+              <p>
+                dothome을 통해 간단하게 회원들의 정보를 관리하고 게시물 작성 및
+                삭제 할 수 있어 사용하게 되었습니다.
+              </p>
+            </div>
+            <div>
+              <h4>MySQL</h4>
+              <p>
+                php로 작성한것을 dothome 호스팅을 통해 filezilla로 접속하여 관리
+                하기위해 사용하였습니다.
+              </p>
+            </div>
+            {/* <div>
               <a href="https://github.com/kimsangjunv1/codingclass/blob/main/javascript/effect/quizEffect01.html">
                 code
               </a>
               <a href="http://vvv0032.dothome.co.kr/javascript/effect/quizEffect01.html">
                 view
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -106,39 +117,91 @@ const Section_03 = () => {
           <img src={section3_img_003} alt="Search Effect" />
           <div className="item_desc">
             <h2>LIBRARY</h2>
-            <p>
-              insertBefore/appendChild을 통해 각각 앞 뒤에 처음이미지와
-              <br />
-              마지막 이미지를 넣어주어 연속적으로 스크롤하는 효과를 줍니다.
-            </p>
             <div>
+              <h4>스와이퍼</h4>
+              <p>
+                다양한 데모를 통한 여러가지 형태의 슬라이드 구현이 가능하여
+                사용하게 되었습니다.
+              </p>
+            </div>
+            <div>
+              <h4>SCSS</h4>
+              <p>
+                CSS 속성들이 사용된 클래스의 구조들을 쉽게 파악 및 수정이
+                가능하고 압축해 사용이 가능해서 사용하게 되었습니다.
+              </p>
+            </div>
+            <div>
+              <h4>Lenis</h4>
+              <p>스크롤을 부드럽게 제어하기 간편해 사용하게 되었습니다.</p>
+            </div>
+            <div>
+              <h4>Framer</h4>
+              <p>
+                사실적인 애니메이션을 표현하는데 있어서 우수하기에
+                사용하였습니다
+              </p>
+            </div>
+            <div>
+              <h4>Jquery</h4>
+              <p>
+                바닐라 자바스크립트를 좀 더 손쉽게 사용 가능하고, 애니메이션을
+                구현하는데 소요되는 시간이 적어 사용하였습니다.
+              </p>
+            </div>
+
+            {/* <div>
               <a href="https://github.com/kimsangjunv1/codingclass/blob/main/javascript/effect/sliderEffect.html">
                 code
               </a>
               <a href="http://vvv0032.dothome.co.kr/javascript/effect/sliderEffect.html">
                 view
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
 
         <div className="section3_item i004">
           <img src={section3_img_004} alt="Search Effect" />
           <div className="item_desc">
-            <h2>TOOL</h2>
-            <p>
-              window.innerWidth를 통해 마우스가 위치한 좌표 값을 기준으로
-              <br />
-              이미지효과 및 마우스를 추적하는 효과를 구현하였습니다.
-            </p>
             <div>
+              <h4>Zeplin</h4>
+              <p>
+                디자인한 요소들의 html 레이아웃 간격들을 알수가 있어 사용하게
+                되었습니다.
+              </p>
+            </div>
+            <div>
+              <h4>Figma</h4>
+              <p>
+                adobe xd가 아닌 웹사이트를 손쉽게 디자인하고 같은 반복적인
+                작업이 필요할떄는 컴포넌트별로 분리 후 하나만 수정하면
+                다양한것들이 수정 가능한 기능들이 제공되어 사용하게 되었습니다.
+              </p>
+            </div>
+            <div>
+              <h4>Slack</h4>
+              <p>
+                같이 작업하는 사람들과 손쉽게 코드를 공유 및 업무를 분배하기
+                용이한 대화수단이라 사용하게 되었습니다.
+              </p>
+            </div>
+            <div>
+              <h4>Github</h4>
+              <p>
+                브랜치를 각각 나누어 작업하며 메인 브랜치에 merge 하는 방식으로
+                작업하고 있습니다.
+              </p>
+            </div>
+
+            {/* <div>
               <a href="https://github.com/kimsangjunv1/codingclass/blob/main/javascript/effect/mouseEffect01.html">
                 code
               </a>
               <a href="http://vvv0032.dothome.co.kr/javascript/effect/mouseEffect01.html">
                 view
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
 
