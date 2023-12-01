@@ -120,7 +120,7 @@ const Section_03 = () => {
           </div>
         </div>
 
-        <div className="section3_item i005">
+        <div style={{ display: "none" }} className="section3_item i005">
           <img src={section3_img_005} alt="Search Effect" />
           <div className="item_desc">
             <h2>
