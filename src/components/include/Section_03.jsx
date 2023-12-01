@@ -43,20 +43,42 @@ const Section_03 = () => {
           <img src={section3_img_001} alt="Search Effect" />
           <div className="item_desc">
             <h2>FRONT</h2>
-            <p>
-              indexOf, includes, find 메서드 등을 이용해 사용자가 입력한
-              키워드와 문자열이 일치시 해당 속성만 출력해 주는 CSS 속성 검색
-              효과입니다. 좀 더 응용하여 data-set의 value값을 호출해 카테고리
-              별로 검색하는 기능까지 추가해 종류별로도 볼 수 있도록 하였습니다.
-            </p>
+
             <div>
+              <p>React</p>
+              <p>
+                React의 구조를 이해하고 있으며, 여러가지 Hook을 사용할 수
+                있습니다.
+              </p>
+            </div>
+            <div>
+              <p>ReduxToolKit</p>
+              <p>
+                기록이 남아 에러가 발생한경우 찾기 수월하였으며, 상태관리를
+                한곳에 관리하는데 유용하게 사용하였습니다.
+              </p>
+            </div>
+            <div>
+              <p>Zustand</p>
+              <p>
+                리덕스를 사용하기위해 provider 등등의 세팅 하는 과정들을
+                축소시켜 빠른 작업이 가능하였고 상태를 정의하고 사용하는 방법이
+                단순해 사용하게 되었습니다!
+              </p>
+            </div>
+            <div>
+              <p>Vue</p>
+              <p></p>
+            </div>
+
+            {/* <div>
               <a href="https://github.com/kimsangjunv1/codingclass/blob/main/javascript/effect/searchEffect01.html">
                 code
               </a>
               <a href="http://vvv0032.dothome.co.kr/javascript/effect/searchEffect01.html">
                 view
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
 
