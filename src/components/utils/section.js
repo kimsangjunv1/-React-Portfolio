@@ -367,11 +367,10 @@ const section = () => {
     animation: gsap.fromTo(
       ".lamas",
       {
-        transform: "translate(70%,0) rotate(0deg)",
+        bottom: "-50%",
       },
       {
-        transform: "translate(300%,-200%) scale(1.5) rotate(200deg)",
-        filter: "blur(5px)",
+        bottom: "0",
       }
     ),
   });
@@ -1386,7 +1385,7 @@ const section = () => {
         path: "#motionPath",
         align: "#motionPath",
         alignOrigin: [0.5, 0.5],
-        autoRotate: 210,
+        // autoRotate: 210,
       },
     });
 

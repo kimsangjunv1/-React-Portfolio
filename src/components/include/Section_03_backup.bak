@@ -24,7 +24,6 @@ const Section_03 = () => {
           USED <em>STACK</em>
           {/* JAVASCRIPT <em>PRACTICE</em> */}
         </h2>
-        <p>이런 기술들을 사용해봤어요!</p>
         {/* <img src={section3_title} alt="" /> */}
       </div>
 
@@ -63,7 +62,11 @@ const Section_03 = () => {
         <div className="section3_item i002">
           <img src={section3_img_002} alt="Search Effect" />
           <div className="item_desc">
-            <h2>BACK-END</h2>
+            <h2>
+              QUIZ
+              <br />
+              EFFECT
+            </h2>
             <p>
               quizScore 변수에 정답을 저장해서 맞은 갯수가 몇개인지 알려주고
               <br />
@@ -83,7 +86,10 @@ const Section_03 = () => {
         <div className="section3_item i003">
           <img src={section3_img_003} alt="Search Effect" />
           <div className="item_desc">
-            <h2>LIBRARY</h2>
+            <h2>
+              SLIDE <br />
+              EFFECT
+            </h2>
             <p>
               insertBefore/appendChild을 통해 각각 앞 뒤에 처음이미지와
               <br />
@@ -103,7 +109,10 @@ const Section_03 = () => {
         <div className="section3_item i004">
           <img src={section3_img_004} alt="Search Effect" />
           <div className="item_desc">
-            <h2>TOOL</h2>
+            <h2>
+              MOUSE <br />
+              EFFECT
+            </h2>
             <p>
               window.innerWidth를 통해 마우스가 위치한 좌표 값을 기준으로
               <br />
