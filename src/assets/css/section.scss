@@ -398,12 +398,16 @@
     color: #10c06b;
     border-bottom: 1px solid white;
   }
+  h4 {
+    padding: 0 20px;
+  }
   p {
     width: 32vw;
     font-size: 1.1vw;
     line-height: 160%;
     word-break: keep-all;
     background: rgba(0, 0, 0, 0.0509803922);
+    color: rgba(255, 255, 255, 0.706);
 
     padding: 0 20px;
     &:first-child {
