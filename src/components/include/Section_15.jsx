@@ -11,7 +11,7 @@ const Section_15 = () => {
         <div className="section15_all_cont">
           <h2>Worklist</h2>
           <div className="section15_list_cont">
-            <ul>
+            {/* <ul>
               <li>모두 보기</li>
               <div>
                 <ul>
@@ -24,7 +24,7 @@ const Section_15 = () => {
                   </li>
                 </ul>
               </div>
-            </ul>
+            </ul> */}
             {/* <ul>
               <li>
                 HTML

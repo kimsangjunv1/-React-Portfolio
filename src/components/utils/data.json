@@ -247,6 +247,36 @@
       "color": "#3A1D69"
     }
   ],
+  "clonecoding": [
+    {
+      "title": "언스플레시",
+      "desc": "프레임워크는 REACT의 NextJS로 SEO를 해결할 방법은 없는지에 대해 TMDB의 API를 활용하여 넷플릭스를 클론코딩 하였습니다. SEO의 문제점 과",
+      "info": {
+        "type": "반응형 웹",
+        "page": "Main + Sub * 9",
+        "participation": "100% 개인작업",
+        "skill": "NextJS, React, Redux Tool Kit",
+        "library": "SwiperJS"
+      },
+      "github": "https://github.com/kimsangjunv1/-React-portfolio-rework",
+      "view": "https://portfolio-sprout.netlify.app/",
+      "figma": "https://www.figma.com/file/CXwaeJIh0hsAVgihQMjreL/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4-%EB%A6%AC%EC%9B%8C%ED%81%AC?type=design&node-id=171%3A746&mode=design&t=z81wqywdOkeLiIas-1"
+    },
+    {
+      "title": "넷플릭스",
+      "desc": "프레임워크는 REACT의 NextJS로 SEO를 해결할 방법은 없는지에 대해 TMDB의 API를 활용하여 넷플릭스를 클론코딩 하였습니다. SEO의 문제점 과",
+      "info": {
+        "type": "반응형 웹",
+        "page": "Main + Sub * 9",
+        "participation": "100% 개인작업",
+        "skill": "NextJS, React, Redux Tool Kit",
+        "library": "SwiperJS"
+      },
+      "github": "https://github.com/kimsangjunv1/-React-portfolio-rework",
+      "view": "https://portfolio-sprout.netlify.app/",
+      "figma": "https://www.figma.com/file/CXwaeJIh0hsAVgihQMjreL/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4-%EB%A6%AC%EC%9B%8C%ED%81%AC?type=design&node-id=171%3A746&mode=design&t=z81wqywdOkeLiIas-1"
+    }
+  ],
   "RecycleBin": [
     { "name": "Zustand", "desc": "사용한 이유는..." },
     { "name": "뷰", "desc": "사용한 이유는..." },
