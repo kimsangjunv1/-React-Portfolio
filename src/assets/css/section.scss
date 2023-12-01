@@ -2226,8 +2226,17 @@ h1 {
   justify-content: center;
   padding: 120px 0;
   z-index: 1;
-  p {
-    color: #fff;
+  .title_container {
+    .title {
+      font-size: 52px;
+      color: #10c06b;
+      margin-bottom: 10px;
+      line-height: 1.1;
+    }
+    margin-bottom: 20px;
+  }
+  .info_container {
+    margin-bottom: 20px;
   }
 }
 .section9_logo_cont {
@@ -2291,6 +2300,18 @@ h1 {
   justify-content: center;
   padding: 120px 0;
   z-index: 1;
+  .title_container {
+    .title {
+      font-size: 52px;
+      color: #10c06b;
+      margin-bottom: 10px;
+      line-height: 1.1;
+    }
+    margin-bottom: 20px;
+  }
+  .info_container {
+    margin-bottom: 20px;
+  }
 }
 .section10_logo_cont {
   position: relative;
@@ -2330,6 +2351,18 @@ h1 {
   justify-content: center;
   padding: 120px 0;
   z-index: 1;
+  .title_container {
+    .title {
+      font-size: 52px;
+      color: #10c06b;
+      margin-bottom: 10px;
+      line-height: 1.1;
+    }
+    margin-bottom: 20px;
+  }
+  .info_container {
+    margin-bottom: 20px;
+  }
 }
 .section11_logo_cont {
   position: relative;
@@ -2769,27 +2802,50 @@ h1 {
 .section_rv_button_cont {
   display: flex;
   justify-content: start;
-  margin-top: 20px;
-  border: 1px solid #ffffff1f;
-  width: 140px;
-}
-.section_rv_button_cont a {
-  padding: 10px;
-  cursor: pointer;
-  transition: 0.25s;
-  width: 50%;
-  text-align: center;
-  border-right: 1px solid #ffffff1f;
-  &:last-child {
-    border-right: none;
+  width: 260px;
+  a {
+    flex: 1;
+    padding: 10px;
+    background: white;
+    border-right: 1px solid rgba(0, 0, 0, 0.162);
+    color: black;
+    transition: 0.25s;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 5px 0 0 rgba(255, 255, 255, 0.4);
+    &:last-child {
+      border-right: none;
+    }
+    &:hover {
+      background: #10c06b;
+    }
+    &:active {
+      box-shadow: 0 0px 0 0 rgba(255, 255, 255, 0.4);
+      transform: translateY(5px);
+    }
+    &:not(:hover) {
+      transition: 0.25s;
+    }
   }
 }
-.section_rv_button_cont a:hover {
-  background: #fff;
-  color: #000;
-}
-.section_rv_button_cont a:not(:hover) {
-  transition: 0.25s;
+.info_container {
+  ul {
+    li {
+      ul {
+        li {
+          display: inline-block;
+          &:first-child {
+            padding-right: 10px;
+            width: 20%;
+          }
+          &:last-child {
+            width: 80%;
+            color: #10c06b;
+          }
+        }
+      }
+    }
+  }
 }
 .section14_lama,
 .section13_lama,

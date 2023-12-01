@@ -36,14 +36,12 @@ import PopupComponents from "../common/PopupComponents.jsx";
 import DescFixed from "../layout/DescFixed.jsx";
 import ImgLoader from "../include/ImgLoader.jsx";
 
-const test = () => {
-  alert("테스트 알람");
-};
-
 const Main = () => {
   const [scrolled, setScrolled] = useState(0);
   const [isLoaded, setIsLoaded] = useState(false);
   const [loadingCount, setLoadingCount] = useState(0);
+  const [cloneInfo, setCloneInfo] = useState([]);
+
   // 스크롤
   window.onscroll = function () {
     let winScroll =
@@ -53,10 +51,7 @@ const Main = () => {
       document.documentElement.clientHeight;
     setScrolled((winScroll / height) * 100);
   };
-  // 이미지 로딩
-  // imagesLoaded("body", function () {
-  //   setIsLoaded(true);
-  // });
+
   useEffect(() => {
     function imagesProgress() {
       var imgLoad = imagesLoaded("body"),
@@ -116,9 +111,9 @@ const Main = () => {
         <Section_09 />
         <Section_10 />
         <Section_11 />
-        <Section_12 />
+        {/* <Section_12 />
         <Section_13 />
-        <Section_14 />
+        <Section_14 /> */}
         <Section_15 />
         <Section_16 />
         <MouseComponents />
