@@ -637,7 +637,7 @@ const section = () => {
       ".s5p5_7",
       {
         transform: "skew(346deg, 354deg) rotate(340deg)",
-        yPercent: "100",
+        yPercent: "-200",
       },
       {
         transform: "skew(336deg, 334deg) rotate(20deg)",
@@ -653,7 +653,7 @@ const section = () => {
       ".site_type_03_desc",
       {
         transform: "skew(0deg, 0deg) rotate(340deg)",
-        yPercent: "100",
+        yPercent: "-200",
       },
       {
         transform: "skew(3deg, 3deg) rotate(10deg)",

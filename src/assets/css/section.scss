@@ -2638,6 +2638,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: white;
   .input_cont {
     display: flex;
     flex-direction: column;
@@ -2667,17 +2668,41 @@ h1 {
   h2 {
     font-weight: 900;
     font-size: 5.2vw;
-    color: #5046ac;
+    // color: #5046ac;
     margin-bottom: 15px;
   }
-  p {
-    font-size: 1.3vw;
-    border-left: 3px solid #343440;
-    margin-bottom: 15px;
-    // padding-bottom: 15px;
-    padding-left: 10px;
-    &:last-child {
-      border-bottom: 1px solid #343440;
+  .info_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    p {
+      flex: 1;
+      font-size: 1.3vw;
+      padding: 5px;
+      color: black;
+      background: white;
+      line-height: 2.7;
+      transition: 0.25s;
+      text-align: center;
+      box-shadow: 0 5px 0 0 #ffffff42;
+      &:hover {
+        background: #10c06b;
+        color: black;
+      }
+      &:active {
+        transform: translateY(5px);
+        box-shadow: 0 0px 0 0 #ffffff42;
+        // box-shadow: 0px 3px 0 5px rgba(0, 0, 0, 0.2588235294) inset;
+        // filter: brightness(0.5);
+      }
+      a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        line-height: 2.7;
+        color: black;
+        text-align: center;
+      }
     }
   }
   .sns_cont {
@@ -2689,7 +2714,7 @@ h1 {
   position: relative;
 }
 .vr8 .section16_item_cont .contact_cont {
-  color: #343440;
+  // color: #343440;
 }
 .vr8 .section16_item_cont .contact_cont .sns_cont a {
   display: inline-flex;
