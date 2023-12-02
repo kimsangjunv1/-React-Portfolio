@@ -367,7 +367,7 @@ const section = () => {
     animation: gsap.fromTo(
       ".lamas",
       {
-        bottom: "-50%",
+        bottom: "-100%",
       },
       {
         bottom: "0",
@@ -1026,105 +1026,105 @@ const section = () => {
   //   ),
   // });
 
-  ScrollTrigger.create({
-    scrub: 0.1,
-    animation: gsap.fromTo(
-      ".section9_lama",
-      {
-        rotate: "+=1000",
-        y: "-22500",
-      },
-      {
-        rotate: "+=6000",
-        y: "-100",
-      }
-    ),
-  });
+  // ScrollTrigger.create({
+  //   scrub: 0.1,
+  //   animation: gsap.fromTo(
+  //     ".section9_lama",
+  //     {
+  //       rotate: "+=1000",
+  //       y: "-22500",
+  //     },
+  //     {
+  //       rotate: "+=6000",
+  //       y: "-100",
+  //     }
+  //   ),
+  // });
 
-  ScrollTrigger.create({
-    scrub: 0.1,
-    animation: gsap.fromTo(
-      ".section10_lama",
-      {
-        rotate: "+=1000",
-        y: "-22500",
-      },
-      {
-        rotate: "+=6000",
-        y: "-100",
-      }
-    ),
-  });
-  ScrollTrigger.create({
-    scrub: 0.1,
-    animation: gsap.fromTo(
-      ".section11_lama",
-      {
-        rotate: "+=1000",
+  // ScrollTrigger.create({
+  //   scrub: 0.1,
+  //   animation: gsap.fromTo(
+  //     ".section10_lama",
+  //     {
+  //       rotate: "+=1000",
+  //       y: "-22500",
+  //     },
+  //     {
+  //       rotate: "+=6000",
+  //       y: "-100",
+  //     }
+  //   ),
+  // });
+  // ScrollTrigger.create({
+  //   scrub: 0.1,
+  //   animation: gsap.fromTo(
+  //     ".section11_lama",
+  //     {
+  //       rotate: "+=1000",
 
-        y: "-22500",
-      },
-      {
-        rotate: "+=16000",
+  //       y: "-22500",
+  //     },
+  //     {
+  //       rotate: "+=16000",
 
-        y: "-100",
-      }
-    ),
-  });
-  ScrollTrigger.create({
-    scrub: 0.1,
-    animation: gsap.fromTo(
-      ".section12_lama",
-      {
-        rotate: "+=1000",
+  //       y: "-100",
+  //     }
+  //   ),
+  // });
+  // ScrollTrigger.create({
+  //   scrub: 0.1,
+  //   animation: gsap.fromTo(
+  //     ".section12_lama",
+  //     {
+  //       rotate: "+=1000",
 
-        // x: "4000",
-        y: "-22500",
-      },
-      {
-        rotate: "+=16000",
+  //       // x: "4000",
+  //       y: "-22500",
+  //     },
+  //     {
+  //       rotate: "+=16000",
 
-        // x: "-3000",
-        y: "-100",
-      }
-    ),
-  });
-  ScrollTrigger.create({
-    scrub: 0.1,
-    animation: gsap.fromTo(
-      ".section13_lama",
-      {
-        rotate: "+=1000",
+  //       // x: "-3000",
+  //       y: "-100",
+  //     }
+  //   ),
+  // });
+  // ScrollTrigger.create({
+  //   scrub: 0.1,
+  //   animation: gsap.fromTo(
+  //     ".section13_lama",
+  //     {
+  //       rotate: "+=1000",
 
-        // x: "4000",
-        y: "-22500",
-      },
-      {
-        rotate: "+=16000",
+  //       // x: "4000",
+  //       y: "-22500",
+  //     },
+  //     {
+  //       rotate: "+=16000",
 
-        // x: "-3000",
-        y: "-100",
-      }
-    ),
-  });
-  ScrollTrigger.create({
-    scrub: 0.1,
-    animation: gsap.fromTo(
-      ".section14_lama",
-      {
-        rotate: "+=1000",
+  //       // x: "-3000",
+  //       y: "-100",
+  //     }
+  //   ),
+  // });
+  // ScrollTrigger.create({
+  //   scrub: 0.1,
+  //   animation: gsap.fromTo(
+  //     ".section14_lama",
+  //     {
+  //       rotate: "+=1000",
 
-        // x: "4000",
-        y: "-22500",
-      },
-      {
-        rotate: "+=16000",
+  //       // x: "4000",
+  //       y: "-22500",
+  //     },
+  //     {
+  //       rotate: "+=16000",
 
-        // x: "-3000",
-        y: "-100",
-      }
-    ),
-  });
+  //       // x: "-3000",
+  //       y: "-100",
+  //     }
+  //   ),
+  // });
 
   // 1 / 1
   // VUE_API MOVIE
@@ -1267,26 +1267,26 @@ const section = () => {
       }
     ),
   });
-  ScrollTrigger.create({
-    trigger: ".vr4",
-    scrub: 1,
-    animation: gsap.fromTo(
-      ".sec12_bg",
-      {
-        x: "0%",
-        y: "0%",
-        backgroundSize: 0,
-        // scale: 1,
-      },
-      {
-        x: "20%",
-        y: "0%",
-        // ease: Linear.easeNone,
-        scale: 1.2,
-        // objectFit: none,
-      }
-    ),
-  });
+  // ScrollTrigger.create({
+  //   trigger: ".vr4",
+  //   scrub: 1,
+  //   animation: gsap.fromTo(
+  //     ".sec12_bg",
+  //     {
+  //       x: "0%",
+  //       y: "0%",
+  //       backgroundSize: 0,
+  //       // scale: 1,
+  //     },
+  //     {
+  //       x: "20%",
+  //       y: "0%",
+  //       // ease: Linear.easeNone,
+  //       scale: 1.2,
+  //       // objectFit: none,
+  //     }
+  //   ),
+  // });
 
   // VUE_API TMDB
   ScrollTrigger.create({
