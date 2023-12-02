@@ -194,6 +194,20 @@ const Section_03 = () => {
                 작업하고 있습니다.
               </p>
             </div>
+            <div>
+              <h4>Photoshop</h4>
+              <p>
+                브랜치를 각각 나누어 작업하며 메인 브랜치에 merge 하는 방식으로
+                작업하고 있습니다.
+              </p>
+            </div>
+            <div>
+              <h4>illustrator</h4>
+              <p>
+                브랜치를 각각 나누어 작업하며 메인 브랜치에 merge 하는 방식으로
+                작업하고 있습니다.
+              </p>
+            </div>
 
             {/* <div>
               <a href="https://github.com/kimsangjunv1/codingclass/blob/main/javascript/effect/mouseEffect01.html">
