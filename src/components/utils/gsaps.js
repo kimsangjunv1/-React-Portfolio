@@ -121,11 +121,11 @@ const gsaps = () => {
 
   ScrollTrigger.create({
     // 어디에 닿으면 반응할건지
-    trigger: ".pin2",
+    trigger: "#site",
     scrub: 1,
     // 어디다가 적용할건지
     animation: gsap.fromTo(
-      ".cursor div div",
+      ".point2",
 
       {
         borderColor: "black",

@@ -18,7 +18,7 @@ const Section_03 = () => {
     },
   ];
   return (
-    <section id="javascript" className="horizontal">
+    <section id="usedStack" className="horizontal">
       <div className="section3_fixed">
         <h2>
           USED <em>STACK</em>

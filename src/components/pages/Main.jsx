@@ -97,7 +97,6 @@ const Main = () => {
 					}
 				/> */}
         {/* <ImgLoader /> */}
-        <DescFixed scrolled={scrolled} />
         <Section_01 />
         <Section_02 />
         <Section_03 />
@@ -117,6 +116,7 @@ const Main = () => {
         <Section_15 />
         <Section_16 />
         <MouseComponents />
+        <DescFixed scrolled={scrolled} />
       </Contents>
       {/* <Footer /> */}
     </>
