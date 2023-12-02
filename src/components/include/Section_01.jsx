@@ -19,8 +19,12 @@ const Section_01 = () => {
     // 섹션 1 : 메인
     <section id="intro" className="section lama_ctrl">
       <div className="section1_desc">
-        <img src={main_title_001} alt="웹 프론트엔드 글자" />
-        <img src={main_title_002} alt="포트폴리오 글자" />
+        <h2>
+          웹 <i>프론트엔드</i>
+        </h2>
+        <h2>포트-폴리오</h2>
+        {/* <img src={main_title_001} alt="웹 프론트엔드 글자" />
+        <img src={main_title_002} alt="포트폴리오 글자" /> */}
       </div>
 
       <div className="section1_img">

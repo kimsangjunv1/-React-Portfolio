@@ -141,22 +141,16 @@
     font-weight: 900;
   }
   h2 {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* background: linear-gradient(360deg, rgba(255, 255, 255, 0) 25%, #fff 60%); */
     color: rgb(255 255 255);
-    /* -webkit-background-clip: text; */
-    font-size: 13vw;
+    font-size: 10vmin;
     font-weight: 100;
     z-index: 1;
-    line-height: 80%;
-    height: 0;
-    em {
-      font-weight: 900;
+    line-height: 1;
+    &:first-child {
+      font-size: 8.5vmin;
+    }
+    i {
       color: #10c06b;
-      filter: drop-shadow(0px 0px 26px rgba(23, 245, 164, 0.19));
     }
   }
   img {

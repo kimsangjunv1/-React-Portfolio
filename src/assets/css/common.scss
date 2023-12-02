@@ -518,8 +518,8 @@ body {
   .section {
     .section1_desc {
       h2 {
-        font-size: 25vw !important;
-        height: 52vw !important;
+        // font-size: 25vw !important;
+        // height: 52vw !important;
       }
     }
     .section1_img {
@@ -528,17 +528,26 @@ body {
           width: 35vw;
         }
         &:nth-child(2) {
-          left: 30%;
-          width: 35vw;
+          left: 20%;
+          width: 30vmin;
         }
         &:nth-child(3) {
-          right: 10%;
-          width: 25vw;
+          // right: 10%;
+          width: 25vmin;
+        }
+        &:nth-child(4) {
+          right: 40%;
+          bottom: 10vmin;
         }
         &:nth-child(5) {
           left: 10%;
           width: 5vw;
           bottom: 34vw;
+        }
+        &:nth-child(5) {
+          left: 30%;
+          bottom: 20vmin;
+          width: 20vmin;
         }
         &:nth-child(7) {
           width: 190vw;
@@ -547,10 +556,12 @@ body {
           width: 120vw;
         }
         &:nth-child(10) {
-          width: 7vw;
+          width: 15vmin;
+          right: 35%;
         }
         &:nth-child(11) {
-          width: 10vw;
+          left: 30%;
+          // width: 10vw;
         }
       }
     }
