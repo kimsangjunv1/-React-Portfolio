@@ -71,6 +71,15 @@ const Header = () => {
           <a href="#project">프로젝트</a>
           <a href="#vue&react">뷰/리액트</a>
         </div>
+        <button className="mobile_btn">메뉴</button>
+        <div className="menu_cont mobile">
+          <a href="#javascript">기술</a>
+          <a href="#game">게임</a>
+          <a href="#reference">레퍼런스</a>
+          <a href="#site">사이트</a>
+          <a href="#project">프로젝트</a>
+          <a href="#vue&react">뷰/리액트</a>
+        </div>
       </div>
     </header>
   );
