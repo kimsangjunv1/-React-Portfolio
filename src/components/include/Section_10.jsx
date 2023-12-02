@@ -13,7 +13,7 @@ const Section_10 = () => {
         {/* <img className="section10_lama" src={section10_lama} alt="" /> */}
         <div className="section10_desc_cont">
           <div className="title_container">
-            <p className="title">언스플레시</p>
+            <p className="title">언스플레시 API</p>
             <p className="description">
               Axios를 사용해 RESTful API를 활용하여
               <br />

@@ -1886,6 +1886,8 @@ h1 {
       li {
         ul {
           margin-bottom: 10px;
+          display: flex;
+          align-items: start;
           li {
             &:first-child {
               color: #10c06b;

@@ -24,7 +24,7 @@ const Section_06 = () => {
             <h2>PICK</h2>
             <div className="project_type">
               <span>개인 프로젝트</span>
-              <span>담당 : 디자인 100% / 프론트 100% / 퍼블리싱 100%</span>
+              {/* <span>담당 : 디자인 100% / 프론트 100% / 퍼블리싱 100%</span> */}
             </div>
             <div className="info_container">
               <ul>
@@ -54,7 +54,7 @@ const Section_06 = () => {
                 <li>
                   <ul>
                     <li>참여도</li>
-                    <li>100% 개인작업</li>
+                    <li>디자인 100% / 프론트 100% / 퍼블리싱 100%</li>
                   </ul>
                 </li>
                 <li>
@@ -75,8 +75,10 @@ const Section_06 = () => {
               <a href="https://github.com/kimsangjunv1/-React-Pick-Music-Player">
                 깃허브
               </a>
-              <a href="https://react-pick.netlify.app">미리보기</a>
-              <a href="https://react-pick.netlify.app">피그마</a>
+              <a href="https://react-pick.netlify.app/">미리보기</a>
+              <a href="https://www.figma.com/file/0Fads8hi4HV4RtXV94SAUz/%EB%AE%A4%EC%A7%81%ED%94%8C%EB%A0%88%EC%9D%B4%EC%96%B4-PiCK?type=design&node-id=0%3A1&mode=design&t=0QdSkNiRWmYy96Y9-1">
+                피그마
+              </a>
             </div>
           </div>
         </div>
@@ -90,7 +92,7 @@ const Section_06 = () => {
             <h2>PlayGround</h2>
             <div className="project_type">
               <span>개인 프로젝트</span>
-              <span>담당 : 디자인 100% / 프론트 100% / 퍼블리싱 100%</span>
+              {/* <span>담당 : 디자인 100% / 프론트 100% / 퍼블리싱 100%</span> */}
             </div>
             {/* <p>
               <strong>
@@ -126,7 +128,7 @@ const Section_06 = () => {
                 <li>
                   <ul>
                     <li>참여도</li>
-                    <li>100% 개인작업</li>
+                    <li>디자인 100% / 프론트 100% / 퍼블리싱 100%</li>
                   </ul>
                 </li>
                 <li>
@@ -144,11 +146,13 @@ const Section_06 = () => {
               </ul>
             </div>
             <div className="section6p5_button_cont">
-              <a href="https://github.com/kimsangjunv1/-React-OpenAI-Summarizer-website">
+              <a href="https://github.com/kimsangjunv1/-React-Playground">
                 깃허브
               </a>
-              <a href="https://react-sumz.netlify.app/">미리보기</a>
-              <a href="https://react-sumz.netlify.app/">피그마</a>
+              <a href="https://playground-r.netlify.app/">미리보기</a>
+              <a href="https://www.figma.com/file/Za2MM7db7OKZtiBJ1EeEaV/%EC%9C%A0%ED%8A%9C%EB%B8%8C-%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8?type=design&node-id=0%3A1&mode=design&t=HqaYZ3hMuFVMborN-1">
+                피그마
+              </a>
             </div>
           </div>
         </div>
@@ -162,7 +166,7 @@ const Section_06 = () => {
             <h2>꾸다</h2>
             <div className="project_type">
               <span>팀 프로젝트</span>
-              <span>담당 : 디자인 80% / 프론트 60% / 퍼블리싱 50%</span>
+              {/* <span>담당 : 디자인 80% / 프론트 60% / 퍼블리싱 50%</span> */}
             </div>
             <div className="info_container">
               <ul>
@@ -181,25 +185,26 @@ const Section_06 = () => {
                   <ul>
                     <li>회고록</li>
                     <li>
-                      각 페이지별,컴포넌트별로 나누다보니
-                      재생기록/플레이리스트/정보 등의 상태값을 넘겨주는것이
-                      복잡해지는 문제에 부딪혀
+                      스티커가 되는 이미지를 다이어리 바깥에도 두기가능한 문제가
+                      있었습니다,
                       <br />
-                      ReduxToolKit을 사용해 페이지별 상태관리를 용이하게
-                      하였습니다.
+                      해당 문제를 해결하기 위해 getBoundingClientRect를 사용하여
+                      다이어리와 스티커의 위치를 구한뒤 top,right,left,bottom 값
+                      비교 후 위치가 겹치지 않는다면 원래의 컨테이너에 append
+                      하는 방식으로 해결하였습니다.
                     </li>
                   </ul>
                 </li>
                 <li>
                   <ul>
                     <li>참여도</li>
-                    <li>100% 개인작업</li>
+                    <li>디자인 80% / 프론트 60% / 퍼블리싱 50%</li>
                   </ul>
                 </li>
                 <li>
                   <ul>
                     <li>기술스택</li>
-                    <li>React,Redux Tool Kit</li>
+                    <li>PHP, MySQL</li>
                   </ul>
                 </li>
                 <li>
@@ -211,11 +216,15 @@ const Section_06 = () => {
               </ul>
             </div>
             <div className="section6p5_button_cont">
-              <a href="https://github.com/kimsangjunv1/-React-Car-Showcase">
+              <a href="https://github.com/kimsangjunv1/-PHP-GGUDA-Diary">
                 깃허브
               </a>
-              <a href="#">미리보기(수정중)</a>
-              <a href="#">피그마</a>
+              <a href="http://vvv0032.dothome.co.kr/Diary/PHP/main/main.php">
+                미리보기(수정중)
+              </a>
+              <a href="https://www.figma.com/file/KdrJpICIDBY9p4jC4JPKdR/%EA%BE%B8%EB%8B%A4?type=design&node-id=0%3A1&mode=design&t=nyyCWOsBoKNP0kgm-1">
+                피그마
+              </a>
             </div>
           </div>
         </div>

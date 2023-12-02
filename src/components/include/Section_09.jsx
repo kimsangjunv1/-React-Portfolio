@@ -17,7 +17,7 @@ const Section_09 = () => {
         {/* <img className="section9_lama" src={section9_lama} alt="" /> */}
         <div className="section9_desc_cont">
           <div className="title_container">
-            <p className="title">넷플릭스</p>
+            <p className="title">TMDB API</p>
             <p className="description">
               Axios를 사용해 RESTful API를 활용하여
               <br />

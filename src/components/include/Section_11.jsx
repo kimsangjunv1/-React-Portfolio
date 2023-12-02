@@ -13,7 +13,7 @@ const Section_11 = () => {
         {/* <img className="section11_lama" src={section11_lama} alt="" /> */}
         <div className="section11_desc_cont">
           <div className="title_container">
-            <p className="title">맥</p>
+            <p className="title">기본구조 웹사이트</p>
             <p className="description">
               REACT의 장점인 컴포넌트를 적극 활용해 구성한 기본구조 웹사이트
               입니다.
@@ -60,9 +60,13 @@ const Section_11 = () => {
           </div>
 
           <div className="section_rv_button_cont">
-            <a href="www.naver.com">깃허브</a>
-            <a href="www.naver.com">미리보기</a>
-            <a href="w">피그마</a>
+            <a href="https://github.com/kimsangjunv1/-React-Pick-Music-Player">
+              깃허브
+            </a>
+            <a href="https://react-pick.netlify.app/">미리보기</a>
+            <a href="https://www.figma.com/file/0Fads8hi4HV4RtXV94SAUz/%EB%AE%A4%EC%A7%81%ED%94%8C%EB%A0%88%EC%9D%B4%EC%96%B4-PiCK?type=design&node-id=0%3A1&mode=design&t=0QdSkNiRWmYy96Y9-1">
+              피그마
+            </a>
           </div>
         </div>
         <div className="section11_logo_cont">
