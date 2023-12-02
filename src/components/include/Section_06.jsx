@@ -10,9 +10,7 @@ const Section_06 = () => {
     <section id="site" className="section point2">
       <div>
         <div className="section6p5_static">
-          <p className="section6p5_title">
-            PERSONAL <em>PROJECT</em>
-          </p>
+          <p className="section6p5_title">프로젝트</p>
         </div>
         <div className="light ir">light</div>
         <img className="light_on_top" src={section5p5_light} alt="" />
@@ -30,11 +28,49 @@ const Section_06 = () => {
             </div>
             <p>
               <strong>
-                뮤직플레이어 Pick은 날씨에 따라
-                <br />
-                음악을 추천해주는 사이트 입니다
+                사용자에게 날씨별로 음악의 듣기/아티스트 정보/앨범정보를
+                제공해주는
+                <br />웹 사이트 'PiCK' 입니다,
               </strong>
-              <br />
+            </p>
+            <div className="info_container">
+              <ul>
+                <li>
+                  <ul>
+                    <li>얻어갔던점</li>
+                    <li>
+                      컴포넌트가 페이지별로 분리되어 있다보니 상태를 관리하는데
+                      있어서 문제가 많았다
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li>페이지</li>
+                    <li>반응형 웹</li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li>참여도</li>
+                    <li>100% 개인작업</li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li>기술스택</li>
+                    <li>NextJS, React, Redux Tool Kit</li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li>라이브러리</li>
+                    <li>SwiperJS</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            {/* <br />
               <br />
               Axios를 사용해 RESTful API를 활용해서 각 컴포넌트 별로 props를
               <br />
@@ -54,8 +90,7 @@ const Section_06 = () => {
               <br />
               아티스트별로 클릭을 했을때 보여주고 해당 음원들을 눌렀을때
               <br />
-              실제로 재생되도록 하였습니다.
-            </p>
+              실제로 재생되도록 하였습니다. */}
             <div className="section6p5_button_cont">
               <a href="https://github.com/kimsangjunv1/-React-Pick-Music-Player">
                 CODE
@@ -71,24 +106,54 @@ const Section_06 = () => {
             alt=""
           />
           <div className="site_type_02_desc">
-            <h2>Sumz</h2>
+            <h2>PlayGround</h2>
             <div className="project_type">
               <span>개인 프로젝트</span>
+              <span>담당 : 디자인 100% / 프론트 100% / 퍼블리싱 100%</span>
             </div>
             <p>
               <strong>
-                Sumz는 우리가 일상 생활에서 보는 뉴스 본문들을
-                <br />
-                요약해주는 사이트입니다.
+                기존 유튜브를 재디자인 후 드랍박스의 기능을 추가한 <br />
+                웹사이트 'PlayGround' 입니다,
               </strong>
-              <br />
-              <br />
-              화면 가운데에 본인이 요약을 원하는 뉴스 기사나 본문을 가지고 있는
-              <br />
-              링크를 넣고 엔터를 누르면 하단에 요약된 문단이 나오고 요약된
-              <br />
-              문단의 기록을 볼 수 있도록 input 하단에 기록들을 배치하였습니다.
             </p>
+            <div className="info_container">
+              <ul>
+                <li>
+                  <ul>
+                    <li>얻어갔던점</li>
+                    <li>
+                      컴포넌트가 페이지별로 분리되어 있다보니 상태를 관리하는데
+                      있어서 문제가 많았다
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li>페이지</li>
+                    <li>반응형 웹</li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li>참여도</li>
+                    <li>100% 개인작업</li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li>기술스택</li>
+                    <li>NextJS, React, Redux Tool Kit</li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li>라이브러리</li>
+                    <li>SwiperJS</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
             <div className="section6p5_button_cont">
               <a href="https://github.com/kimsangjunv1/-React-OpenAI-Summarizer-website">
                 CODE
@@ -104,31 +169,56 @@ const Section_06 = () => {
             alt=""
           />
           <div className="site_type_03_desc">
-            <h2>Car Hub</h2>
+            <h2>꾸다</h2>
             <div className="project_type">
-              <span>개인 프로젝트</span>
+              <span>팀 프로젝트</span>
+              <span>담당 : 디자인 80% / 프론트 60% / 퍼블리싱 50%</span>
             </div>
             <p>
               <strong>
-                Car Hub는 제조사별 차량들의 모습과
+                본인이 꾸며보고 싶었던 다이어리를 간단하게 꾸며 보고
                 <br />
-                상세 정보를 알 수 있는 사이트 입니다.
+                사용자들끼리 내용도 공유할 수 있도록 만든 웹사이트 '꾸다'
+                입니다.
               </strong>
-              <br />
-              <br />
-              Axios를 사용해 RESTful API를 활용해서 각 컴포넌트 별로 props를
-              <br />
-              넘겨주고 타입스크립트를 활용함으로써 각 props와 가공받아야 할
-              <br />
-              데이터들의 타입이 제대로 지켜질 수 있도록 하였으며
-              <br />
-              <br />
-              제조사 및 차량별로 검색 가능하도록 필터링을 거쳐 하단에 각
-              <br />
-              제조사별 차량들의 모습이 나오고 제조사별 차량을 누르면 상세정보가
-              <br />
-              나오도록 하였습니다.
             </p>
+            <div className="info_container">
+              <ul>
+                <li>
+                  <ul>
+                    <li>얻어갔던점</li>
+                    <li>
+                      컴포넌트가 페이지별로 분리되어 있다보니 상태를 관리하는데
+                      있어서 문제가 많았다
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li>페이지</li>
+                    <li>반응형 웹</li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li>참여도</li>
+                    <li>100% 개인작업</li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li>기술스택</li>
+                    <li>NextJS, React, Redux Tool Kit</li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li>라이브러리</li>
+                    <li>SwiperJS</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
             <div className="section6p5_button_cont">
               <a href="https://github.com/kimsangjunv1/-React-Car-Showcase">
                 CODE
