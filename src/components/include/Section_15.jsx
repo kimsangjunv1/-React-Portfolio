@@ -6,7 +6,7 @@ const Section_15 = () => {
   return (
     // <!-- section15 -->
     // <section style={{ background: "#f6f6fb" }} className="section vr7">
-    <section className="section vr7">
+    <section className="section vr7" style={{ display: "none" }}>
       <div className="section15_flex_cont">
         <div className="section15_all_cont">
           <h2>Worklist</h2>
