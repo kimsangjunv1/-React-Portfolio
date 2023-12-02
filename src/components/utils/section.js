@@ -965,7 +965,7 @@ const section = () => {
     }),
     animation: gsap.to(".i005 .item_desc", {
       // transform: "translatex(-450%)",
-      x: "-1000%",
+      x: "-400%",
     }),
   });
 
