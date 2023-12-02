@@ -938,11 +938,11 @@ const section = () => {
     scrub: 1,
     animation: gsap.from(".i004 .item_desc", {
       // transform: "translatex(-50%)",
-      x: "100%",
+      x: "400%",
     }),
     animation: gsap.to(".i004 .item_desc", {
       // transform: "translatex(-450%)",
-      x: "-700%",
+      x: "-200%",
     }),
   });
 
