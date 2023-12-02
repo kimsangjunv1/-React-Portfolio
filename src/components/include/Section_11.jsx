@@ -60,13 +60,11 @@ const Section_11 = () => {
           </div>
 
           <div className="section_rv_button_cont">
-            <a href="https://github.com/kimsangjunv1/-React-Pick-Music-Player">
-              깃허브
-            </a>
-            <a href="https://react-pick.netlify.app/">미리보기</a>
-            <a href="https://www.figma.com/file/0Fads8hi4HV4RtXV94SAUz/%EB%AE%A4%EC%A7%81%ED%94%8C%EB%A0%88%EC%9D%B4%EC%96%B4-PiCK?type=design&node-id=0%3A1&mode=design&t=0QdSkNiRWmYy96Y9-1">
+            <a href="https://github.com/kimsangjunv1/reactclass">깃허브</a>
+            <a href="https://creative-lokum-2822d2.netlify.app/">미리보기</a>
+            {/* <a href="https://www.figma.com/file/0Fads8hi4HV4RtXV94SAUz/%EB%AE%A4%EC%A7%81%ED%94%8C%EB%A0%88%EC%9D%B4%EC%96%B4-PiCK?type=design&node-id=0%3A1&mode=design&t=0QdSkNiRWmYy96Y9-1">
               피그마
-            </a>
+            </a> */}
           </div>
         </div>
         <div className="section11_logo_cont">
