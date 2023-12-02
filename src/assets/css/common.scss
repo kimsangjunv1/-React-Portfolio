@@ -872,20 +872,32 @@ body {
       }
     }
   }
-  .info_container ul li {
+  .info_container {
     ul {
-      margin-bottom: 5px;
-    }
-    &:last-child {
-      ul {
-        margin-bottom: 0;
+      li {
+        ul {
+          display: flex;
+          align-items: start;
+          // margin-bottom: 5px;
+          li {
+            &:first-child {
+              width: 100% !important;
+              padding-right: 0 !important;
+            }
+          }
+        }
+        &:last-child {
+          ul {
+            margin-bottom: 0;
+          }
+        }
       }
     }
   }
-  .info_container ul li ul li:first-child {
-    width: 100% !important;
-    padding-right: 0 !important;
-  }
+  // .info_container ul li ul li:first-child {
+  //   width: 100% !important;
+  //   padding-right: 0 !important;
+  // }
   .title_wrap {
     flex-direction: column-reverse;
     text-align: center;

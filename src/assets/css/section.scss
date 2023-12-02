@@ -1737,10 +1737,7 @@ h1 {
   z-index: 2;
   width: 40vw;
   transform: skew(346deg, 354deg) rotate(340deg);
-  border: 10px solid rgba(255, 255, 255, 0.0705882353);
-  box-shadow: 0 50px 70px -30px #0000007a;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  border: 2px solid #10c06b;
 }
 .s5p5_2 {
   top: 40vw;
@@ -1760,10 +1757,7 @@ h1 {
   width: 40vw;
   z-index: 2;
   transform: skew(10deg, 2deg);
-  border: 10px solid rgba(255, 255, 255, 0.0705882353);
-  box-shadow: 0 50px 70px -30px #0000007a;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  border: 2px solid #10c06b;
 }
 .s5p5_5 {
   top: 102vw;
@@ -1783,10 +1777,7 @@ h1 {
   width: 40vw;
   z-index: 2;
   transform: skew(343deg, 354deg);
-  border: 10px solid rgba(255, 255, 255, 0.0705882353);
-  box-shadow: 0 50px 70px -30px #0000007a;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  border: 2px solid #10c06b;
 }
 .s5p5_8 {
   top: 177vw;
@@ -1811,7 +1802,7 @@ h1 {
 .site_type_01_desc {
   position: absolute;
   top: 32.2vw;
-  left: 21vw;
+  left: 10vw;
   transform: skew(3deg, 3deg);
 }
 .site_type_02_desc {
@@ -1858,7 +1849,7 @@ h1 {
 .site_type_05_desc h2,
 .site_type_06_desc h2,
 .site_type_07_desc h2 {
-  font-size: 4.2vw;
+  font-size: 2.7vw;
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -1870,6 +1861,11 @@ h1 {
 .site_type_06_desc,
 .site_type_07_desc {
   z-index: 1000;
+  background: #000000de;
+  border: 2px solid #10c06b;
+  padding: 10px;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
 
   .project_type {
     margin-bottom: 10px;
@@ -1882,6 +1878,23 @@ h1 {
       }
     }
   }
+  .info_container {
+    ul {
+      li {
+        ul {
+          margin-bottom: 10px;
+          li {
+            &:first-child {
+              color: #10c06b;
+            }
+            &:last-child {
+              color: rgba(255, 255, 255, 0.8);
+            }
+          }
+        }
+      }
+    }
+  }
 }
 .site_type_01_desc p,
 .site_type_02_desc p,
@@ -1891,10 +1904,6 @@ h1 {
 .site_type_06_desc p,
 .site_type_07_desc p {
   font-size: 1.2vw;
-  // padding: 0 20px;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  // border-left: 11px solid #19f5a5;
   color: #fff;
   line-height: 1.6;
 }
@@ -1911,24 +1920,26 @@ h1 {
 .section6p5_button_cont {
   display: flex;
   justify-content: start;
-  margin-top: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.0705882353);
-  width: 10vw;
-}
-.section6p5_button_cont a {
-  padding: 10px;
-  width: 50%;
-  text-align: center;
-  &:first-child {
-    border-right: 1px solid #ffffff12;
+
+  border: 2px solid #10c06b44;
+  // width: 10vw;
+  a {
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    flex: 1;
+    border-right: 2px solid #10c06b44;
+    &:last-child {
+      border-right: none;
+    }
+    &:hover {
+      background: #10c06b;
+      color: #000;
+    }
+    &:not(:hover) {
+      transition: 0.25s;
+    }
   }
-}
-.section6p5_button_cont a:hover {
-  background: #19f5a5;
-  color: #000;
-}
-.section6p5_button_cont a:not(:hover) {
-  transition: 0.25s;
 }
 
 .ball_cont {

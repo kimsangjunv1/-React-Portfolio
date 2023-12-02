@@ -24,30 +24,31 @@ const Section_06 = () => {
             <h2>PICK</h2>
             <div className="project_type">
               <span>개인 프로젝트</span>
-              <span>담당 : 디자인 100% / 프론트 60% / 퍼블리싱 80%</span>
+              <span>담당 : 디자인 100% / 프론트 100% / 퍼블리싱 100%</span>
             </div>
-            <p>
-              <strong>
-                사용자에게 날씨별로 음악의 듣기/아티스트 정보/앨범정보를
-                제공해주는
-                <br />웹 사이트 'PiCK' 입니다,
-              </strong>
-            </p>
             <div className="info_container">
               <ul>
                 <li>
                   <ul>
-                    <li>얻어갔던점</li>
+                    <li>설명</li>
                     <li>
-                      컴포넌트가 페이지별로 분리되어 있다보니 상태를 관리하는데
-                      있어서 문제가 많았다
+                      사용자에게 날씨별로 음악의 듣기/아티스트 정보/앨범정보를
+                      제공해주는
+                      <br />웹 사이트 'PiCK' 입니다,
                     </li>
                   </ul>
                 </li>
                 <li>
                   <ul>
-                    <li>페이지</li>
-                    <li>반응형 웹</li>
+                    <li>회고록</li>
+                    <li>
+                      각 페이지별,컴포넌트별로 나누다보니
+                      재생기록/플레이리스트/정보 등의 상태값을 넘겨주는것이
+                      복잡해지는 문제에 부딪혀
+                      <br />
+                      ReduxToolKit을 사용해 페이지별 상태관리를 용이하게
+                      하였습니다.
+                    </li>
                   </ul>
                 </li>
                 <li>
@@ -59,43 +60,23 @@ const Section_06 = () => {
                 <li>
                   <ul>
                     <li>기술스택</li>
-                    <li>NextJS, React, Redux Tool Kit</li>
+                    <li>React,Redux Tool Kit</li>
                   </ul>
                 </li>
                 <li>
                   <ul>
-                    <li>라이브러리</li>
-                    <li>SwiperJS</li>
+                    <li>API</li>
+                    <li>야후 날씨, 샤잠 뮤직</li>
                   </ul>
                 </li>
               </ul>
             </div>
-            {/* <br />
-              <br />
-              Axios를 사용해 RESTful API를 활용해서 각 컴포넌트 별로 props를
-              <br />
-              넘겨주고 컴포넌트간의 가공된 데이터를 받을 수 있도록 Redux
-              <br />
-              Toolkit을 통해 관리하였습니다.
-              <br />
-              <br />
-              메인화면 첫번째 섹션에 어떤 음악들이 추천되었는지 두번째 섹션에
-              <br />
-              주간 날씨가 어떤지 세번째 섹션에는 각 음악들의 순위와 아티스트들을
-              <br />
-              보여주도록 하였으며
-              <br />
-              <br />
-              각 아티스트가 어떤 음악을 녹음했는지 발매 정보를 각
-              <br />
-              아티스트별로 클릭을 했을때 보여주고 해당 음원들을 눌렀을때
-              <br />
-              실제로 재생되도록 하였습니다. */}
             <div className="section6p5_button_cont">
               <a href="https://github.com/kimsangjunv1/-React-Pick-Music-Player">
-                CODE
+                깃허브
               </a>
-              <a href="https://react-pick.netlify.app">VIEW</a>
+              <a href="https://react-pick.netlify.app">미리보기</a>
+              <a href="https://react-pick.netlify.app">피그마</a>
             </div>
           </div>
         </div>
@@ -111,27 +92,35 @@ const Section_06 = () => {
               <span>개인 프로젝트</span>
               <span>담당 : 디자인 100% / 프론트 100% / 퍼블리싱 100%</span>
             </div>
-            <p>
+            {/* <p>
               <strong>
                 기존 유튜브를 재디자인 후 드랍박스의 기능을 추가한 <br />
                 웹사이트 'PlayGround' 입니다,
               </strong>
-            </p>
+            </p> */}
             <div className="info_container">
               <ul>
                 <li>
                   <ul>
-                    <li>얻어갔던점</li>
+                    <li>설명</li>
                     <li>
-                      컴포넌트가 페이지별로 분리되어 있다보니 상태를 관리하는데
-                      있어서 문제가 많았다
+                      기존 유튜브를 재디자인 후 드랍박스의 기능을 추가한 <br />
+                      웹사이트 'PlayGround' 입니다,
                     </li>
                   </ul>
                 </li>
                 <li>
                   <ul>
-                    <li>페이지</li>
-                    <li>반응형 웹</li>
+                    <li>회고록</li>
+                    <li>
+                      원하는 영상을 드랍박스구역에 드래그&드롭 하여 저장하다보니
+                      이미 똑같은 영상이 존재함에도 또 다시 담기는 문제와
+                      박스에서 삭제시 같이 삭제되는 문제가 발생하였습니다.
+                      <br />
+                      그래서 저장되어있는 정보를 map을 통해 각 비디오 id 값을
+                      담은 변수에 includes를 통해 지금 넣으려는 비디오의 id가
+                      없을 경우에만 저장되도록 하여 해결하였습니다.
+                    </li>
                   </ul>
                 </li>
                 <li>
@@ -143,22 +132,23 @@ const Section_06 = () => {
                 <li>
                   <ul>
                     <li>기술스택</li>
-                    <li>NextJS, React, Redux Tool Kit</li>
+                    <li>React,Zustand</li>
                   </ul>
                 </li>
                 <li>
                   <ul>
-                    <li>라이브러리</li>
-                    <li>SwiperJS</li>
+                    <li>API</li>
+                    <li>유튜브</li>
                   </ul>
                 </li>
               </ul>
             </div>
             <div className="section6p5_button_cont">
               <a href="https://github.com/kimsangjunv1/-React-OpenAI-Summarizer-website">
-                CODE
+                깃허브
               </a>
-              <a href="https://react-sumz.netlify.app/">VIEW</a>
+              <a href="https://react-sumz.netlify.app/">미리보기</a>
+              <a href="https://react-sumz.netlify.app/">피그마</a>
             </div>
           </div>
         </div>
@@ -174,29 +164,30 @@ const Section_06 = () => {
               <span>팀 프로젝트</span>
               <span>담당 : 디자인 80% / 프론트 60% / 퍼블리싱 50%</span>
             </div>
-            <p>
-              <strong>
-                본인이 꾸며보고 싶었던 다이어리를 간단하게 꾸며 보고
-                <br />
-                사용자들끼리 내용도 공유할 수 있도록 만든 웹사이트 '꾸다'
-                입니다.
-              </strong>
-            </p>
             <div className="info_container">
               <ul>
                 <li>
                   <ul>
-                    <li>얻어갔던점</li>
+                    <li>설명</li>
                     <li>
-                      컴포넌트가 페이지별로 분리되어 있다보니 상태를 관리하는데
-                      있어서 문제가 많았다
+                      본인이 꾸며보고 싶었던 다이어리를 간단하게 꾸며 보고
+                      <br />
+                      사용자들끼리 내용도 공유할 수 있도록 만든 웹사이트 '꾸다'
+                      입니다.
                     </li>
                   </ul>
                 </li>
                 <li>
                   <ul>
-                    <li>페이지</li>
-                    <li>반응형 웹</li>
+                    <li>회고록</li>
+                    <li>
+                      각 페이지별,컴포넌트별로 나누다보니
+                      재생기록/플레이리스트/정보 등의 상태값을 넘겨주는것이
+                      복잡해지는 문제에 부딪혀
+                      <br />
+                      ReduxToolKit을 사용해 페이지별 상태관리를 용이하게
+                      하였습니다.
+                    </li>
                   </ul>
                 </li>
                 <li>
@@ -208,22 +199,23 @@ const Section_06 = () => {
                 <li>
                   <ul>
                     <li>기술스택</li>
-                    <li>NextJS, React, Redux Tool Kit</li>
+                    <li>React,Redux Tool Kit</li>
                   </ul>
                 </li>
                 <li>
                   <ul>
-                    <li>라이브러리</li>
-                    <li>SwiperJS</li>
+                    <li>API</li>
+                    <li>야후 날씨, 샤잠 뮤직</li>
                   </ul>
                 </li>
               </ul>
             </div>
             <div className="section6p5_button_cont">
               <a href="https://github.com/kimsangjunv1/-React-Car-Showcase">
-                CODE
+                깃허브
               </a>
-              <a href="#">VIEW(수정중)</a>
+              <a href="#">미리보기(수정중)</a>
+              <a href="#">피그마</a>
             </div>
           </div>
         </div>

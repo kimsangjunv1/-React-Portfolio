@@ -7,15 +7,13 @@ const Section_04 = () => {
     // <!-- 섹션 4 : 게임 이펙트 -->
     <section id="game" className="section point custom_color">
       <div className="section4_fixed">
-        <h2 className="title">
-          GAME <em>EFFECT</em>
-        </h2>
+        <h2 className="title">게임&뮤직</h2>
         <div className="desc_cont">
           <p className="desc">
-            자바스크립트와 각종 음원들을 통하여
+            어릴적부터 좋아하던 게임을 유튜브 강의를 보고 제작하였으나,
             <br />
-            게임 이펙트에 다양한 게임들을 담았습니다
-            <br />총 4가지의 게임으로 준비해보았습니다.
+            게임 시작,스코어부분과 더불어 bgm이 없으니 심심하다 생각이되어
+            <br />각 요소를 추가하게되었습니다.
           </p>
           <div className="section4_button_cont">
             <a href="https://github.com/kimsangjunv1/codingclass/blob/main/javascript/effect/gameEffect01.html">
