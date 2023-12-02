@@ -164,6 +164,7 @@ const Section_03 = () => {
         <div className="section3_item i004">
           <img src={section3_img_004} alt="Search Effect" />
           <div className="item_desc">
+            <h2>TOOLS</h2>
             <div>
               <h4>Zeplin</h4>
               <p>
