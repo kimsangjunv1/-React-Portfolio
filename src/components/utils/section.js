@@ -927,22 +927,22 @@ const section = () => {
     scrub: 1,
     animation: gsap.from(".i004", {
       // transform: "translatex(-50%)",
-      x: "300%",
+      x: "250%",
     }),
     animation: gsap.to(".i004", {
       // transform: "translatex(-450%)",
-      x: "-350%",
+      x: "-450%",
     }),
   });
   ScrollTrigger.create({
     scrub: 1,
     animation: gsap.from(".i004 .item_desc", {
       // transform: "translatex(-50%)",
-      x: "300%",
+      x: "250%",
     }),
     animation: gsap.to(".i004 .item_desc", {
       // transform: "translatex(-450%)",
-      x: "-450%",
+      x: "-550%",
     }),
   });
 
