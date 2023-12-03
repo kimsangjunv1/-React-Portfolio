@@ -51,7 +51,7 @@ const Header = () => {
           <a href="#usedStack">스택</a>
           <a href="#game">게임</a>
           <a href="#site">개인 프로젝트</a>
-          <a href="#vue&react">기본 사이트</a>
+          <a href="#vue&react">OpenAPI활용</a>
         </div>
         <button className="mobile_btn">메뉴</button>
         <div className="menu_cont mobile">
@@ -59,7 +59,7 @@ const Header = () => {
           <a href="#usedStack">스택</a>
           <a href="#game">게임</a>
           <a href="#site">개인 프로젝트</a>
-          <a href="#vue&react">기본 사이트</a>
+          <a href="#vue&react">OpenAPI활용</a>
         </div>
       </div>
     </header>
