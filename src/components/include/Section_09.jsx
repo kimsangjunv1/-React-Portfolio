@@ -32,7 +32,7 @@ const Section_09 = () => {
           </div>
           <div className="info_container">
             <ul>
-              <li>
+              {/* <li>
                 <ul>
                   <li>타입</li>
                   <li>반응형 웹</li>
@@ -49,11 +49,11 @@ const Section_09 = () => {
                   <li>참여도</li>
                   <li>100% 개인작업</li>
                 </ul>
-              </li>
+              </li> */}
               <li>
                 <ul>
-                  <li>기술스택</li>
-                  <li>NextJS, React, Redux Tool Kit</li>
+                  <li>사용기술</li>
+                  <li>React</li>
                 </ul>
               </li>
               <li>
