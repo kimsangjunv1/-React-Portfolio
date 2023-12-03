@@ -66,7 +66,7 @@ const Section_09 = () => {
           </div>
           <div className="section_rv_button_cont">
             <a href="https://github.com/kimsangjunv1/react_api">깃허브</a>
-            <a href="https://reactapi11.netlify.app">미리보기</a>
+            <a href="study-api.netlify.app/movie">미리보기</a>
             {/* <a href="https://reactapi11.netlify.app/movie">피그마</a> */}
           </div>
         </div>
