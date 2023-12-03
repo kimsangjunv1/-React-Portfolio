@@ -35,18 +35,19 @@ const gsaps = () => {
   //   },
   // });
 
+  // {
+  //   color: "#fff",
+  //   background: "linear-gradient(180deg, #000000, #00000000)",
+  // },
   // 상단바 : 색상 바꾸기
   ScrollTrigger.create({
     // 어디에 닿으면 반응할건지
-    trigger: ".editorial_two",
+    trigger: ".editorial_03",
     scrub: 1,
     // 어디다가 적용할건지
-    animation: gsap.fromTo(
+    animation: gsap.to(
       "#header, #header .header_inner a, .porfolio_desc_fixed p",
-      {
-        color: "#fff",
-        background: "linear-gradient(180deg, #000000, #00000000)",
-      },
+
       {
         color: "#000",
         background: "linear-gradient(180deg, #ededf4, #ededf400)",
@@ -55,7 +56,7 @@ const gsaps = () => {
   });
   ScrollTrigger.create({
     // 어디에 닿으면 반응할건지
-    trigger: ".editorial_two",
+    trigger: ".editorial_03",
     scrub: 1,
     // 어디다가 적용할건지
     animation: gsap.fromTo(
@@ -72,7 +73,7 @@ const gsaps = () => {
   });
   ScrollTrigger.create({
     // 어디에 닿으면 반응할건지
-    trigger: ".editorial_two",
+    trigger: ".editorial_03",
     scrub: 1,
     // 어디다가 적용할건지
     animation: gsap.fromTo(
@@ -88,15 +89,11 @@ const gsaps = () => {
 
   ScrollTrigger.create({
     // 어디에 닿으면 반응할건지
-    trigger: "#site",
+    trigger: ".editorial_04",
     scrub: 1,
     // 어디다가 적용할건지
-    animation: gsap.fromTo(
+    animation: gsap.to(
       "#header, #header .header_inner a, .porfolio_desc_fixed p",
-      {
-        color: "#000",
-        background: "linear-gradient(180deg, #ededf4, #ededf400)",
-      },
       {
         color: "#fff",
         background: "linear-gradient(180deg, #000000, #00000000)",
@@ -105,23 +102,22 @@ const gsaps = () => {
   });
   ScrollTrigger.create({
     // 어디에 닿으면 반응할건지
-    trigger: ".editorial_two",
+    trigger: ".editorial_04",
     scrub: 1,
     // 어디다가 적용할건지
     animation: gsap.fromTo(
       ".scroll_background",
       {
-        background: "white",
+        background: "black",
       },
       {
-        background: "black",
+        background: "white",
       }
     ),
   });
-
   ScrollTrigger.create({
     // 어디에 닿으면 반응할건지
-    trigger: "#site",
+    trigger: ".editorial_04",
     scrub: 1,
     // 어디다가 적용할건지
     animation: gsap.fromTo(
@@ -140,54 +136,36 @@ const gsaps = () => {
 
   // ScrollTrigger.create({
   //   // 어디에 닿으면 반응할건지
-  //   trigger: ".bg_change_purple",
+  //   trigger: ".section15_flex_cont",
   //   scrub: 1,
   //   // 어디다가 적용할건지
   //   animation: gsap.fromTo(
-  //     "#header, #header a, .porfolio_desc_fixed p",
+  //     "#header, #header .header_inner a, .porfolio_desc_fixed p",
   //     {
-  //       // color: "#000",
+  //       color: "#fff",
   //       background: "linear-gradient(180deg, #000000, #00000000)",
   //     },
   //     {
-  //       // color: "#fff",
-  //       background: "linear-gradient(180deg, #000000, #00000000)",
+  //       color: "#000",
+  //       background: "linear-gradient(180deg, #ededf4, #ededf400)",
   //     }
   //   ),
   // });
-
-  ScrollTrigger.create({
-    // 어디에 닿으면 반응할건지
-    trigger: ".section15_flex_cont",
-    scrub: 1,
-    // 어디다가 적용할건지
-    animation: gsap.fromTo(
-      "#header, #header .header_inner a, .porfolio_desc_fixed p",
-      {
-        color: "#fff",
-        background: "linear-gradient(180deg, #000000, #00000000)",
-      },
-      {
-        color: "#000",
-        background: "linear-gradient(180deg, #ededf4, #ededf400)",
-      }
-    ),
-  });
-  ScrollTrigger.create({
-    // 어디에 닿으면 반응할건지
-    trigger: ".section15_flex_cont",
-    scrub: 1,
-    // 어디다가 적용할건지
-    animation: gsap.fromTo(
-      ".scroll_background",
-      {
-        background: "white",
-      },
-      {
-        background: "black",
-      }
-    ),
-  });
+  // ScrollTrigger.create({
+  //   // 어디에 닿으면 반응할건지
+  //   trigger: ".section15_flex_cont",
+  //   scrub: 1,
+  //   // 어디다가 적용할건지
+  //   animation: gsap.fromTo(
+  //     ".scroll_background",
+  //     {
+  //       background: "white",
+  //     },
+  //     {
+  //       background: "black",
+  //     }
+  //   ),
+  // });
 };
 
 export default gsaps;
