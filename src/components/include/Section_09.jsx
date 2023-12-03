@@ -62,6 +62,12 @@ const Section_09 = () => {
                   <li>SwiperJS</li>
                 </ul>
               </li>
+              <li>
+                <ul>
+                  <li>API</li>
+                  <li>TMDB</li>
+                </ul>
+              </li>
             </ul>
           </div>
           <div className="section_rv_button_cont">

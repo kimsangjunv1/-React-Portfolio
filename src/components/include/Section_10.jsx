@@ -59,6 +59,12 @@ const Section_10 = () => {
                   <li>SwiperJS</li>
                 </ul>
               </li>
+              <li>
+                <ul>
+                  <li>API</li>
+                  <li>Unsplash</li>
+                </ul>
+              </li>
             </ul>
           </div>
           <div className="section_rv_button_cont">
