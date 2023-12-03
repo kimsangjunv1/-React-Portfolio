@@ -4,6 +4,9 @@ body {
   // overflow-x: hidden;
   position: relative;
 }
+#awwwards {
+  display: none;
+}
 body {
   background-color: #000000;
   overflow: hidden;
@@ -500,9 +503,6 @@ body {
         font-size: 20vw !important;
       }
     }
-  }
-  #awwwards {
-    display: none;
   }
   .cursor,
   .porfolio_desc_fixed {
