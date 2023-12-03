@@ -35,10 +35,6 @@ const gsaps = () => {
   //   },
   // });
 
-  // {
-  //   color: "#fff",
-  //   background: "linear-gradient(180deg, #000000, #00000000)",
-  // },
   // 상단바 : 색상 바꾸기
   ScrollTrigger.create({
     // 어디에 닿으면 반응할건지
@@ -133,39 +129,6 @@ const gsaps = () => {
       }
     ),
   });
-
-  // ScrollTrigger.create({
-  //   // 어디에 닿으면 반응할건지
-  //   trigger: ".section15_flex_cont",
-  //   scrub: 1,
-  //   // 어디다가 적용할건지
-  //   animation: gsap.fromTo(
-  //     "#header, #header .header_inner a, .porfolio_desc_fixed p",
-  //     {
-  //       color: "#fff",
-  //       background: "linear-gradient(180deg, #000000, #00000000)",
-  //     },
-  //     {
-  //       color: "#000",
-  //       background: "linear-gradient(180deg, #ededf4, #ededf400)",
-  //     }
-  //   ),
-  // });
-  // ScrollTrigger.create({
-  //   // 어디에 닿으면 반응할건지
-  //   trigger: ".section15_flex_cont",
-  //   scrub: 1,
-  //   // 어디다가 적용할건지
-  //   animation: gsap.fromTo(
-  //     ".scroll_background",
-  //     {
-  //       background: "white",
-  //     },
-  //     {
-  //       background: "black",
-  //     }
-  //   ),
-  // });
 };
 
 export default gsaps;
