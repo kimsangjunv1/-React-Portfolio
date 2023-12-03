@@ -15,11 +15,14 @@ const Section_10 = () => {
           <div className="title_container">
             <p className="title">언스플레시 API</p>
             <p className="description">
-              Axios를 사용해 RESTful API를 활용하여
+              API의 사용원리를 이해하기 위해 제작하게 되었습니다.
               <br />
-              Unsplash에서 제공하는 api로
+              언스플래시에서 제공하는 OpenAPI를 이용해
               <br />
-              검색한 사진들을 보여주도록 하였으며
+              useEffect 훅을 사용하여 렌더링 이후 api를 호출하도록 하여
+              <br />
+              랜덤으로 이미지를 가져온 후, 검색시 해당 키워드에 해당하는
+              이미지가 나오도록 하였습니다.
               <br />
               <br />
               swiper 라이브러리를 통해 상단에 사진들을

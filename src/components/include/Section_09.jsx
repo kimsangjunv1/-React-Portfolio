@@ -19,11 +19,13 @@ const Section_09 = () => {
           <div className="title_container">
             <p className="title">TMDB API</p>
             <p className="description">
-              Axios를 사용해 RESTful API를 활용하여
+              API의 사용원리를 이해하기 위해 제작하게 되었습니다.
               <br />
-              TMDB에서 제공하는 api를 이용해 검색
+              TMDB에서 제공하는 OpenAPI를 이용해
               <br />
-              가능한 영화 목록 웹사이트를 만들었습니다.
+              useEffect 훅을 사용하여 렌더링 이후 api를 호출하도록 하여
+              <br />
+              검색 가능한 영화 목록 웹사이트를 만들었습니다.
               <br />
               <br />
               영화 목록들을 검색하고 검색한 결과를 보여주는 사이트를

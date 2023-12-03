@@ -15,13 +15,11 @@ const Section_11 = () => {
           <div className="title_container">
             <p className="title">기본구조 웹사이트</p>
             <p className="description">
-              REACT의 장점인 컴포넌트를 적극 활용해 구성한 기본구조 웹사이트
-              입니다.
+              React의 기본구조와 컴포넌트 분리에 대해
               <br />
-              <br />
-              상단에 SWIPER를 통해 자동으로 넘어가게하고
-              <br />
-              메뉴 클릭시 해당 섹션으로 스크롤 되게 하였습니다.
+              학습을 위해 만들어본 사이트 입니다.
+              <br />본 학습을 통해 부모 컴포넌트에서 자식 컴포넌트로 state
+              전달하는 방법을 이해하였습니다.
             </p>
           </div>
           <div className="info_container">
