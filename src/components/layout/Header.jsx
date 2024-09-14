@@ -11,7 +11,7 @@ const Header = () => {
     }), []);
 
     useEffect(() => {
-        Animation.layout.header(refs);
+        // Animation.layout.header(refs);
     }, [refs]);
         
     return (

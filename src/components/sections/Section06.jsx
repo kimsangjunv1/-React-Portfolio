@@ -26,9 +26,9 @@ const Section06 = ({ data }) => {
                     프로젝트
                 </section>
                 <section className="bg">
-                    <img src="/images/sections/05/img-deco-02.png" alt="/" className="deco" loading="lazy" />
-                    <img src="/images/sections/05/img-deco-01.png" alt="/" className="deco" loading="lazy" />
-                    <img src="/images/sections/05/img-deco-03.png" alt="/" className="deco" loading="lazy" />
+                    <img src="/images/sections/05/img-deco-02.png" alt="/" className="deco" />
+                    <img src="/images/sections/05/img-deco-01.png" alt="/" className="deco" />
+                    <img src="/images/sections/05/img-deco-03.png" alt="/" className="deco" />
                 </section>
                 <WaveComponents color={"#000000"}/>
             </div>
@@ -40,7 +40,7 @@ const Section06 = ({ data }) => {
             <section className="item" key={index}>
                 {/* <div className="container-inner" style={{ background:`url(/images/sections/06/img-bg-0${index + 1}.png) center top / cover no-repeat` }}> */}
                 <div className="container-inner" >
-                    <img src={`/images/sections/06/${element.imgSrc}.png`} alt="/" className="logo" loading="lazy" />
+                    <img src={`/images/sections/06/${element.imgSrc}.png`} alt="/" className="logo" />
 
                     <div>
                         <section className="info">
@@ -94,9 +94,9 @@ const Section06 = ({ data }) => {
                         
 
                         <section className="actions">
-                            <a href={element.url.live} target="_blank">보기</a>
-                            <a href={element.url.github} target="_blank">깃허브</a>
-                            <a href={element.url.figma} target="_blank">피그마</a>
+                            <a href={element.url.live}>보기</a>
+                            <a href={element.url.github}>깃허브</a>
+                            <a href={element.url.figma}>피그마</a>
                         </section>
                     </div>
                 </div>

@@ -33,8 +33,8 @@ const App = () => {
                 <Section02 data={ data.about } />
                 <Section03 data={ data.career } />
                 <Section04 data={ data.skill } />
-                <Section05 data={ data.education } />
                 <Section06 data={ data.projects } />
+                <Section05 data={ data.education } />
                 <Section07 />
 
                 <MouseComponents />

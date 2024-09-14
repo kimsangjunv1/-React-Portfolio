@@ -326,15 +326,15 @@ class Animation {
         //---------------------------------------------------------------------------------------------------------
 
         const sections = gsap.utils.toArray("#skill > section");
-        
+
         const scrollTween = gsap.to(sections, {
             xPercent: -100 * (sections.length - 1),
             ease: "none",
             scrollTrigger: {
                 trigger: target.container.current,
                 pin: true,
-                scrub: 0,
-                end: () => "+=" + target.container.current.offsetWidth,
+                scrub: 1, // 스크롤과 애니메이션 동기화
+                end: () => "+=" + target.container.current.scrollWidth, // 전체 가로 스크롤 길이 설정
             },
         });
 
@@ -412,29 +412,29 @@ class Animation {
         });
 
         // 이미지들을 선택
-        const images = gsap.utils.toArray("#skill .contents");
+        // const images = gsap.utils.toArray("#skill .contents");
 
-        images.forEach((e, i) => {
-            gsap.fromTo(
-                e,
-                {
-                    opacity: 0,
-                    filter: "blur(10px)",
-                },
-                {
-                    opacity: 1,
-                    filter: "blur(0px)",
-                    ease: "none",
-                    scrollTrigger: {
-                        trigger: e,
-                        containerAnimation: scrollTween,
-                        start: "center 130%",
-                        end: "center 80%",
-                        scrub: true
-                    }
-                }
-            );
-        })
+        // images.forEach((e, i) => {
+        //     gsap.fromTo(
+        //         e,
+        //         {
+        //             opacity: 0,
+        //             filter: "blur(10px)",
+        //         },
+        //         {
+        //             opacity: 1,
+        //             filter: "blur(0px)",
+        //             ease: "none",
+        //             scrollTrigger: {
+        //                 trigger: e,
+        //                 containerAnimation: scrollTween,
+        //                 start: "center 130%",
+        //                 end: "center 80%",
+        //                 scrub: true
+        //             }
+        //         }
+        //     );
+        // })
 
         //---------------------------------------------------------------------------------------------------------
         //---------------------------------------------------------------------------------------------------------
