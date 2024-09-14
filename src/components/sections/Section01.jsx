@@ -10,8 +10,11 @@ import Particle_03 from "/images/sections/01/particle_03.svg";
 import Particle_04 from "/images/sections/01/particle_04.svg";
 import Particle_05 from "/images/sections/01/particle_05.svg";
 import Particle_06 from "/images/sections/01/particle_06.svg";
+import useMatchMedia from "../hooks/useMatchMedia";
 
 const Section01 = () => {
+    const isMobile = useMatchMedia("(max-width: 768px)");
+    
     const refCharacter01 = useRef(null);
     const refCharacter02 = useRef(null);
     const refCharacter03 = useRef(null);

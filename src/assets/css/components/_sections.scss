@@ -2,6 +2,7 @@ article {
     width: 100%;
     min-height: 100vh;
     height: 100%;
+    box-sizing: border-box;
 
     > .container-inner {
         padding: 0 var(--between-space);

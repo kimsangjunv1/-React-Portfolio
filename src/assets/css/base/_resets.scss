@@ -12,13 +12,13 @@
   
     background: var(--page-home-bg);
     color: var(--main-text-color);
-  }
-  
+}
+
 html {
     line-height: 1.25; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
     max-width: 100%;
-    // cursor: none;
+    overflow-x: hidden;
 }
 
 ::selection {
@@ -38,8 +38,8 @@ html {
 
 body {
     position: relative;
-    // overflow-x: hidden;
-    overflow: hidden;
+    overflow-x: hidden;
+    // overflow: hidden;
     width: 100%;
     background-color: #000000;
 }

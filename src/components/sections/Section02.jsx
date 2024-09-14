@@ -1,7 +1,7 @@
 import { useEffect, useRef, useMemo, Fragment } from "react";
 import Animation from "../utils/animation";
 
-const Section02 = ({ data }) => {
+const Section02 = ({ data, isMobile }) => {
     const refContainer = useRef(null);
     const refCard = useRef(null);
 
@@ -9,6 +9,10 @@ const Section02 = ({ data }) => {
         container: refContainer,
         card: refCard,
     }), []);
+    
+    useEffect(() => {
+        console.log("감지",isMobile)
+    }, [isMobile])
 
     useEffect(() => {
         Animation.section03(refs);

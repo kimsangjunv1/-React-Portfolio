@@ -1,5 +1,5 @@
 main {
-    overflow: hidden;
+    overflow-x: hidden;
 
     &::after {
         content: "";
@@ -13,6 +13,7 @@ main {
         background-size: cover;
         z-index: 10000000000;
         pointer-events: none;
+        touch-action: none;
         mix-blend-mode: screen;
     }
 }

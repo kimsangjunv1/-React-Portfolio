@@ -1,0 +1,63 @@
+@media screen and (max-width: 768px) {
+    main {
+        &::after {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    article {
+        &#about {
+            .container-inner {
+                > section {
+                    &:last-child {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        &#career {
+            .container-inner {
+                .item {
+                    > section {
+                        &:last-child {
+                            flex-direction: column;
+                        }
+                    }
+                }
+            }
+        }
+
+        &#projects {
+            .item {
+                > .container-inner {
+                    width: 100% !important;
+                    padding: 0 20px;
+
+                    > img {
+                        display: none !important;
+                    }
+
+                    > div {
+                        width: auto !important;
+                        min-width: auto !important;
+                    }
+                }
+            }
+        }
+
+        &#progress {
+            display: none;
+        }
+
+        &#etc {
+            .cursor {
+                &.main {
+                    display: none;
+                }
+            }
+        }
+    }
+}

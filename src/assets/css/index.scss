@@ -3,7 +3,6 @@
 // base 초기 세팅 스타일
 @import "base/fonts";
 @import "base/resets";
-// @import "base/common";
 
 // abstracts 전역변수
 @import "abstracts/variables";
@@ -12,32 +11,21 @@
 @import "vendors/swiper";
 @import "vendors/lenis";
 
-// pages 페이지 별
-// @import "pages/home";
-// @import "pages/admin";
-// @import "pages/playlist";
-// @import "pages/artist";
-// @import "pages/album";
-
 // layout 사이트 구조
 @import "layout/header";
 @import "layout/main";
 @import "layout/footer";
-// @import "layout/aside";
-// @import "layout/mobile";
 
 // 반응형 모바일
-// @import "layout/mobile";
+@import "layout/mobile";
 
 // components 재사용 가능한 컴포넌트
 @import "components/marquee";
 @import "components/mouse";
 @import "components/popup";
 @import "components/skip";
-// @import "components/cursor";
 @import "components/progress";
 @import "components/wave";
 @import "components/animation";
 @import "components/sections";
-// @import "components/title";
 // @import "components/loading";

@@ -20,21 +20,25 @@ import { data } from "@/components/utils/data";
 
 import Animation from "@/components/utils/animation";
 
+import useMatchMedia from "@/components/hooks/useMatchMedia";
+
 const App = () => {
+    const isMobile = useMatchMedia("(max-width: 768px)");
+
     useEffect(() => {
-        Animation.layout.main();
-    },[])
+        !isMobile ? Animation.layout.main() : "";
+    },[isMobile])
 
     return (
         <Fragment>
             <Header />
             <Main>
                 <Section01 />
-                <Section02 data={ data.about } />
-                <Section03 data={ data.career } />
-                <Section04 data={ data.skill } />
-                <Section06 data={ data.projects } />
-                <Section05 data={ data.education } />
+                <Section02 isMobile={isMobile} data={ data.about } />
+                <Section03 isMobile={isMobile} data={ data.career } />
+                <Section04 isMobile={isMobile} data={ data.skill } />
+                <Section06 isMobile={isMobile} data={ data.projects } />
+                <Section05 isMobile={isMobile} data={ data.education } />
                 <Section07 />
 
                 <MouseComponents />
