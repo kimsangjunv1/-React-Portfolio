@@ -1,3 +1,4 @@
+// 태블릿 이하
 @media screen and (max-width: 768px) {
     main {
         &::after {
@@ -80,43 +81,5 @@
             }
         }
 
-    }
-}
-
-@media screen and (max-width: 375px) {
-    article {
-        // &#about {
-        //     .container-inner {
-        //         > section {
-        //             &:last-child {
-        //                 display: none;
-        //             }
-        //         }
-        //     }
-        // }
-
-        // &#career {
-        //     .container-inner {
-        //         .item {
-        //             > section {
-        //                 &:last-child {
-        //                     flex-direction: column;
-        //                 }
-        //             }
-        //         }
-        //     }
-        // }
-
-        // &#progress {
-        //     display: none;
-        // }
-
-        // &#etc {
-        //     .cursor {
-        //         &.main {
-        //             display: none;
-        //         }
-        //     }
-        // }
     }
 }
