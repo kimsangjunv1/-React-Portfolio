@@ -274,7 +274,7 @@ export const data = {
             }
         },
         {
-            title: "메이즈 공식 홈페이지",
+            title: "메이즈 공식 사이트",
             desc: "asdasdasdas",
             imgSrc:"img-project-maze",
             feature: {

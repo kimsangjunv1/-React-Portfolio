@@ -30,7 +30,7 @@ const Section06 = ({ data }) => {
                     <img src="/images/sections/05/img-deco-01.png" alt="/" className="deco" />
                     <img src="/images/sections/05/img-deco-03.png" alt="/" className="deco" />
                 </section>
-                <WaveComponents color={"#000000"}/>
+                <WaveComponents color={"#2B2BCC"}/>
             </div>
         </section>
         {/* 타이틀 END */}
