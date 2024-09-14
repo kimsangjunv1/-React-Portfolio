@@ -3,7 +3,7 @@ import Animation from '../utils/animation';
 
 import Background from "/images/sections/03/background.png";
 
-const Section04 = ({ data }) => {
+const Section04 = ({ data, isMobile }) => {
     const refContainer = useRef(null);
     const refBackground01 = useRef(null);
     const refBackground02 = useRef(null);
@@ -16,7 +16,7 @@ const Section04 = ({ data }) => {
 
 
     useEffect(() => {
-        Animation.section04(refs)
+        Animation.section04(refs, isMobile)
     }, [refs]);
   return (
     <article id="skill" ref={refs.container}>

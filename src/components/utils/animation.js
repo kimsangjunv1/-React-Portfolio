@@ -301,7 +301,8 @@ class Animation {
     }
 
     //w 섹션 3 : 사용 가능 기술
-    static section04(target, event) {
+    static section04(target, isMobile) {
+        console.log("???????", isMobile)
         const title = gsap.utils.toArray("#skill .title");
 
         // 텍스트 분리 및 삽입
@@ -328,7 +329,7 @@ class Animation {
         const sections = gsap.utils.toArray("#skill > section");
 
         const scrollTween = gsap.to(sections, {
-            xPercent: -100 * (sections.length - 1),
+            xPercent: -100 * (isMobile ? sections.length : sections.length - 1),
             ease: "none",
             scrollTrigger: {
                 trigger: target.container.current,
@@ -338,103 +339,83 @@ class Animation {
             },
         });
 
-        // 항목 1
-        ScrollTrigger.create({
-            scrub: 1,
-            animation: gsap.fromTo(
-                ".target-1 .pinned",
-                {
-                    x: 1500,
-                    y: "0%"
-                },
-                {
-                    x: -1500,
-                }
-            )
-        });
-
-        // 항목 2
-        ScrollTrigger.create({
-            scrub: 1,
-            animation: gsap.fromTo(
-                ".target-2 .pinned",
-                {
-                    x: 2000,
-                    y: "-30%"
-                },
-                {
-                    x: -2000,
-                }
-            )
-        });
-
-        // 항목 3
-        ScrollTrigger.create({
-            scrub: 1,
-            animation: gsap.fromTo(
-                ".target-3 .pinned",
-                {
-                    x: 1200,
-                    y: "10%"
-                },
-                {
-                    x: -1200,
-                }
-            )
-        });
-
-        ScrollTrigger.create({
-            scrub: 1,
-            animation: gsap.fromTo(
-                ".target-4 .pinned",
-                {
-                    x: 1500,
-                    y: "-30%"
-                },
-                {
-                    x: -1000,
-                }
-            )
-        });
-
-        ScrollTrigger.create({
-            scrub: 1,
-            animation: gsap.fromTo(
-                ".target-5 .pinned",
-                {
-                    x: 700,
-                    y: "0%"
-                },
-                {
-                    x: -800,
-                }
-            )
-        });
-
-        // 이미지들을 선택
-        // const images = gsap.utils.toArray("#skill .contents");
-
-        // images.forEach((e, i) => {
-        //     gsap.fromTo(
-        //         e,
-        //         {
-        //             opacity: 0,
-        //             filter: "blur(10px)",
-        //         },
-        //         {
-        //             opacity: 1,
-        //             filter: "blur(0px)",
-        //             ease: "none",
-        //             scrollTrigger: {
-        //                 trigger: e,
-        //                 containerAnimation: scrollTween,
-        //                 start: "center 130%",
-        //                 end: "center 80%",
-        //                 scrub: true
-        //             }
-        //         }
-        //     );
-        // })
+        
+        if (!isMobile) {
+            // 항목 1
+            ScrollTrigger.create({
+                scrub: 1,
+                animation: gsap.fromTo(
+                    ".target-1 .pinned",
+                    {
+                        x: 1500,
+                        y: "0%"
+                    },
+                    {
+                        x: -1500,
+                    }
+                )
+            });
+    
+            // 항목 2
+            ScrollTrigger.create({
+                scrub: 1,
+                animation: gsap.fromTo(
+                    ".target-2 .pinned",
+                    {
+                        x: 2000,
+                        y: "-30%"
+                    },
+                    {
+                        x: -2000,
+                    }
+                )
+            });
+    
+            // 항목 3
+            ScrollTrigger.create({
+                scrub: 1,
+                animation: gsap.fromTo(
+                    ".target-3 .pinned",
+                    {
+                        x: 1200,
+                        y: "10%"
+                    },
+                    {
+                        x: -1200,
+                    }
+                )
+            });
+    
+            // 항목 4
+            ScrollTrigger.create({
+                scrub: 1,
+                animation: gsap.fromTo(
+                    ".target-4 .pinned",
+                    {
+                        x: 1500,
+                        y: "-30%"
+                    },
+                    {
+                        x: -1000,
+                    }
+                )
+            });
+    
+            // 항목 5
+            ScrollTrigger.create({
+                scrub: 1,
+                animation: gsap.fromTo(
+                    ".target-5 .pinned",
+                    {
+                        x: 700,
+                        y: "0%"
+                    },
+                    {
+                        x: -800,
+                    }
+                )
+            });
+        }
 
         //---------------------------------------------------------------------------------------------------------
         //---------------------------------------------------------------------------------------------------------
