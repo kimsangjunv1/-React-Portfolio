@@ -1,0 +1,35 @@
+.parallax {
+    > use {
+        &:nth-child(1) {
+            animation-delay: -2s;
+        }
+
+        &:nth-child(2) {
+            animation-delay: -2s;
+            animation-duration: 5s;
+        }
+        
+        &:nth-child(3) {
+            animation-delay: -4s;
+            animation-duration: 3s;
+        }
+    }
+}
+
+.parallax > use {
+    animation: move-forever 12s linear infinite;
+}
+
+.parallax > use:nth-child(1) {
+    animation-delay: -2s;
+}
+
+.parallax > use:nth-child(2) {
+    animation-delay: -2s;
+    animation-duration: 5s;
+}
+
+.parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 3s;
+}

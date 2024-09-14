@@ -1,0 +1,65 @@
+:root {
+    // 폰트
+    --custom-font: "Galmuri11";
+
+    // 색상 : 브랜드
+    --color-brand-900: #05713d;
+    --color-brand-500: #10C06B;
+    --color-brand-50: #FFE7EC;
+
+    // 색상 : 그레이
+    --color-gray-900: #000000;
+    --color-gray-800: #1D2030;
+    --color-gray-700: #41455D;
+    --color-gray-600: #5A6079;
+    --color-gray-500: #7D829A;
+    --color-gray-400: #9FA4BC;
+    --color-gray-300: #B8BCD3;
+    --color-gray-200: #CCD1E1;
+    --color-gray-100: #E1E4EE;
+    --color-gray-50: #F0F1F6;
+
+    // 색상 : 동의
+    --color-green-900: #007204;
+    --color-green-500: #2DC733;
+    --color-green-50: #E3FFE4;
+
+    // 색상 : 부정
+    --color-red-900: #900000;
+    --color-red-500: #FF3737;
+    --color-red-50: #FFF1F1;
+
+    // 색상 : 경고
+    --color-orange-900: #A33100;
+    --color-orange-500: #FF7337;
+    --color-orange-50: #FFF4EF;
+
+    // 색상 : 정보
+    --color-blue-900: #00199F;
+    --color-blue-500: #3757FF;
+    --color-blue-50: #EFF1FF;
+
+    // 헤더 & 푸터 & 배너
+    --header-height: 10.0rem;
+    --footer-height: 27.4rem;
+
+    --section-space: 12.8rem;
+    --between-space: 1.2rem;
+
+    --input-height: 4.8rem;
+    --input-padding: 0.4rem 0;
+
+    --button-sm-padding: 0.2rem 0.4rem;
+
+    --button-md-height: 3.2rem;
+    --button-md-padding: 0.2rem 1.2rem;
+
+    --button-lg-height: 4.8rem;
+    --button-lg-padding: 1.2rem 1.8rem;
+
+    // 반응형 사이즈
+    --pc: 1024px;
+    // --pc: 1080px;
+    --tablet: 768px;
+    --mobile: 376px;
+}

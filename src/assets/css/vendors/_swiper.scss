@@ -1,0 +1,29 @@
+.swiper {
+	width: 100%;
+	height: 100%;
+
+	.swiper-wrapper {
+		display: flex;
+		transition-timing-function: linear;
+
+		.swiper-slide {
+			text-align: center;
+			font-size: 18px;
+			background: #fff;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 60%;
+			overflow: hidden;
+
+			> img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				transform: scale(1.2);
+			}
+		}
+	}
+}

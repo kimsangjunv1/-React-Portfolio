@@ -1,69 +1,47 @@
-import React, { useRef, useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useRef, useMemo, useEffect } from "react";
+import MarqueeComponents from "@/components/common/MarqueeComponents";
 
-import Logo from "./../../assets/img/logo.svg";
+import Animation from "../utils/animation";
 
 const Header = () => {
-  const headerBox = useRef(null);
-  const [lastScroll, setLastScroll] = useState(0);
+    const refMarquee = useRef(null);
 
-  useEffect(() => {
-    const checkTop = () => {
-      if (document.querySelector("#information").offsetTop >= window.scrollY) {
-        // 안닿았을때
-        // headerBox.current.style.position = "sticky";
-      } else {
-        // 닿았을때
-        let scrollTop =
-          window.pageYOffset ||
-          window.scrollY ||
-          document.documentElement.scrollTop;
+    const refs = useMemo(() => ({
+        marquee: refMarquee
+    }), []);
 
-        if (scrollTop < lastScroll) {
-          //현재 스크롤 값이 이전 스크롤 값보다 작다면
-          headerBox.current.style.top = "0px";
-          // headerBox.current.style.position = "fixed";
-        } else {
-          headerBox.current.style.top = "-85px";
-        }
-        setLastScroll(scrollTop); // 지금 현재 스크롤 값을 이전 스크롤 값에 넣은 뒤
-      }
-    };
+    useEffect(() => {
+        Animation.layout.header(refs);
+    }, [refs]);
+        
+    return (
+        <header id="header">
+            <div className="header-inner">
+                {/* 로고 */}
+                <section className="logo">
+                    <a href="#intro">
+                        <h1>프론트-엔드</h1>
+                        <img src="/images/common/img-header-logo.svg" alt="/" />
+                        <h1 className="target">김상준</h1>
+                        {/* <h1>프론트-엔드</h1>
+                        <h1>김상준</h1> */}
+                    </a>
+                </section>
+                {/* 로고 END */}
 
-    window.addEventListener("scroll", checkTop);
-  });
-  return (
-    <header id="header" ref={headerBox}>
-      <div className="header_inner">
-        <a href="#main">
-          <img src={Logo} alt="헤더 로고" />
-          <div>
-            <p>
-              <i>2023</i> 웹 프론트엔드
-            </p>
-            <p>
-              <i>김상준</i> 포트-폴리오
-            </p>
-          </div>
-        </a>
-        <div className="menu_cont">
-          <a href="#information">소개</a>
-          <a href="#usedStack">스택</a>
-          <a href="#game">게임</a>
-          <a href="#site">개인 프로젝트</a>
-          <a href="#vue&react">OpenAPI활용</a>
-        </div>
-        <button className="mobile_btn">메뉴</button>
-        <div className="menu_cont mobile">
-          <a href="#information">소개</a>
-          <a href="#usedStack">스택</a>
-          <a href="#game">게임</a>
-          <a href="#site">개인 프로젝트</a>
-          <a href="#vue&react">OpenAPI활용</a>
-        </div>
-      </div>
-    </header>
-  );
+                {/* 메뉴 */}
+                <section className="menu">
+                    <a href="#about">인터뷰</a>
+                    <a href="#career">이력</a>
+                    <a href="#skill">기술</a>
+                    <a href="#education">개인공부</a>
+                    <a href="#projects">프로젝트</a>
+                </section>
+                {/* 메뉴 END */}
+            </div>
+            <MarqueeComponents target={refMarquee} title={"THIS PAGE MADE BY REACT | GSAP | SCSS, TAKE A LOOK AROUND"} />
+        </header>
+    );
 };
 
 export default Header;

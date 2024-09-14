@@ -1,0 +1,58 @@
+@keyframes rotate {
+    from {
+        transform: rotate(-3deg);
+    }
+
+    50% {
+        transform: rotate(3deg);
+    }
+
+    to {
+        transform: rotate(-3deg);
+    }
+}
+
+@keyframes hovering {
+    from {
+        transform: translateY(2px);
+    }
+    
+    10% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes centerHovering {
+    from {
+        transform: translate(0, -50%);
+    }
+    
+    10% {
+        transform: translate(0, -45%);
+    }
+
+    50% {
+        transform: translate(0, -55%);
+    }
+
+    to {
+        transform: translate(0, -55%);
+    }
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate(-90px, 0%);
+    }
+    100% {
+        transform: translate(85px, 0%);
+    }
+}

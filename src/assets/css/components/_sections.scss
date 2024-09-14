@@ -1,0 +1,918 @@
+article {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+
+    > .container-inner {
+        padding: 0 var(--between-space);
+    }
+
+    // 섹션 : 인트로
+    &#intro {
+        position: relative;
+        overflow: hidden;
+
+        // 내용
+        > section {
+            > img {
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                transform: translate(-50%, 0);
+                z-index: 1;
+                width: 100%;
+                max-width: 15vmin;
+                // max-width: 28.0rem;
+            }
+
+            // 제목
+            &.title {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 1;
+
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                
+                h2 {
+                    font-weight: 100;
+                }
+
+                > section {
+                    display: flex;
+                    justify-content: center;
+                    // flex-wrap: wrap;
+
+                    &.top {
+                        h2 {
+                            font-size: 10vmin;
+                            color: var(--color-brand-500);
+
+                            &:first-child {
+                                color: white;
+                            }
+                        }
+
+                    }
+
+                    &.bottom {
+                        h2 {
+                            font-weight: 700;
+                            font-size: 12vmin;
+                            color: white;
+                        }
+                    }
+                }
+            }
+
+            // 캐릭터 이미지 모음
+            &.character {
+                > img {
+                    // 메인 캐릭터
+                    &:nth-child(1) {
+                        max-width: 20vmin;
+                        z-index: -1;
+                    }
+
+                    // 먼지 1 캐릭터
+                    &:nth-child(2) {
+                        left: calc(50% - 15vw);
+                        bottom: calc(50% - 30vh);
+                    }
+
+                    // 먼지 2 캐릭터
+                    &:nth-child(3) {
+                        left: calc(50% + 15vw);
+                        bottom: calc(50% - 20vh);
+                    }
+                }
+            }
+
+            // 주변 파티클 이미지 모음
+            &.particle {
+                > img {
+                    // 파티클 : 종이
+                    &:nth-child(1) {
+                        left: calc(50% - 25vw);
+                        bottom: calc(50% + 20vh);
+                        filter: blur(5px);
+                    }
+                    
+                    // 파티클 : 빗자루
+                    &:nth-child(2) {
+                        left: calc(50% + 25vw);
+                        bottom: calc(50% + 10vh);
+                    }
+
+                    // 파티클 : 망원경
+                    &:nth-child(3) {
+                        left: calc(50% - 30vw);
+                        bottom: calc(50% + 0vh);
+                    }
+
+                    // 파티클 : 코드
+                    &:nth-child(4) {
+                        left: calc(50% + 35vw);
+                        bottom: calc(50% - 40vh);
+                    }
+
+                    // 파티클 : 마우스
+                    &:nth-child(5) {
+                        left: calc(50% - 35vw);
+                        bottom: calc(50% - 45vh);
+                    }
+
+                    // 파티클 : 종이
+                    &:nth-child(6) {
+                        left: calc(50% + 40vw);
+                        bottom: calc(50% + 0vh);
+                        filter: blur(10px);
+                    }
+                }
+            }
+        }
+    }
+
+    // 섹션 : 자기 소개
+    &#about {
+        width: 100%;
+        
+        .container-inner {
+            max-width: var(--pc);
+            margin: 0 auto;
+            display: flex;
+            gap: 0.4rem;
+
+            > section {
+                flex: 1;
+    
+                // 프로필 이미지
+                &:last-child {
+                    > div {
+                        position: sticky;
+                        top: 10.3rem;
+                        left: 50%;
+                        transform: translateX(calc(50% - 5.5rem));
+                        width: 64%;
+                        height: calc(50% - 8.7rem + 1.6rem);
+
+                        > img {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            object-fit: cover;
+                            object-position: center;
+                            border-radius: 0.8rem;
+
+                            &:nth-of-type(1) {
+                                z-index: 1;
+                            }
+                            &:nth-of-type(2) {
+                                z-index: 2;
+                            }
+                            &:nth-of-type(3) {
+                                z-index: 3;
+                            }
+                        }
+                    }
+                }
+    
+                // 설명
+                &:first-child {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.4rem;
+    
+                    > .item {
+                        position: relative;
+                        border-radius: 0.8rem;
+                        color: white;
+    
+                        > h5 {
+                            font-size: 2.4rem;
+                        }
+    
+                        > p {
+                            line-height: 1.5;
+    
+                            > strong {
+                                color: black;
+                                background: var(--color-brand-500);
+                                border-radius: 0.4rem;
+                                padding: 0.2rem 0.4rem;
+                            }
+                        }
+
+                        &:last-child {
+                            padding-bottom: 0;
+                        }
+    
+                        &::after {
+                            // content: "";
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 140%;
+                            height: 150%;
+                            filter: opacity(0.7);
+                            background: url("/images/sections/03/img-item-bg.webp");
+                            background-size: 100% 100%;
+                            background-repeat: no-repeat;
+                            z-index: -1;
+                        }
+    
+                        &.content-1 {
+                            // border-color: var(--color-brand-500);
+                            color: var(--color-brand-500);
+                        }
+
+                        &:nth-child(odd) {
+                            margin-bottom: 1.2rem;
+                        }
+
+                        &:nth-child(even) {
+                            margin-bottom: 7.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &#career {
+        // height: 200vh;
+        padding: var(--section-space) 0;
+
+        .container-inner {
+            position: relative;
+            max-width: var(--pc);
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            gap: 7.2rem;
+
+            > .contents {
+                display: flex;
+                flex-direction: column;
+                gap: 3.2rem;
+
+                > .item {
+                    color: white;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.8rem;
+                    
+                    > section {
+                        display: flex;
+                        gap: 0.8rem;
+    
+                        > div {
+                            flex: 1;
+                            border: 1px solid var(--color-brand-500);
+                            padding: 3.2rem;
+                            border-radius: 0.8rem;
+                            background: black;
+
+                            > .tags {
+                                margin-top: 1.2rem;
+                                display: flex;
+                                flex-wrap: wrap;
+                                gap: 0.4rem;
+
+                                li {
+                                    font-size: 1.4rem;
+                                    border-radius: 0.4rem;
+                                    border: 1px solid white;
+                                    padding: 0.4rem 0.4rem;
+
+                                    &.focus- {
+                                        &0 {
+                                            border-color: red;
+                                            color: red;
+                                        }
+                                        &1 {
+                                            border-color: blue;
+                                            color: blue;
+                                        }
+                                        &2 {
+                                            border-color: var(--color-brand-500);
+                                            color: var(--color-brand-500);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &:first-child {
+                            > div {
+                                position: relative;
+
+                                // &::after {
+                                //     content: '';
+                                //     position: absolute;
+                                //     top: 50%;
+                                //     right: 2vmin;
+                                //     transform: translate(-50%, 0) rotate(-45deg);
+
+                                //     width: 20px;
+                                //     height: 1px;
+                                //     background: red;
+                                // }
+                            }
+                        }
+                    }            
+                }
+            }
+
+            > .bg {
+                position: absolute;
+                // position: sticky;
+                top: 0;
+                left: 0;
+                // transform: translate(-50%, -50%);
+                z-index: -1;
+            }
+        }
+    }
+
+    // 섹션 : 스킬 (가로)
+    &#skill {
+        max-width: none;
+        min-height: auto;
+        height: 100vh;
+        width: 400vw;
+        // width: 300vw;
+        display: flex;
+        align-items: center;
+        gap: 2.4rem;
+        margin: 0;
+        position: relative;
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            color: white;
+
+            &.title {
+                position: relative;
+                background: transparent;
+                flex: 0 0 100vw;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+
+                > h2 {
+                    background: transparent;
+                    padding: 0;
+                    color: white;
+                    font-size: 8vmin;
+                }
+            }
+
+            &.contents {
+            max-width: 49.6rem;
+
+                .item-inner {
+                    overflow: hidden;
+                    border-radius: 8px;
+                    box-shadow: 0 40px 50px -20px rgba(0, 0, 0, 0.525);
+                    
+                    > h2 {
+                        position: relative;
+                        color: var(--color-brand-500);
+                        font-size: 1.8rem;
+                        border: 1px solid var(--color-brand-500);
+                        background: black;
+                        padding: 3.2rem;
+                        border-radius: 0.8rem;
+        
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            top: 50%;
+                            right: 20px;
+                            transform: translate(-50%, 0) rotate(-45deg);
+                            background: var(--color-brand-500);
+                            width: 20px;
+                            height: 1px;
+                        }
+                    }
+        
+                    
+                    > div {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.4rem;
+                        border: 1px solid rgba(255, 255, 255, 0.5);
+                        border-radius: 0.8rem;
+                        background: black;
+                        padding: 1.2rem;
+
+                        > h5 {
+                            margin-bottom: 0.4rem;
+                        }
+        
+                        > p {
+                            font-size: 1.4rem;
+                            line-height: 1.5;
+                        }
+                    }
+                }
+            }
+        }
+
+        .background {
+            position: absolute;
+            bottom: -10vmin;
+            // bottom: -15%;
+            left: 0;
+
+            > img {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 30vmin;
+
+                &:first-child {
+                    filter: blur(5px);
+                }
+
+                &:last-child {
+                }
+            }
+        }
+    }
+
+    // 섹션 : 공부 중 인것
+    &#education {
+        position: relative;
+        background: #eeedf5;
+        z-index: 1;
+
+        > .container-inner {
+            svg {
+                position: absolute;
+                top: -19vmin;
+                left: 0;
+                width: 100%;
+                height: 19vmin;
+            }
+    
+            > section {
+                &.title {
+                    position: sticky;
+                    top: 100px;
+                    z-index: 10;
+    
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    max-width: var(--pc);
+                    margin: 0 auto;
+                    margin-bottom: 12.4rem;
+                    pointer-events: none;
+    
+                    > h2 {
+                        font-size: 5vmin;
+                    }
+    
+                    > .desc {
+                        display: flex;
+                        align-items: center;
+
+                        > p {
+                            line-height: 1.5;
+                        }
+    
+                        > .actions {
+                            display: flex;
+                            flex-direction: column;
+    
+                            > button {
+                                border: 1px solid black;
+                                padding: 1.2rem;
+                            }
+                        }
+                    }
+                }
+    
+                &.deco {
+                    > img {
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translate(-50%, 0%);
+                        height: 30vh;
+    
+                        &:nth-of-type(1){}
+                        &:nth-of-type(2){
+                            // pos
+                        }
+                        &:nth-of-type(3){}
+                    }
+                }
+    
+                &.contents {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12.4rem;
+                    max-width: var(--pc);
+                    margin: 0 auto;
+    
+                    > .item {
+                        display: flex;
+                        justify-content: center;
+    
+                        > div {
+                            flex: 0 0 calc(50% + 3rem);
+    
+                            > img {
+                                width: 100%;
+                                filter: drop-shadow(0 20px 20px rgba(130,134,156,.4392156863));
+                            }
+    
+                            &:first-child {
+                                transform: translateX(30px);
+                            }
+    
+                            &:last-child {
+                                position: relative;
+                                transform: translateX(-30px);
+                                
+                                > div {
+                                    z-index: 1;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                    color: white;
+    
+                                    > h5 {
+                                        font-size: 2vmin;
+                                        font-weight: 700;
+                                        margin-bottom: 0.8rem;
+                                    }
+
+                                    > p {
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        display: -webkit-box;
+                                        -webkit-line-clamp: 2; 
+                                        -webkit-box-orient: vertical;
+                                    }
+
+                                    a {
+                                        display: inline-block;
+                                        margin-top: 1.6rem;
+                                        border: 1px solid white;
+                                        padding: 0.8rem 1.2rem;
+                                        font-size: 1.4rem;
+
+                                        transition: 0.25s background, color;
+
+                                        &:hover {
+                                            background: white;
+                                            color: black;
+                                        }
+                                    }
+
+                                    > h5,
+                                    > p,
+                                    > div {
+                                        transform: skew(-2deg, -4deg);
+                                        line-height: 1.5;
+                                    }
+
+                                    .import {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 0.8rem;
+                                        margin-bottom: 0.8rem;
+
+                                        img {
+                                            width: 20px;
+                                        }
+
+                                        p {
+                                            font-weight: 700;
+                                            color: orangered;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+    
+                        // > img {
+                        //     flex: 1;
+                        //     width: calc(50% + 1.8rem);
+    
+                        //     &:first-child {
+                        //         transform: translateX(30px);
+                        //     }
+                        //     &:last-child {
+                        //         transform: translateX(-30px);
+                        //     }
+                        // }
+                    }
+                }
+            }
+        }
+    }
+
+    // 섹션 : 했던 프로젝트
+    &#projects {
+        // position: relative;
+        background: black;
+
+        width: auto;
+        min-height: auto;
+        height: auto;
+
+        .item {
+            position: relative;
+            min-height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &.title {
+                position: relative;
+                background: #eeedf5;
+
+                .container-inner {
+                    height: 100vh;
+                }
+
+                .desc {
+                    position: absolute;
+                    bottom: calc(30vmin * 2 + 0px);
+                    left: 50%;
+                    transform: translate(-50%, 0%);
+                    font-size: 10vmin;
+
+                    display: flex;
+
+                    > h2 {
+                        font-size: 10vmin;
+                    }
+                }
+
+                .bg {
+                    > img {
+                        position: absolute;
+                        bottom: -2.0rem;
+                        left: 50%;
+                        transform: translate(-50%, 0%);
+                        
+                        &:nth-of-type(1) {
+                            width: calc(18vmin * 2);
+                            left: 30%;
+                        }
+
+                        &:nth-of-type(2) {
+                            width: calc(30vmin * 2);
+                            // height: calc(270px * 2);
+                            z-index: 1;
+                        }
+
+                        &:nth-of-type(3) {
+                            width: calc(18vmin * 2);
+                            // height: calc(150px * 2);
+                            left: 70%;
+                        }
+                    }
+                }
+
+                svg {
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 150%;
+                    height: 19vmin;
+                    z-index: 10;
+                }
+            }     
+
+            > .container-inner {
+                // height: 100vh;
+                width: var(--pc);
+                // margin: 0 auto;
+
+                > img {
+                    // width: 80vmin;
+                    
+                    // position: absolute;
+                    // bottom: -20vmin;
+                    // right: -20vmin;
+
+                    width: 50%;
+                    position: absolute;
+                    right: -20vmin;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+
+                > div {
+                    height: 100%;
+                    width: 50%;
+                    min-width: 60.0rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 3.2rem;
+
+                    > section {
+                        h5, h6, a {
+                            color: white;
+                        }
+
+                        p {
+                            color: rgba(255, 255, 255, 0.8);
+                            font-size: 1.4rem;
+                        }
+
+                        // 항목 : 제목 및 설명
+                        &.info {
+                            h5 {
+                                font-size: 5vmin;
+                            }
+                        }
+
+                        // 항목 : 세부 정보 및 기능
+                        &.more {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1.6rem;
+
+                            > section {
+
+                                // 항목 : 세부 정보
+                                &.details {
+                                    display: flex;
+                                    gap: 0.4rem;
+        
+                                    > div {
+                                        flex: 1;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 0.4rem;
+                                        border-radius: 0.4rem;
+                                        backdrop-filter: blur(20px);
+                                        -webkit-backdrop-filter: blur(20px);
+        
+                                        > div {
+                                            display: flex;
+                                            flex-direction: column;
+                                            gap: 0.4rem;
+                                        }
+                                    }
+                                }
+        
+                                // 항목 : 기능
+                                &.feature {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 0.4rem;
+                                    // padding: 0.8rem;
+                                    // border: 1px solid rgba(255, 255, 255, 0.2);
+                                    // background: #3A3B5670;
+                                    backdrop-filter: blur(20px);
+                                    -webkit-backdrop-filter: blur(20px);
+                                    border-radius: 0.4rem;
+        
+                                    p {
+                                        line-height: 1.5;
+                                    }
+                                }
+
+                                // 항목 : 스크린샷
+                                &.screenshot {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 0.4rem;
+                                    // padding: 0.8rem;
+                                    border-radius: 0.4rem;
+                                    // border: 1px solid rgba(255, 255, 255, 0.2);
+                                    backdrop-filter: blur(20px);
+                                    -webkit-backdrop-filter: blur(20px);
+                                    overflow: hidden;
+
+                                    > div {
+                                        display: flex;
+                                        height: 12.8rem;
+
+                                        .swiper-slide {
+                                            border-radius: 0.8rem;
+
+                                            img {
+                                                cursor: pointer;
+                                                object-fit: contain;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+
+                        // 항목 : 이동 버튼
+                        &.actions {
+                            display: flex;
+                            gap: 0.4rem;
+
+                            > a {
+                                // display: inline-block;
+                                padding: 1.6rem 0.8rem;
+                                text-align: center;
+                                flex: 1;
+                                // background: white;
+                                color: white;
+                                border: 1px solid white;
+                                border-radius: 0.4rem;
+                                transition: 0.25s background;
+
+                                &:hover {
+                                    border-color: transparent;
+                                    background: var(--color-brand-500);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // 섹션 : 마무리
+    &#end {
+        position: relative;
+        height: 100vh;
+        // background: red;
+
+        svg {
+            position: absolute;
+            top: -19vmin;
+            left: 0;
+            width: 100%;
+            height: 19vmin;
+        }
+
+        &::before {
+            // content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5vmin;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0), #000000);
+        }
+
+        > .container-inner {
+            font-size: 10vmin;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.6rem;
+
+            > h5 {
+                font-size: 5vmin;
+            }
+
+            > p {
+                text-align: center;
+                line-height: 1.5;
+            }
+
+            > .actions {
+                display: flex;
+                gap: 1.6rem;
+
+                a {
+                    border-radius: 0.4rem;
+                    padding: 0.8rem;
+                    border: 1px solid white;
+                }
+            }
+        }
+    }
+
+    &#etc {
+        height: 0;
+        min-height: 0;
+    }
+}

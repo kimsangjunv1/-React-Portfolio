@@ -1,0 +1,28 @@
+article {
+    &.title {
+        position: sticky;
+        top: calc(4.8rem + 4.2rem + 4.4rem + 1.2rem);
+        display: flex;
+        justify-content: flex-start;
+        height: 9.2rem;
+        max-width: var(--pc);
+        z-index: 1000;
+        mix-blend-mode: difference;
+        z-index: 100;
+        margin: 0 auto;
+
+        > section {
+            display: flex;
+
+            > h2 {
+                font-family: "Montserrat";
+                font-weight: 800;
+                font-size: 3.2rem;
+
+                &.space {
+                    margin-right: 1.2rem;
+                }
+            }
+        }
+    }
+}

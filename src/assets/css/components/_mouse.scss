@@ -1,0 +1,28 @@
+// 모든 페이지 커서
+.cursor {
+    position: fixed;
+    pointer-events: none;
+    border: 5px solid transparent;
+    border-radius: 100%;
+    
+    &.main {
+        mix-blend-mode: difference;
+        background: white;
+        z-index: 100000000;
+        height: 3rem;
+        width: 3rem;
+
+        top: -1.5rem;
+        left: -1.5rem;
+    }
+
+    &.sub {
+        width: 50.0rem;
+        height: 50.0rem;
+        z-index: -10000;
+        background: var(--color-brand-500);
+        filter: blur(200px) opacity(0.5);
+        top: -25.0rem;
+        left: -25.0rem;
+    }
+}

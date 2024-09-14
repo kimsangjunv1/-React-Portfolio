@@ -1,0 +1,46 @@
+#progress {
+    position: fixed;
+    left: 3.2rem;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3.6rem;
+    z-index: 111;
+    // padding: 7.2vw 0;
+    // font-size: 0.7vw;
+    text-transform: uppercase;
+    
+    p {
+        font-family: "LCDdot";
+        font-size: 1.8rem;
+        color: #ffffff;
+        transform: rotate(90deg);
+        background: transparent !important;
+    }
+
+    .scroll_background {
+        width: 1px;
+        height: 50%;
+        position: relative;
+        z-index: -1;
+        display: flex;
+        align-items: start;
+        background: #ffffff40;
+
+        .scroll_progress {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+            background: var(--color-brand-500);
+            width: 3px;
+            height: 5%;
+            // border-radius: 100px;
+            margin: 0 auto;
+        }
+    }
+}
