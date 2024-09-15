@@ -43,7 +43,6 @@ const App = () => {
                 <AnimatePresence>
                     {isLoaded ? "" : <LoadingComponents count={loadingCount} />}
                 </AnimatePresence>
-                {/* <AnimatePresence mode="wait">{!isLoaded && <LoadingComponents routeName={router.route} loadingCount={loadingCount} />}</AnimatePresence> */}
                 <Section01 />
                 <Section02 isMobile={isMobile} data={ data.about } />
                 <Section03 isMobile={isMobile} data={ data.career } />
