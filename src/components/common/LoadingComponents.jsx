@@ -3,20 +3,20 @@ import { motion } from "framer-motion";
 
 const LoadingComponents = ({ count }) => {
     // 로딩 중 스크롤 방지
-    useEffect(() => {
-        const body = document.querySelector("body");
+    // useEffect(() => {
+    //     const body = document.querySelector("body");
     
-        if (count >= 98) {
-            const timeout = setTimeout(() => {
-                body.classList.remove("no-scroll");
-            }, 100);
+    //     if (count >= 98) {
+    //         const timeout = setTimeout(() => {
+    //             body.classList.remove("no-scroll");
+    //         }, 100);
     
-            return () => clearTimeout(timeout);
-        } else if (count >= 1) {
-            console.log("테스트 확인", count)
-            body.classList.add("no-scroll");
-        }
-    }, [count]);
+    //         return () => clearTimeout(timeout);
+    //     } else if (count >= 1) {
+    //         console.log("테스트 확인", count)
+    //         body.classList.add("no-scroll");
+    //     }
+    // }, [count]);
     return (
         <motion.article
             id="loading"
