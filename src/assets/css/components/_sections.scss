@@ -459,6 +459,8 @@ article {
         > .container-inner {
             padding-bottom: 19vmin;
             svg {
+                pointer-events: none;
+
                 &.wave-1 {
                     position: absolute;
                     top: -19vmin;
@@ -704,6 +706,8 @@ article {
                 }
 
                 svg {
+                    pointer-events: none;
+                    
                     &.wave-1 {
                         position: absolute;
                         top: -19vmin;
@@ -758,7 +762,7 @@ article {
                             color: white;
                         }
 
-                        p {
+                        li, p {
                             color: rgba(255, 255, 255, 0.8);
                             font-size: 1.4rem;
                         }
@@ -812,8 +816,13 @@ article {
                                     -webkit-backdrop-filter: blur(20px);
                                     border-radius: 0.4rem;
         
-                                    p {
-                                        line-height: 1.5;
+                                    ol {
+                                        padding-left: 2.0rem;
+                                        list-style: disc;
+
+                                        li {
+                                            line-height: 1.5;
+                                        }
                                     }
                                 }
 
@@ -886,7 +895,8 @@ article {
                     h5,
                     h6,
                     a,
-                    p { 
+                    p,
+                    li { 
                         color: black !important;
                         border-color: black !important;
                     }
@@ -896,7 +906,7 @@ article {
                 }
             }
             &:nth-of-type(5) {
-                background: #FF234A;
+                background: #1c1e25;
             }
         }
     }

@@ -66,11 +66,11 @@ const Section06 = ({ data }) => {
                             {/* 기능 */}
                             <section className="feature">
                                 <h6>{element.feature.name}</h6>
-                                <div>
+                                <ol>
                                     {element.feature.description.map((e, i) =>
-                                        <p>{e}</p>
+                                        <li>{e}</li>
                                     )}
-                                </div>
+                                </ol>
                             </section>
                             {/* 기능 END */}
                             
