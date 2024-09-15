@@ -32,7 +32,8 @@ const Section05 = ({ data }) => {
                 </section>
 
                 <section className="deco">
-                    <WaveComponents color={"#ededf4"}/>
+                    <WaveComponents color={"#ededf4"} className={"wave-1"}/>
+                    <WaveComponents color={"#000000"} className={"wave-2"}/>
                 </section>
 
                 <section className="contents">

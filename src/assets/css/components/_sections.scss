@@ -458,11 +458,22 @@ article {
 
         > .container-inner {
             svg {
-                position: absolute;
-                top: -19vmin;
-                left: 0;
-                width: 100%;
-                height: 19vmin;
+                &.wave-1 {
+                    position: absolute;
+                    top: -19vmin;
+                    left: 0;
+                    width: 100%;
+                    height: 19vmin;
+                }
+
+                &.wave-2 {
+                    position: absolute;
+                    bottom: 0;
+                    // bottom: -19vmin;
+                    left: 0;
+                    width: 100%;
+                    height: 19vmin;
+                }
             }
     
             > section {
@@ -646,6 +657,7 @@ article {
             &.title {
                 position: relative;
                 background: #eeedf5;
+                overflow: visible;
 
                 .container-inner {
                     height: 100vh;
@@ -692,13 +704,24 @@ article {
                 }
 
                 svg {
-                    position: absolute;
-                    bottom: 0;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    width: 200vw;
-                    height: 19vmin;
-                    z-index: 10;
+                    &.wave-1 {
+                        position: absolute;
+                        top: -19vmin;
+                        left: 50%;
+                        transform: translate(-50%, 0);
+                        width: 200vw;
+                        height: 19vmin;
+                    }
+    
+                    &.wave-2 {
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 200vw;
+                        height: 19vmin;
+                        z-index: 10;
+                    }
                 }
             }     
 
@@ -893,12 +916,12 @@ article {
         }
 
         &::before {
-            // content: '';
+            content: '';
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
-            height: 5vmin;
+            height: 50%;
             background: linear-gradient(to top, rgba(0, 0, 0, 0), #000000);
         }
 

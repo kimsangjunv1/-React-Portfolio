@@ -21,6 +21,7 @@ const Section06 = ({ data }) => {
     <article id="projects">
         {/* 타이틀 */}
         <section className="item title">
+            <WaveComponents color={"#eeedf5"} className={"wave-1"}/>
             <div className="container-inner">
                 <section className="desc">
                     프로젝트
@@ -30,7 +31,7 @@ const Section06 = ({ data }) => {
                     <img src="/images/sections/05/img-deco-01.png" alt="/" className="deco" />
                     <img src="/images/sections/05/img-deco-03.png" alt="/" className="deco" />
                 </section>
-                <WaveComponents color={"#2B2BCC"}/>
+                <WaveComponents color={"#2B2BCC"} className={"wave-2"}/>
             </div>
         </section>
         {/* 타이틀 END */}
@@ -38,14 +39,12 @@ const Section06 = ({ data }) => {
         {/* 내용 */}
         {data.map((element, index) =>
             <section className="item" key={index}>
-                {/* <div className="container-inner" style={{ background:`url(/images/sections/06/img-bg-0${index + 1}.png) center top / cover no-repeat` }}> */}
                 <div className="container-inner" >
                     <img src={`/images/sections/06/${element.imgSrc}.png`} alt="/" className="logo" />
 
                     <div>
                         <section className="info">
                             <h5>{element.title}</h5>
-                            {/* <p>{element.desc}</p> */}
                         </section>
 
                         <section className="more">

@@ -1,10 +1,11 @@
-const WaveComponents = ({ color }) => {
+const WaveComponents = ({ color, className }) => {
   return (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
         viewBox="0 24 150 28"
         preserveAspectRatio="none"
+        className={className}
     >
         <defs>
             <path id="gentle-wave"
