@@ -14,7 +14,11 @@ import Section07 from "@/components/sections/Section07";
 
 import MouseComponents from "@/components/common/MouseComponents";
 import ProgressComponents from "@/components/common/ProgressComponents";
-import SkipComponents from "./components/common/SkipComponents";
+import SkipComponents from "@/components/common/SkipComponents";
+
+import { AnimatePresence } from "framer-motion";
+
+import LoadingComponents from "@/components/common/LoadingComponents";
 
 import { data } from "@/components/utils/data";
 
@@ -22,8 +26,11 @@ import Animation from "@/components/utils/animation";
 
 import useMatchMedia from "@/components/hooks/useMatchMedia";
 
+import useRouteLoading from "@/components/hooks/useRouteLoading";
+
 const App = () => {
     const isMobile = useMatchMedia("(max-width: 768px)");
+    const { isLoaded, loadingCount } = useRouteLoading();
 
     useEffect(() => {
         !isMobile ? Animation.layout.main() : "";
@@ -33,6 +40,10 @@ const App = () => {
         <Fragment>
             <Header />
             <Main>
+                <AnimatePresence>
+                    {isLoaded ? "" : <LoadingComponents count={loadingCount} />}
+                </AnimatePresence>
+                {/* <AnimatePresence mode="wait">{!isLoaded && <LoadingComponents routeName={router.route} loadingCount={loadingCount} />}</AnimatePresence> */}
                 <Section01 />
                 <Section02 isMobile={isMobile} data={ data.about } />
                 <Section03 isMobile={isMobile} data={ data.career } />
