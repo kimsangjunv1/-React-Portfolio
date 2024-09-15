@@ -5,26 +5,23 @@ const LoadingComponents = ({ count }) => {
     // 로딩 중 스크롤 방지
     useEffect(() => {
         const body = document.querySelector("body");
-        const html = document.querySelector("html");
-    
-        body.classList.add("no-scroll");
-        html.classList.add("no-scroll");
     
         if (count >= 98) {
             const timeout = setTimeout(() => {
                 body.classList.remove("no-scroll");
-                html.classList.remove("no-scroll");
             }, 100);
     
             return () => clearTimeout(timeout);
+        } else if (count >= 1) {
+            body.classList.add("no-scroll");
         }
     }, [count]);
     return (
         <motion.article
             id="loading"
 
-            initial={{ y: 0, translateY: "0%" }}
-            animate={{ background: "transparent" }}
+            initial={{ y: 0 }}
+            animate={{ background: "#00000000" }}
             transition={{ duration: 2.0, delay: 0.5, ease: [0, 0.71, 0.2, 1.01] }}
         >
             {Array(5).fill(0).map((e, key) =>
