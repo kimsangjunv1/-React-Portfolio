@@ -9,10 +9,6 @@ const Section02 = ({ data, isMobile }) => {
         container: refContainer,
         card: refCard,
     }), []);
-    
-    useEffect(() => {
-        console.log("감지",isMobile)
-    }, [isMobile])
 
     useEffect(() => {
         Animation.section03(refs);

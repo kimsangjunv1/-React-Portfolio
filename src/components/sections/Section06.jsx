@@ -80,8 +80,8 @@ const Section06 = ({ data }) => {
                                 <Swiper
                                     spaceBetween={8}
                                     slidesPerView={3}
-                                    onSlideChange={() => console.log('slide change')}
-                                    onSwiper={(swiper) => console.log(swiper)}
+                                    // onSlideChange={() => console.log('slide change')}
+                                    // onSwiper={(swiper) => console.log(swiper)}
                                 >
                                     {element.screenshots.map((e, i) =>
                                         <SwiperSlide><img src={`/images/sections/06/${e}.png`} alt="스크린샷" key={i}/></SwiperSlide>

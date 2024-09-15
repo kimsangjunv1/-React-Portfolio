@@ -41,22 +41,18 @@ class Animation {
                 start: () => "+=" + conatinerSkill.offsetWidth,
                 end: () => "+=" + containerEducation.offsetHeight,
                 onEnter: () => {
-                  console.log("아래로 스크롤 시작");
                   gsap.to("#header a, #header h5, #progress p", { color: "#000000" });
                   gsap.to("#progress .scroll_background", { backgroundColor: "#00000050" });
                 },
                 onLeave: () => {
-                  console.log("아래로 스크롤 끝");
                   gsap.to("#header a, #header h5, #progress p", { color: "#ffffff" });
                   gsap.to("#progress .scroll_background", { backgroundColor: "#ffffff50" });
                 },
                 onEnterBack: () => {
-                  console.log("위로 스크롤 시작");
                   gsap.to("#header a, #header h5, #progress p", { color: "#000000" });
                   gsap.to("#progress .scroll_background", { backgroundColor: "#00000050" });
                 },
                 onLeaveBack: () => {
-                  console.log("위로 스크롤 끝");
                   gsap.to("#header a, #header h5, #progress p", { color: "#ffffff" });
                   gsap.to("#progress .scroll_background", { backgroundColor: "#ffffff50" });
                 }
@@ -302,7 +298,6 @@ class Animation {
 
     //w 섹션 3 : 사용 가능 기술
     static section04(target, isMobile) {
-        console.log("???????", isMobile)
         const title = gsap.utils.toArray("#skill .title");
 
         // 텍스트 분리 및 삽입
@@ -566,7 +561,6 @@ class Animation {
         
         for (let i = 0; i <= elementTitle.length - 1; i++) {
             splitText(elementTitle[i]);
-            console.log("실행",i)
         };
 
         gsap.to(
