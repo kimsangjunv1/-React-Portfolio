@@ -457,6 +457,7 @@ article {
         z-index: 1;
 
         > .container-inner {
+            padding-bottom: 19vmin;
             svg {
                 &.wave-1 {
                     position: absolute;
@@ -481,13 +482,12 @@ article {
                     position: sticky;
                     top: 100px;
                     z-index: 10;
-    
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
                     max-width: var(--pc);
                     margin: 0 auto;
-                    margin-bottom: 12.4rem;
+                    padding: 5vmin 0;
                     pointer-events: none;
     
                     > h2 {
