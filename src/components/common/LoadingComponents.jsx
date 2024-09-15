@@ -13,6 +13,7 @@ const LoadingComponents = ({ count }) => {
     
             return () => clearTimeout(timeout);
         } else if (count >= 1) {
+            console.log("테스트 확인", count)
             body.classList.add("no-scroll");
         }
     }, [count]);
