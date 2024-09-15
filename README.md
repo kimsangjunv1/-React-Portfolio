@@ -6,6 +6,7 @@
 Vite
 React
 GSAP
+Framer-Motion
 SCSS
 Swiper
 Lenis
@@ -22,7 +23,7 @@ Lenis
 
 ```
 네트리파이
-링크 준비중
+https://portfoliosj-react.netlify.app/
 ```
 
 ### 용도
