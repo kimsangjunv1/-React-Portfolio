@@ -1,15 +1,13 @@
 const SkipComponents = () => {
-  return (
-    <article id="skip">
-        <a href="#intro">인트로</a>
-        <a href="#javascript">자바스크립트</a>
-        <a href="#game">게임</a>
-        <a href="#reference">레퍼런스</a>
-        <a href="#site">사이트</a>
-        <a href="#project">프로젝트</a>
-        <a href="#vue&react">뷰/리액트</a>
-    </article>
-  )
+    return (
+        <article id="skip">
+            <a href="#about">인터뷰</a>
+            <a href="#career">이력</a>
+            <a href="#skill">기술</a>
+            <a href="#education">개인공부</a>
+            <a href="#projects">프로젝트</a>
+        </article>
+    )
 }
 
 export default SkipComponents
