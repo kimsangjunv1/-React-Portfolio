@@ -3,7 +3,7 @@ export const data = {
     about: [
         {
             title: "프론트엔드로 전향한 이유",
-            desc: "웹 디자이너로 활동하며 사용자 중심 디자인, 협업, 프론트엔드 기초 지식을 쌓았습니다. 사용자와의 소통에 대해 중요성을 인지하고, 사용자와의 상호작용을 극대화하는 프로젝트를 개발하기 위해 프론트엔드 개발자로 전향을 결심하게 되었습니다. React, Styled Components, Redux Toolkit 등 다양한 프레임워크와 라이브러리를 도입해 발전할 수 있는 새로운 도전에 나서고 있습니다.",
+            desc: "웹 디자이너로 활동하며 사용자 중심 디자인, 협업, 프론트엔드 기초 지식을 쌓았습니다. 사용자와의 소통에 대해 중요성을 인지하고, 사용자와의 상호작용을 극대화하는 프로젝트를 개발하기 위해 프론트엔드 개발자로 전향을 결심하게 되었습니다. React, Zustand, Framer-Motion, GSAP 등 다양한 프레임워크와 라이브러리를 도입해 발전할 수 있는 새로운 도전에 나서고 있습니다.",
         },
         {
             title: "일에 있어 가장 중요하게 생각하는 것이 있다면?",
@@ -269,8 +269,8 @@ export const data = {
             ],
             url:{
                 live: "https://fdmbox.com",
-                github: "www.naver.com",
-                figma: "www.naver.com",
+                github: "",
+                figma: "",
             }
         },
         {
@@ -333,8 +333,8 @@ export const data = {
             ],
             url:{
                 live: "https://maze.games",
-                github: "www.naver.com",
-                figma: "www.naver.com",
+                github: "",
+                figma: "",
             }
         },
         {
@@ -344,6 +344,7 @@ export const data = {
             feature: {
                 name: "주요 기능 및 특징",
                 description: [
+                    "날씨에 따라 추천되는 음악을 들을 수도 있고 서버 자체에 저장되어 있는 음악을 들을수도 있는 음악 사이트 픽클! 입니다.",
                     "웹 표준과 접근성을 준수하여 다양한 사용자가 서비스에 쉽게 접근할 수 있도록 퍼블리싱 작업을 진행했습니다.",
                     "Zustand를 활용해 음악 재생 및 재생 목록 상태를 중앙에서 효율적으로 관리하여, 사용자의 경험을 향상시켰습니다.",
                     "외부 API를 활용하여 실시간으로 음악 데이터를 수집하고, 이를 기반으로 사용자가 다양한 음악을 검색하고 재생할 수 있는 기능을 구현했습니다.",
@@ -388,6 +389,9 @@ export const data = {
             screenshots: [
                 "img-screenshot-pickle-01",
                 "img-screenshot-pickle-02",
+                "img-screenshot-pickle-03",
+                "img-screenshot-pickle-04",
+                "img-screenshot-pickle-05",
             ],
             url:{
                 live: "https://pickle-music.netlify.app/home",

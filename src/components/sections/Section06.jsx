@@ -94,8 +94,8 @@ const Section06 = ({ data }) => {
 
                         <section className="actions">
                             <a href={element.url.live}>보기</a>
-                            <a href={element.url.github}>깃허브</a>
-                            <a href={element.url.figma}>피그마</a>
+                            {element.url.github && <a href={element.url.github}>깃허브</a>}
+                            {element.url.figma && <a href={element.url.figma}>피그마</a>}
                         </section>
                     </div>
                 </div>
