@@ -402,7 +402,7 @@ export const data = {
         {
             title: "플레이그라운드",
             desc: "asdasdasdas",
-            imgSrc:"img-project-video",
+            imgSrc:"img-project-playground",
             feature: {
                 name: "주요 기능 및 특징",
                 description: [
@@ -449,6 +449,67 @@ export const data = {
                 "img-screenshot-playground-01",
                 "img-screenshot-playground-02",
                 "img-screenshot-playground-03",
+            ],
+            url:{
+                live: "https://playground-r.netlify.app",
+                github: "www.naver.com",
+                figma: "www.naver.com",
+            }
+        },
+        {
+            title: "포트폴리오",
+            desc: "asdasdasdas",
+            imgSrc:"img-project-portfolio",
+            feature: {
+                name: "주요 기능 및 특징",
+                description: [
+                    "포트폴리오를 보는 사용자들에게 인터렉티브 하면서도 원하는 정보를 쉽게 전달할 수 있도록 고려",
+                    "다양한 모습의 캐릭터를 중간중간 삽입해 순간순간의 장면이 기억에 남을 수 있도록 구성하였습니다.",
+                    "GSAP와 Framer-Motion을 통해 인터렉티브한 섹션들을 구성하였습니다.",
+                    "모든 내용을 손쉽게 관리(수정, 삭제)하기 위해 하나의 js에 중앙관리화 하였습니다."
+                ]
+            },
+            details: [
+                {
+                    name: "타입",
+                    description: [
+                        "PC",
+                        "모바일"
+                    ]
+                },
+                {
+                    name: "프로젝트 규모",
+                    description: [
+                        "사이드 프로젝트"
+                    ]
+                },
+                {
+                    name: "참여도",
+                    description: [
+                        "프론트 100%",
+                        "디자인 100%"
+                    ]
+                },
+                {
+                    name: "메인",
+                    description: [
+                        "React"
+                    ]
+                },
+                {
+                    name: "라이브러리",
+                    description: [
+                        "GSAP",
+                        "Framer-Motion",
+                        "Lenis"
+                    ]
+                },
+            ],
+            screenshots: [
+                "img-screenshot-portfolio-01",
+                "img-screenshot-portfolio-02",
+                "img-screenshot-portfolio-03",
+                "img-screenshot-portfolio-04",
             ],
             url:{
                 live: "https://playground-r.netlify.app",
