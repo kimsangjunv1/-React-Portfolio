@@ -395,8 +395,8 @@ export const data = {
             ],
             url:{
                 live: "https://pickle-music.netlify.app/home",
-                github: "www.naver.com",
-                figma: "www.naver.com",
+                github: "https://github.com/kimsangjunv1/-NextJS-Pickle",
+                figma: "",
             }
         },
         {
@@ -452,8 +452,8 @@ export const data = {
             ],
             url:{
                 live: "https://playground-r.netlify.app",
-                github: "www.naver.com",
-                figma: "www.naver.com",
+                github: "https://github.com/kimsangjunv1/-React-Playground",
+                figma: "",
             }
         },
         {
@@ -512,9 +512,68 @@ export const data = {
                 "img-screenshot-portfolio-04",
             ],
             url:{
-                live: "https://playground-r.netlify.app",
-                github: "www.naver.com",
-                figma: "www.naver.com",
+                live: "https://portfoliosj-react.netlify.app/",
+                github: "https://github.com/kimsangjunv1/-React-Portfolio",
+                figma: "",
+            }
+        },
+        {
+            title: "CODi_Agit. | 코디 아지트.",
+            desc: "제가 개인적으로 공부한것을 올리기위한 블로그 입니다.",
+            imgSrc:"img-project-codiagit",
+            feature: {
+                name: "주요 기능 및 특징",
+                description: [
+                    "주어진 권한에 따라 글 편집 권한이 주어집니다.",
+                    "게스트 로그인을 통해 회원가입 없이도 접속이 가능합니다.",
+                    "좋아요 및 로그인 횟수 별 회원 등급이 부여 됩니다.(개발중)",
+                    "개인별 댓글 작성이 가능합니다.(개발중)",
+                ]
+            },
+            details: [
+                {
+                    name: "타입",
+                    description: [
+                        "PC"
+                    ]
+                },
+                {
+                    name: "프로젝트 규모",
+                    description: [
+                        "토이 프로젝트"
+                    ]
+                },
+                {
+                    name: "기타",
+                    description: [
+                        "현재 개발 진행중"
+                    ]
+                },
+                {
+                    name: "메인",
+                    description: [
+                        "PHP"
+                    ]
+                },
+                {
+                    name: "라이브러리",
+                    description: [
+                        "Sun Editor",
+                        "Lenis",
+                        "SCSS"
+                    ]
+                },
+            ],
+            screenshots: [
+                "img-screenshot-codiagit-01",
+                "img-screenshot-codiagit-02",
+                "img-screenshot-codiagit-03",
+                "img-screenshot-codiagit-04"
+            ],
+            url:{
+                live: "https://codi-agit.com",
+                github: "https://github.com/kimsangjunv1/-PHP-CODi_Agit.",
+                figma: "",
             }
         },
     ]
