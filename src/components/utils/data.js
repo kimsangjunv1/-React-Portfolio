@@ -179,14 +179,14 @@ export const data = {
         {
             title: "Cannot use import statement outside a module 오류 해결",
             desc: "NodeJS를 학습하던 도중에 패키지를 가져오기위해 require가 아닌 import를 사용했더니 발생한 문제를 해결해보자",
-            imgSrc: "",
-            url: "https://kimsangjun.tistory.com/185"
+            imgSrc: "https://codi-agit.com/src/assets/images/storage/Img_172839410878501.jpeg",
+            url: "https://codi-agit.com/category/view/?postID=1"
         },
         {
             title: "MySQL에 대하여 기초부터 기본 명령어까지",
             desc: "MySQL은 PHP 스크립트 언어와 상호 연동이 잘 되면서 오픈소스를 개발된 무료 프로그램입니다. 그래서 홈페이지나 쇼핑몰(워드프레스, cafe24, 제로보드, 그누보드)등 일반적으로 웹 개발에 널리 사용하고 있습니다.",
-            imgSrc: "",
-            url: "https://kimsangjun.tistory.com/108"
+            imgSrc: "https://codi-agit.com/src/assets/images/storage/Img_172847803216417.jpeg",
+            url: "https://codi-agit.com/category/view/?postID=5"
         },
         {
             title: "마우스를 따라가는 눈알 효과 만들어보기",

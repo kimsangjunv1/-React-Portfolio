@@ -21,7 +21,7 @@ const Section05 = ({ data }) => {
                     <h2 className="">개인 공부</h2>
                     <div className="desc">
                         <p>
-                            개인적으로 공부한 내용들을 티스토리에 정리하였습니다<br />
+                            개인적으로 공부한 내용들을 제 개인 웹사이트에 정리하였습니다,<br />
                             각각의 본문은 '보기'를 클릭하시면 이동됩니다!
                         </p>
                         {/* <div className="actions">
@@ -45,8 +45,7 @@ const Section05 = ({ data }) => {
                             <div className="desc">
                                 <div>
                                     <div className="import">
-                                        {/* <img src="/images/common/img-logo-tistory.png" alt="/" loading="lazy"/> */}
-                                        <p>tistory</p>
+                                        <img src={e.imgSrc} alt={e.title} loading="lazy"/>
                                     </div>
                                     <h5>{e.title}</h5>
                                     <p>{e.desc}</p>
