@@ -191,19 +191,19 @@ export const data = {
         {
             title: "마우스를 따라가는 눈알 효과 만들어보기",
             desc: "이번에는 눈알이 마우스를 따라 돌아가는 효과를 한번 구현해볼게요",
-            imgSrc: "",
+            imgSrc: "https://codi-agit.com/src/assets/images/storage/Img_172847803216417.jpeg",
             url: "https://kimsangjun.tistory.com/126"
         },
         {
             title: "reverse() / sort() : 배열 순서 반전 및 정렬해주는 메서드들!",
             desc: "배열의 순서를 반전합니다. 첫 번째 요소는 마지막 요소가 되며 마지막 요소는 첫 번째 요소가 됩니다, 배열의 요소를 적절한 위치에 정렬한 후 그 배열을 반환합니다.",
-            imgSrc: "",
+            imgSrc: "https://codi-agit.com/src/assets/images/storage/Img_172847803216417.jpeg",
             url: "https://kimsangjun.tistory.com/128"
         },
         {
             title: "펼침연산자 / 비구조화 / 객체구조분해에 대해",
             desc: "이번에는 펼침연산자와 비구조화, 객체 구조분해에 대해 알아볼게요!!",
-            imgSrc: "",
+            imgSrc: "https://codi-agit.com/src/assets/images/storage/Img_172847803216417.jpeg",
             url: "https://kimsangjun.tistory.com/118"
         },
     ],

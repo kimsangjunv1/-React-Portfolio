@@ -40,12 +40,12 @@ const Section05 = ({ data }) => {
                     {data.map((e, i) => 
                         <div className="item" key={i}>
                             <div className="title">
-                                <img src="/images/sections/05/img-thumbnail-01.png" alt="/" loading="lazy"/>
+                                <img src={e.imgSrc} alt={e.title} loading="lazy" className="bg" />
                             </div>
                             <div className="desc">
                                 <div>
                                     <div className="import">
-                                        <img src={e.imgSrc} alt={e.title} loading="lazy"/>
+                                        <img src="/images/common/img-logo-codiagit.png" alt="/" loading="lazy"/>
                                     </div>
                                     <h5>{e.title}</h5>
                                     <p>{e.desc}</p>
@@ -53,7 +53,7 @@ const Section05 = ({ data }) => {
                                         <a href={e.url} target="_blank">보기</a>
                                     </div>
                                 </div>
-                                <img src="/images/sections/05/img-desc-background.png" alt="/" loading="lazy"/>
+                                <div className="bg"></div>
                             </div>
                         </div>
                     )}
