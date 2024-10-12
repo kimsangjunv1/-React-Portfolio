@@ -203,7 +203,7 @@ export const data = {
         {
             title: "제이쿼리의 $필터 선택자에 대해 알아보자",
             desc: "'$'이 붙은 필터 선택자에 대해 알아보겠습니다.",
-            imgSrc: "https://codi-agit.com/src/assets/images/storage/Img_172874317049454.jpeg",
+            imgSrc: "https://codi-agit.com/src/assets/images/storage/Img_172850233687876.jpeg",
             url: "https://kimsangjun.tistory.com/118"
         },
     ],
