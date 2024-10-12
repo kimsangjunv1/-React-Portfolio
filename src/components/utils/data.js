@@ -177,33 +177,33 @@ export const data = {
     // 섹션 4
     education: [
         {
+            title: "PHP에서 좋아요 기능 구현해보기",
+            desc: "PHP를 이용해 웹사이트를 구현하는 도중 좋아요 기능이 필요할거 같아 직접 구현해보기로 했습니다!",
+            imgSrc: "https://codi-agit.com/src/assets/images/storage/Img_172874317049454.jpeg",
+            url: "https://codi-agit.com/category/view/?postID=31"
+        },
+        {
+            title: "React에서 로딩중일때 임시로 표시할 스켈레톤 UI를 구현해보자!",
+            desc: "리액트로 작업하던 토이 프로젝트가 있었는데 API에서 데이터를 받아오는 동안 빈 화면으로 냅두는건 좀 아니다 싶어 스켈레톤 UI를 구현해보기로 했습니다!",
+            imgSrc: "https://codi-agit.com/src/assets/images/storage/Img_172874734514029.jpeg",
+            url: "https://codi-agit.com/category/view/?postID=32"
+        },
+        {
             title: "Cannot use import statement outside a module 오류 해결",
             desc: "NodeJS를 학습하던 도중에 패키지를 가져오기위해 require가 아닌 import를 사용했더니 발생한 문제를 해결해보자",
             imgSrc: "https://codi-agit.com/src/assets/images/storage/Img_172839410878501.jpeg",
             url: "https://codi-agit.com/category/view/?postID=1"
         },
         {
-            title: "MySQL에 대하여 기초부터 기본 명령어까지",
+            title: "CSS를 통해 '다크모드'를 구현해보자!",
             desc: "MySQL은 PHP 스크립트 언어와 상호 연동이 잘 되면서 오픈소스를 개발된 무료 프로그램입니다. 그래서 홈페이지나 쇼핑몰(워드프레스, cafe24, 제로보드, 그누보드)등 일반적으로 웹 개발에 널리 사용하고 있습니다.",
             imgSrc: "https://codi-agit.com/src/assets/images/storage/Img_172847803216417.jpeg",
             url: "https://codi-agit.com/category/view/?postID=5"
         },
         {
-            title: "마우스를 따라가는 눈알 효과 만들어보기",
-            desc: "이번에는 눈알이 마우스를 따라 돌아가는 효과를 한번 구현해볼게요",
-            imgSrc: "https://codi-agit.com/src/assets/images/storage/Img_172847803216417.jpeg",
-            url: "https://kimsangjun.tistory.com/126"
-        },
-        {
-            title: "reverse() / sort() : 배열 순서 반전 및 정렬해주는 메서드들!",
-            desc: "배열의 순서를 반전합니다. 첫 번째 요소는 마지막 요소가 되며 마지막 요소는 첫 번째 요소가 됩니다, 배열의 요소를 적절한 위치에 정렬한 후 그 배열을 반환합니다.",
-            imgSrc: "https://codi-agit.com/src/assets/images/storage/Img_172847803216417.jpeg",
-            url: "https://kimsangjun.tistory.com/128"
-        },
-        {
             title: "펼침연산자 / 비구조화 / 객체구조분해에 대해",
             desc: "이번에는 펼침연산자와 비구조화, 객체 구조분해에 대해 알아볼게요!!",
-            imgSrc: "https://codi-agit.com/src/assets/images/storage/Img_172847803216417.jpeg",
+            imgSrc: "https://codi-agit.com/src/assets/images/storage/Img_172874317049454.jpeg",
             url: "https://kimsangjun.tistory.com/118"
         },
     ],
