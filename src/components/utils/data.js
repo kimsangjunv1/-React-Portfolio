@@ -197,12 +197,12 @@ export const data = {
         {
             title: "CSS를 통해 '다크모드'를 구현해보자!",
             desc: "MySQL은 PHP 스크립트 언어와 상호 연동이 잘 되면서 오픈소스를 개발된 무료 프로그램입니다. 그래서 홈페이지나 쇼핑몰(워드프레스, cafe24, 제로보드, 그누보드)등 일반적으로 웹 개발에 널리 사용하고 있습니다.",
-            imgSrc: "https://codi-agit.com/src/assets/images/storage/Img_172847803216417.jpeg",
+            imgSrc: "https://codi-agit.com/src/assets/images/storage/Img_172874781148259.jpeg",
             url: "https://codi-agit.com/category/view/?postID=5"
         },
         {
-            title: "펼침연산자 / 비구조화 / 객체구조분해에 대해",
-            desc: "이번에는 펼침연산자와 비구조화, 객체 구조분해에 대해 알아볼게요!!",
+            title: "제이쿼리의 $필터 선택자에 대해 알아보자",
+            desc: "'$'이 붙은 필터 선택자에 대해 알아보겠습니다.",
             imgSrc: "https://codi-agit.com/src/assets/images/storage/Img_172874317049454.jpeg",
             url: "https://kimsangjun.tistory.com/118"
         },
@@ -519,13 +519,14 @@ export const data = {
         },
         {
             title: "CODi_Agit. | 코디 아지트.",
-            desc: "제가 개인적으로 공부한것을 올리기위한 블로그 입니다.",
+            desc: "좋아하는것, 공부한것, 기록해두고 싶은것을 올리기위한 저만의 웹사이트 입니다.",
             imgSrc:"img-project-codiagit",
             feature: {
                 name: "주요 기능 및 특징",
                 description: [
                     "주어진 권한에 따라 글 편집 권한이 주어집니다.",
                     "게스트 로그인을 통해 회원가입 없이도 접속이 가능합니다.",
+                    "SEO 최적화를 위한 시멘틱 태그 배치 및 OG 정보를 최적화 했습니다.",
                     "좋아요 및 로그인 횟수 별 회원 등급이 부여 됩니다.(개발중)",
                     "개인별 댓글 작성이 가능합니다.(개발중)",
                 ]
