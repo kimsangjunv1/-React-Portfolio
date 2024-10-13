@@ -177,10 +177,22 @@ export const data = {
     // 섹션 4
     education: [
         {
+            title: "lighthouse를 통해 사이트를 최적화 해보자",
+            desc: "웹사이트의 성능, 접근성, SEO(검색엔진 최적화) 등 개선을 통해 라이트 하우스를 사용해 최적화를 진행하였습니다.",
+            imgSrc: "https://codi-agit.com/src/assets/images/storage/Img_172881525130312.jpeg",
+            url: "https://codi-agit.com/category/view/?postID=33"
+        },
+        {
             title: "PHP에서 좋아요 기능 구현해보기",
             desc: "PHP를 이용해 웹사이트를 구현하는 도중 좋아요 기능이 필요할거 같아 직접 구현해보기로 했습니다!",
             imgSrc: "https://codi-agit.com/src/assets/images/storage/Img_172874317049454.jpeg",
             url: "https://codi-agit.com/category/view/?postID=31"
+        },
+        {
+            title: "Vite + React 빠르게 시작해보기!",
+            desc: "빌드가 빠른 번들러인 Vite를 사용해 Netlify에 배포시 발생하는 빌드시간을 줄이기 위해 채택하였습니다.",
+            imgSrc: "https://codi-agit.com/src/assets/images/storage/Img_172881967833739.jpeg",
+            url: "https://codi-agit.com/category/view/?postID=34"
         },
         {
             title: "React에서 로딩중일때 임시로 표시할 스켈레톤 UI를 구현해보자!",
@@ -193,18 +205,6 @@ export const data = {
             desc: "NodeJS를 학습하던 도중에 패키지를 가져오기위해 require가 아닌 import를 사용했더니 발생한 문제를 해결해보자",
             imgSrc: "https://codi-agit.com/src/assets/images/storage/Img_172839410878501.jpeg",
             url: "https://codi-agit.com/category/view/?postID=1"
-        },
-        {
-            title: "CSS를 통해 '다크모드'를 구현해보자!",
-            desc: "MySQL은 PHP 스크립트 언어와 상호 연동이 잘 되면서 오픈소스를 개발된 무료 프로그램입니다. 그래서 홈페이지나 쇼핑몰(워드프레스, cafe24, 제로보드, 그누보드)등 일반적으로 웹 개발에 널리 사용하고 있습니다.",
-            imgSrc: "https://codi-agit.com/src/assets/images/storage/Img_172874781148259.jpeg",
-            url: "https://codi-agit.com/category/view/?postID=5"
-        },
-        {
-            title: "제이쿼리의 $필터 선택자에 대해 알아보자",
-            desc: "'$'이 붙은 필터 선택자에 대해 알아보겠습니다.",
-            imgSrc: "https://codi-agit.com/src/assets/images/storage/Img_172850233687876.jpeg",
-            url: "https://kimsangjun.tistory.com/118"
         },
     ],
 
