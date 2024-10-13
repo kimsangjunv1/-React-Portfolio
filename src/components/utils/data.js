@@ -201,10 +201,10 @@ export const data = {
             url: "https://codi-agit.com/category/view/?postID=32"
         },
         {
-            title: "Cannot use import statement outside a module 오류 해결",
-            desc: "NodeJS를 학습하던 도중에 패키지를 가져오기위해 require가 아닌 import를 사용했더니 발생한 문제를 해결해보자",
-            imgSrc: "https://codi-agit.com/src/assets/images/storage/Img_172839410878501.jpeg",
-            url: "https://codi-agit.com/category/view/?postID=1"
+            title: "useMemo를 활용해 값이 그대로 들어올때 불필요한 실행을 방지해보자!",
+            desc: "값은 재할당 되었으나 굳이 다시 렌더링 할 필요가 없는 작업이 있었는데 그 부분을 해결하기 위해 useMemo를 사용해보자",
+            imgSrc: "https://codi-agit.com/src/assets/images/storage/Img_172884056675422.jpeg",
+            url: "https://codi-agit.com/category/view/?postID=35"
         },
     ],
 
