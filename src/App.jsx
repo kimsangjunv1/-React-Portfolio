@@ -1,16 +1,12 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Fragment, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 import Header from "@/components/layout/Header";
 import Main from "@/components/layout/Main";
 import Footer from "@/components/layout/Footer";
 
-import Section01 from "@/components/sections/Section01";
-import Section02 from "@/components/sections/Section02";
-import Section03 from "@/components/sections/Section03";
-import Section04 from "@/components/sections/Section04";
-import Section05 from "@/components/sections/Section05";
-import Section06 from "@/components/sections/Section06";
-import Section07 from "@/components/sections/Section07";
+import Index from "@/components/pages/home";
 
 import MouseComponents from "@/components/common/MouseComponents";
 import ProgressComponents from "@/components/common/ProgressComponents";
@@ -34,29 +30,26 @@ const App = () => {
 
     useEffect(() => {
         !isMobile ? Animation.layout.main() : "";
-    },[isMobile])
-
+    },[isMobile]);
+    
     return (
-        <Fragment>
+        <Router>
             <Header />
             <Main>
                 <AnimatePresence>
                     {isLoaded ? "" : <LoadingComponents count={loadingCount} />}
                 </AnimatePresence>
-                <Section01 />
-                <Section02 isMobile={isMobile} data={ data.about } />
-                <Section03 isMobile={isMobile} data={ data.career } />
-                <Section04 isMobile={isMobile} data={ data.skill } />
-                <Section06 isMobile={isMobile} data={ data.projects } />
-                <Section05 isMobile={isMobile} data={ data.education } />
-                <Section07 />
+                
+                <Routes>
+                    <Route path="/" element={<Index isMobile={isMobile} data={data} />} />
+                </Routes>
 
                 <MouseComponents />
                 <ProgressComponents />
                 <SkipComponents />
             </Main>
             <Footer />
-        </Fragment>
+        </Router>
     );
 };
 
