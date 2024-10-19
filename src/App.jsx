@@ -28,22 +28,14 @@ const App = () => {
     const isMobile = useMatchMedia("(max-width: 768px)");
     const { isLoaded, loadingCount } = useRouteLoading();
 
-    useEffect(() => {
-        !isMobile ? Animation.layout.main() : "";
-    },[isMobile]);
+    useEffect(() => !isMobile ? Animation.layout.main() : "" ,[isMobile]);
     
     return (
         <Router>
             <Header />
             <Main>
-                <AnimatePresence>
-                    {isLoaded ? "" : <LoadingComponents count={loadingCount} />}
-                </AnimatePresence>
-                
-                <Routes>
-                    <Route path="/" element={<Index isMobile={isMobile} data={data} />} />
-                </Routes>
-
+                <AnimatePresence>{ isLoaded ? "" : <LoadingComponents count={loadingCount} /> }</AnimatePresence>
+                <Routes><Route path="/" element={ <Index isMobile={isMobile} data={data} /> } /></Routes>
                 <MouseComponents />
                 <ProgressComponents />
                 <SkipComponents />

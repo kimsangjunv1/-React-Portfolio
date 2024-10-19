@@ -1,5 +1,6 @@
 import { useEffect, useRef, useMemo, Fragment } from "react";
 import Animation from "../utils/animation";
+import { util } from "../utils/util";
 
 const Section02 = ({ data, isMobile, type }) => {
     const refContainer = useRef(null);
@@ -21,11 +22,11 @@ const Section02 = ({ data, isMobile, type }) => {
                     {data.map((e, i) =>
                         <Fragment key={i}>
                             <div className={`item content-${i}`} ref={refCard}>
-                                <h5>Q. {e.title}</h5>
+                                <h5>Q. {util.replace(type, e.title)}</h5>
                             </div>
                             <div className={`item content-${i}`} ref={refCard}>
                                 <p>
-                                    {e.desc}
+                                    {util.replace(type, e.desc)}
                                 </p>
                             </div>
                         </Fragment>

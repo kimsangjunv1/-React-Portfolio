@@ -23,8 +23,6 @@ const Header = () => {
                         <h1>프론트-엔드</h1>
                         <img src="/images/common/img-header-logo.svg" alt="/" />
                         <h1 className="target">김상준</h1>
-                        {/* <h1>프론트-엔드</h1>
-                        <h1>김상준</h1> */}
                     </a>
                 </section>
                 {/* 로고 END */}

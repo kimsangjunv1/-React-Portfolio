@@ -1,7 +1,8 @@
 import { useEffect, useRef, useMemo, Fragment } from "react";
 import Animation from "../utils/animation";
+import { util } from "../utils/util";
 
-const Section03 = ({ data }) => {
+const Section03 = ({ data, type }) => {
     const refContainer = useRef(null);
 
     const refs = useMemo(() => ({
@@ -32,7 +33,7 @@ const Section03 = ({ data }) => {
 
                                         <ul className="tags">
                                             {e.tags.map((e, i) => 
-                                                <li className={`${i == 0 && "focus-2"}`} key={i}>{e}</li>
+                                                <li className={`${i == 0 && "focus-2"}`} key={i}>{util.replace(type, e)}</li>
                                             )}
                                         </ul>
                                     </div>
