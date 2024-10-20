@@ -1,25 +1,28 @@
 #navigate {
     position: fixed;
-    bottom: 0;
+    bottom: 1.6rem;
     left: 50%;
     transform: translate(-50%, 0);
     z-index: 1000000;
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
     color: white;
     width: 300px;
     height: auto;
     min-height: auto;
     display: flex;
-    justify-content: space-around;position: fixed;
+    justify-content: space-around;
+    background: #000000bd;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 0.8rem;
 
     > a {
         padding: 1.2rem;
         width: 100%;
         text-align: center;
         transition: 0.25s background;
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        background: #000000ad;
+        border-radius: 100px;
 
         &.active {
             background: white;

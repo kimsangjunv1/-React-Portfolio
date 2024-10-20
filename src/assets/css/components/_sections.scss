@@ -246,7 +246,6 @@ article {
     }
 
     &#career {
-        // height: 200vh;
         padding: var(--section-space) 0;
 
         .container-inner {
@@ -261,8 +260,9 @@ article {
             > .contents {
                 display: flex;
                 flex-direction: column;
-                gap: 3.2rem;
+                gap: 7.2rem;
 
+                // 항목
                 > .item {
                     color: white;
                     display: flex;
@@ -275,56 +275,60 @@ article {
     
                         > div {
                             flex: 1;
-                            border: 1px solid var(--color-brand-500);
-                            padding: 3.2rem;
-                            border-radius: 0.8rem;
-                            background: black;
+                        }
+                        
+                        // 카테고리
+                        &:first-child {
+                            > div {
+                                position: relative;
+                                margin-bottom: 1.2rem;
 
-                            > .tags {
-                                margin-top: 1.2rem;
-                                display: flex;
-                                flex-wrap: wrap;
-                                gap: 0.4rem;
-
-                                li {
-                                    font-size: 1.4rem;
-                                    border-radius: 0.4rem;
-                                    border: 1px solid white;
-                                    padding: 0.4rem 0.4rem;
-
-                                    &.focus- {
-                                        &0 {
-                                            border-color: red;
-                                            color: red;
-                                        }
-                                        &1 {
-                                            border-color: blue;
-                                            color: blue;
-                                        }
-                                        &2 {
-                                            border-color: var(--color-brand-500);
-                                            color: var(--color-brand-500);
-                                        }
-                                    }
+                                > h5 {
+                                    font-size: 3.2rem;
                                 }
                             }
                         }
 
-                        &:first-child {
+                        // 내용
+                        &:last-child {
                             > div {
-                                position: relative;
-
-                                // &::after {
-                                //     content: '';
-                                //     position: absolute;
-                                //     top: 50%;
-                                //     right: 2vmin;
-                                //     transform: translate(-50%, 0) rotate(-45deg);
-
-                                //     width: 20px;
-                                //     height: 1px;
-                                //     background: red;
-                                // }
+                                > h5 {
+                                    color: var(--color-brand-500);
+                                    margin-bottom: 1.2rem;
+                                }
+    
+                                > p {
+                                    line-height: 1.5;
+                                    word-break: keep-all;
+                                    opacity: 0.7;
+                                }
+    
+                                > .tags {
+                                    margin-top: 1.2rem;
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    gap: 0.4rem;
+    
+                                    li {
+                                        font-size: 1.4rem;
+                                        border-radius: 0.4rem;
+                                        padding: 0.4rem 0.8rem;
+                                        background: #ffffff21;
+    
+                                        &.focus- {
+                                            &0 {
+                                                border-color: red;
+                                                color: red;
+                                            }
+                                            &1 {
+                                                border-color: blue;
+                                                color: blue;
+                                            }
+                                            &2 {
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                     }            
