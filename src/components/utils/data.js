@@ -90,11 +90,6 @@ export const data = {
                     "imgSrc": "img-icon-react"
                 },
                 {
-                    "name": "ReduxToolKit",
-                    "description": "집중된 상태 관리를 통해 에러 추적이 용이하여 사용했습니다.",
-                    "imgSrc": "img-icon-react"
-                },
-                {
                     "name": "Zustand",
                     "description": "리덕스의 초기 세팅을 축소하여 빠르게 작업할 수 있었고, 상태 정의와 사용이 간편해 사용했습니다.",
                     "imgSrc": "img-icon-react"
