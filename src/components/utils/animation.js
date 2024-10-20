@@ -601,20 +601,17 @@ class Animation {
 
             gsap.fromTo(imageWrappers,
             {
-                x: "-10vw",
+                x: "10vw",
                 y: "-30vh",
             }, 
             {
                 y: "30vh",
-                x: "10vw",
+                x: "-10vw",
                 scrollTrigger: {
                     trigger: slide,
                     scrub: true,
-                    // start: "top bottom", // position of trigger meets the scroller position
                     start: "top bottom", // 트리거 시작 지점 명시
-                    // start: "top bottom", // 트리거 시작 지점 명시
                     end: "bottom top",   // 트리거 종료 지점 명시
-                    // end: "bottom top",   // 트리거 종료 지점 명시
                 },
                 ease: "none",
             });
