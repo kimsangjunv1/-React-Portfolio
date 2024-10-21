@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useEffect } from "react";
 
-import Index from "@/components/pages/home";
+import Index from "@/components/pages/Index";
+
 import Header from "@/components/layout/Header";
 import Main from "@/components/layout/Main";
 import Footer from "@/components/layout/Footer";
