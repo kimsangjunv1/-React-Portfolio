@@ -184,10 +184,10 @@ export const data = {
             url: "https://codi-agit.com/category/view/?postID=31"
         },
         {
-            title: "Vite + React 빠르게 시작해보기!",
+            title: "클로저란 무엇일까",
             desc: "빌드가 빠른 번들러인 Vite를 사용해 Netlify에 배포시 발생하는 빌드시간을 줄이기 위해 채택하였습니다.",
-            imgSrc: "https://codi-agit.com/src/assets/images/storage/Img_172881967833739.jpeg",
-            url: "https://codi-agit.com/category/view/?postID=34"
+            imgSrc: "https://codi-agit.com/src/assets/images/storage/Img_172969322691163.jpeg",
+            url: "https://codi-agit.com/blog/view/?postID=43"
         },
         {
             title: "React에서 로딩중일때 임시로 표시할 스켈레톤 UI를 구현해보자!",
