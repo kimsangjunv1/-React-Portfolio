@@ -920,6 +920,51 @@ article {
                 background: #1c1e25;
             }
         }
+
+        .viewer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 10000000;
+            background: rgba(0, 0, 0, 0.7490196078);
+            padding: 2.4rem;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            > img {
+                width: 60%;
+                height: 60%;
+                object-fit: contain;
+                border-radius: 0.4rem;
+                background: black;
+                border: 1px solid white;
+            }
+
+            > button {
+                font-family: 'Galmuri11';
+                position: absolute;
+                bottom: 1.6rem;
+                left: 50%;
+                transform: translate(-50%, 0%);
+                width: calc(60% - 3.2rem);
+                padding: 1.6rem;
+                background: white;
+                color: black;
+                border-radius: 0.4rem;
+                transition: 0.25s background, color;
+
+                &:hover {
+                    background: var(--color-brand-500);
+                    color: black;
+                }
+            }
+        }
     }
 
     // 섹션 : 마무리

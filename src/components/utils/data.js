@@ -185,7 +185,7 @@ export const data = {
         },
         {
             title: "클로저란 무엇일까",
-            desc: "빌드가 빠른 번들러인 Vite를 사용해 Netlify에 배포시 발생하는 빌드시간을 줄이기 위해 채택하였습니다.",
+            desc: "사실상 면접을 대비한 공부라고 할수도 있고 일상생활에 있다보니 그러려니 하고 쓰다가 명칭을 알게된 경우였는데, 이번 기회에 클로저에 대해 알기쉽게 이해해보고자 작성하게 되었습니다.",
             imgSrc: "https://codi-agit.com/src/assets/images/storage/Img_172969322691163.jpeg",
             url: "https://codi-agit.com/blog/view/?postID=43"
         },
@@ -197,7 +197,7 @@ export const data = {
         },
         {
             title: "useMemo를 활용해 값이 그대로 들어올때 불필요한 실행을 방지해보자!",
-            desc: "값은 재할당 되었으나 굳이 다시 렌더링 할 필요가 없는 작업이 있었는데 그 부분을 해결하기 위해 useMemo를 사용해보자",
+            desc: "값은 재할당 되었으나 값이 이전과 같아 굳이 다시 렌더링 할 필요가 없는 작업이 있었는데 그 부분을 해결하기 위한 useMemo를 사용해보자!",
             imgSrc: "https://codi-agit.com/src/assets/images/storage/Img_172884056675422.jpeg",
             url: "https://codi-agit.com/category/view/?postID=35"
         },

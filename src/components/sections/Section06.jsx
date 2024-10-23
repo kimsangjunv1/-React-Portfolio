@@ -1,11 +1,11 @@
-import  { useEffect, useLayoutEffect } from "react";
+import  { useEffect, useLayoutEffect, useState } from "react";
 import Animation from "../utils/animation";
 import WaveComponents from "../common/WaveComponents";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-
 const Section06 = ({ data }) => {
+    const [imgUrl, setImgUrl] = useState(null);
     // const refCharacter01 = useRef(null);
 
     // const refs = useMemo(() => ({
@@ -84,7 +84,7 @@ const Section06 = ({ data }) => {
                                     // onSwiper={(swiper) => console.log(swiper)}
                                 >
                                     {element.screenshots.map((e, i) =>
-                                        <SwiperSlide><img src={`/images/sections/06/${e}.png`} alt="스크린샷" key={i}/></SwiperSlide>
+                                        <SwiperSlide><img src={`/images/sections/06/${e}.png`} alt="스크린샷" key={i} onClick={(event) => setImgUrl(event.target.src)}/></SwiperSlide>
                                     )}
                                 </Swiper>
                             </section>
@@ -102,8 +102,20 @@ const Section06 = ({ data }) => {
             </section>
         )}
         {/* 내용 END */}
+
+        {imgUrl && <ImageViewerComponents src={imgUrl} funcClose={() => setImgUrl(null)}/>}
     </article>
   )
+}
+
+// 공통 : 이미지 뷰어
+const ImageViewerComponents = ({src, funcClose}) => {
+    return (
+        <section className="viewer">
+            <button type="button" onClick={() => funcClose()}>닫기</button>
+            <img src={src} alt="스크린샷"/>
+        </section>
+    )
 }
 
 export default Section06
