@@ -323,16 +323,18 @@ class Animation {
 
         const sections = gsap.utils.toArray("#skill > section");
 
-        const scrollTween = gsap.to(sections, {
-            xPercent: -100 * (isMobile ? sections.length : sections.length - 1),
-            ease: "none",
-            scrollTrigger: {
-                trigger: target.container.current,
-                pin: true,
-                scrub: 1, // 스크롤과 애니메이션 동기화
-                end: () => "+=" + target.container.current.scrollWidth, // 전체 가로 스크롤 길이 설정
-            },
-        });
+        if (target.container.current) {
+            const scrollTween = gsap.to(sections, {
+                xPercent: -100 * (isMobile ? sections.length : sections.length - 1),
+                ease: "none",
+                scrollTrigger: {
+                    trigger: target.container.current,
+                    pin: true,
+                    scrub: 1, // 스크롤과 애니메이션 동기화
+                    end: () => "+=" + target.container.current.scrollWidth, // 전체 가로 스크롤 길이 설정
+                },
+            });
+        }
 
         
         if (!isMobile) {

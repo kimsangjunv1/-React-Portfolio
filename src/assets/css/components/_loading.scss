@@ -14,7 +14,6 @@ article {
             flex: 0 0 20%;
             background: var(--color-brand-500);
             height: 100%;
-            // width: 100%;
             overflow: hidden;
             position: relative;
             display: flex;
@@ -30,6 +29,7 @@ article {
             
         }
 
+        .list,
         .info {
             position: absolute;
             top: 50%;
@@ -46,6 +46,18 @@ article {
 
             p {
                 font-size: 30px;
+            }
+        }
+
+        .list {
+            flex-direction: column;
+            gap: 2.2rem;
+
+            > button {
+                font-family: 'Galmuri11';
+                padding: 0.4rem 0.8rem;
+                background: black;
+                color: white;
             }
         }
     }

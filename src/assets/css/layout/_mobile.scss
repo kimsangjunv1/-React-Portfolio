@@ -1,5 +1,21 @@
 // 태블릿 이하
 @media screen and (max-width: 768px) {
+    header {
+        .header-inner {
+            > section {
+                &.logo {}
+
+                &.menu {
+                    display: none;
+
+                    &.show {
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+    
     main {
         &::after {
             display: none;

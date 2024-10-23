@@ -123,5 +123,30 @@ header {
                 }
             }
         }
+
+        // 모바일 메뉴 호출 버튼
+        > button {
+            position: relative;
+
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: white;
+                width: 1.6rem;
+                height: 0.2rem;
+            }
+
+            &::before {
+                top: 30%;
+            }
+
+            &::after {
+                top: 70%;
+            }
+        }
     }
 }
