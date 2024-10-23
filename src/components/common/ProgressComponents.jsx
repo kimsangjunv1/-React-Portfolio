@@ -1,4 +1,4 @@
-import  { useEffect, useRef, useMemo, useState } from "react";
+import  { useEffect, useRef, useMemo, useState, useLayoutEffect } from "react";
 
 const ProgressComponents = () => {
     const [ scrollValue, setScrollValue ] = useState(0);
@@ -33,7 +33,7 @@ const ProgressComponents = () => {
         };
     }, []);
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         refs.progress.bar.current.style.height = scrollValue + "%";
     }, [scrollValue])
 
