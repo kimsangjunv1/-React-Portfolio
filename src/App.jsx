@@ -9,6 +9,7 @@ import Footer from "@/components/layout/Footer";
 
 import SkipComponents from "@/components/common/SkipComponents";
 import MouseComponents from "@/components/common/MouseComponents";
+import AwardsComponents from "@/components/common/AwardsComponents";
 import LoadingComponents from "@/components/common/LoadingComponents";
 import NavigateComponents from "@/components/common/NavigateComponents";
 import ProgressComponents from "@/components/common/ProgressComponents";
@@ -49,6 +50,7 @@ const App = () => {
                 <ProgressComponents />
                 <SkipComponents />
                 <NavigateComponents />
+                <AwardsComponents />
             </Main>
             <Footer />
         </Router>
