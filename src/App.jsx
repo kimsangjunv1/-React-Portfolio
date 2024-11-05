@@ -50,7 +50,7 @@ const App = () => {
                 <ProgressComponents />
                 <SkipComponents />
                 <NavigateComponents />
-                <AwardsComponents />
+                {/* <AwardsComponents /> */}
             </Main>
             <Footer />
         </Router>
